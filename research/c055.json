@@ -4,7 +4,10 @@
   "legal_name": "Arca Capital Slovakia",
   "reg_no": null,
   "country": "SK",
-  "active_in": ["SK", "CZ"],
+  "active_in": [
+    "SK",
+    "CZ"
+  ],
   "website": null,
   "entity_kind": {
     "value": "investor",
@@ -19,14 +22,25 @@
     "quote": "Arca Capital je private equity skupina pôsobiaca predovšetkým v regióne strednej a východnej Európy."
   },
   "stages": {
-    "value": ["seed", "growth"],
+    "value": [
+      "seed",
+      "growth"
+    ],
     "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
     "source_date": "2016-02-17",
     "quote": "Ide o financovanie rannej fázy firmy (tzv. seed alebo start-up kapitál) až po fázu expanzie."
   },
   "funds": [],
-  "investments": [],
+  "investments": [
+    {
+      "company": "Zentiva",
+      "deal_date": "2016-02-17",
+      "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+      "source_date": "2016-02-17",
+      "quote": "Medzi realizované investície patrili resp. patria napr. Zentiva, KASA.cz (hej.sk) či GEODÉZIA Bratislava."
+    }
+  ],
   "duplicate_of": null,
-  "notes": "Not an active investor: per Startitup (2025-07-17) the Bratislava court opened bankruptcy proceedings against Arca Capital Slovakia in July 2025; the group (parent Arca Investments) has debts over EUR 770M and has been selling assets since 2020. No new investments found in the activity window; historical deals (Zentiva, KASA.cz, GEODÉZIA Bratislava) are only listed in the 2016 overview without dates. Source for insolvency: https://www.startitup.sk/arca-capital-celi-konkurzu-po-rokoch-pravnych-manevrov-trzby-klesli-na-144-tisic-eur-dlhy-presiahli-miliardu/",
+  "notes": "Not an active investor: per Startitup (2025-07-17) the Bratislava court opened bankruptcy proceedings against Arca Capital Slovakia in July 2025; the group (parent Arca Investments) has debts over EUR 770M and has been selling assets since 2020. No new investments found in the activity window; historical deals (Zentiva, KASA.cz, GEODÉZIA Bratislava) are only listed in the 2016 overview without dates. Source for insolvency: https://www.startitup.sk/arca-capital-celi-konkurzu-po-rokoch-pravnych-manevrov-trzby-klesli-na-144-tisic-eur-dlhy-presiahli-miliardu/ Manual check 2026-10-09: deal_date is the article date (upper bound, exact deal date unknown).",
   "researched_at": "2026-10-09"
 }

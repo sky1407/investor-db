@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-09T17:46:23+00:00",
+  "generated_at": "2026-10-09T12:41:32+00:00",
   "summary": {
     "http_error": 2,
-    "verified": 329
+    "verified": 327
   },
   "schema_errors": [],
   "records": {
@@ -585,6 +585,12 @@
       },
       "investor_type": {
         "url": "https://en.ain.ua/2024/11/25/slovakian-startup-superscale-raises-12m-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://across.sk/o-nas",
         "status": "verified",
         "http_status": 200,
         "detail": ""
@@ -1240,12 +1246,6 @@
         "status": "verified",
         "http_status": 200,
         "detail": ""
-      },
-      "investments[0]": {
-        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
-        "status": "verified",
-        "http_status": 200,
-        "detail": ""
       }
     },
     "c052": {
@@ -1368,12 +1368,6 @@
         "status": "verified",
         "http_status": 200,
         "detail": ""
-      },
-      "investments[0]": {
-        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
-        "status": "verified",
-        "http_status": 200,
-        "detail": ""
       }
     },
     "c056": {
@@ -1441,12 +1435,6 @@
       },
       "aum": {
         "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
-        "status": "verified",
-        "http_status": 200,
-        "detail": ""
-      },
-      "investments[0]": {
-        "url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
         "status": "verified",
         "http_status": 200,
         "detail": ""

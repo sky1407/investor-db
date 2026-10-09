@@ -1221,15 +1221,7 @@
       "stages": null,
       "ticket_min_eur": null,
       "ticket_max_eur": null,
-      "aum_eur": {
-        "value": 450000000,
-        "source_url": "https://across.sk/o-nas",
-        "source_date": null,
-        "quote": "450+ mil. eur pod správou",
-        "status": "verified",
-        "original_amount": 450000000.0,
-        "original_currency": "EUR"
-      },
+      "aum_eur": null,
       "investments": [
         {
           "company": "SuperScale",
@@ -1251,7 +1243,7 @@
         }
       ],
       "last_evidence_date": "2024-11-19",
-      "notes": "Across is primarily a Slovak wealth/asset manager (securities dealer licensed by NBS) that also makes direct private/venture investments for its clients; classified as investor with type vc as closest fit, but it is not a dedicated VC fund. AUM of 450+ mil. EUR covers the whole wealth management business, not a venture vehicle. No deals after Nov 2024 found; Tachyum/Brightpick appear only on aggregators."
+      "notes": "Across is primarily a Slovak wealth/asset manager (securities dealer licensed by NBS) that also makes direct private/venture investments for its clients; classified as investor with type vc as closest fit, but it is not a dedicated VC fund. AUM of 450+ mil. EUR covers the whole wealth management business, not a venture vehicle. No deals after Nov 2024 found; Tachyum/Brightpick appear only on aggregators. Manual check 2026-10-09: the 450M EUR figure is wealth-management client assets, not VC fund size; AUM removed."
     },
     {
       "candidate_id": "c014",
@@ -3025,7 +3017,7 @@
       "website": null,
       "funds": [],
       "included": false,
-      "exclusion_reason": "no_evidence",
+      "exclusion_reason": "inactive",
       "confidence": null,
       "needs_review": false,
       "issues": [],
@@ -3070,9 +3062,19 @@
         "original_currency": "EUR"
       },
       "aum_eur": null,
-      "investments": [],
-      "last_evidence_date": null,
-      "notes": "Public fund under Národný holdingový fond (c008), managed by QUADRICA Private Equity per a 2016 article; the only source found is that 2016 overview. The current nhfond.sk site no longer lists SRF (only NHF, Fond inovácií a technológií and Eterus Capital), and no investments or news since were found, so it is very likely inactive or wound down. Not marked as duplicate because it was a separate legal fund, but it may be treated as part of c008."
+      "investments": [
+        {
+          "company": "FUN MEDIA GROUP",
+          "deal_date": "2016-02-17",
+          "in_window": false,
+          "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+          "source_date": "2016-02-17",
+          "quote": "Investície tohto fondu smerovali napr. do projektov FUN MEDIA GROUP, Cromwell, Kláštorná.",
+          "status": "verified"
+        }
+      ],
+      "last_evidence_date": "2016-02-17",
+      "notes": "Public fund under Národný holdingový fond (c008), managed by QUADRICA Private Equity per a 2016 article; the only source found is that 2016 overview. The current nhfond.sk site no longer lists SRF (only NHF, Fond inovácií a technológií and Eterus Capital), and no investments or news since were found, so it is very likely inactive or wound down. Not marked as duplicate because it was a separate legal fund, but it may be treated as part of c008. Manual check 2026-10-09: deal_date is the article date (upper bound, exact deal date unknown)."
     },
     {
       "candidate_id": "c052",
@@ -3309,7 +3311,7 @@
       "website": null,
       "funds": [],
       "included": false,
-      "exclusion_reason": "no_evidence",
+      "exclusion_reason": "inactive",
       "confidence": null,
       "needs_review": false,
       "issues": [],
@@ -3347,9 +3349,19 @@
       "ticket_min_eur": null,
       "ticket_max_eur": null,
       "aum_eur": null,
-      "investments": [],
-      "last_evidence_date": null,
-      "notes": "Not an active investor: per Startitup (2025-07-17) the Bratislava court opened bankruptcy proceedings against Arca Capital Slovakia in July 2025; the group (parent Arca Investments) has debts over EUR 770M and has been selling assets since 2020. No new investments found in the activity window; historical deals (Zentiva, KASA.cz, GEODÉZIA Bratislava) are only listed in the 2016 overview without dates. Source for insolvency: https://www.startitup.sk/arca-capital-celi-konkurzu-po-rokoch-pravnych-manevrov-trzby-klesli-na-144-tisic-eur-dlhy-presiahli-miliardu/"
+      "investments": [
+        {
+          "company": "Zentiva",
+          "deal_date": "2016-02-17",
+          "in_window": false,
+          "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+          "source_date": "2016-02-17",
+          "quote": "Medzi realizované investície patrili resp. patria napr. Zentiva, KASA.cz (hej.sk) či GEODÉZIA Bratislava.",
+          "status": "verified"
+        }
+      ],
+      "last_evidence_date": "2016-02-17",
+      "notes": "Not an active investor: per Startitup (2025-07-17) the Bratislava court opened bankruptcy proceedings against Arca Capital Slovakia in July 2025; the group (parent Arca Investments) has debts over EUR 770M and has been selling assets since 2020. No new investments found in the activity window; historical deals (Zentiva, KASA.cz, GEODÉZIA Bratislava) are only listed in the 2016 overview without dates. Source for insolvency: https://www.startitup.sk/arca-capital-celi-konkurzu-po-rokoch-pravnych-manevrov-trzby-klesli-na-144-tisic-eur-dlhy-presiahli-miliardu/ Manual check 2026-10-09: deal_date is the article date (upper bound, exact deal date unknown)."
     },
     {
       "candidate_id": "c056",
@@ -3430,7 +3442,7 @@
         "JEREMIE Co-Investment Fund"
       ],
       "included": false,
-      "exclusion_reason": "no_evidence",
+      "exclusion_reason": "inactive",
       "confidence": null,
       "needs_review": false,
       "issues": [],
@@ -3492,9 +3504,19 @@
         "original_amount": 12000000.0,
         "original_currency": "EUR"
       },
-      "investments": [],
-      "last_evidence_date": null,
-      "notes": "Inactive: Slovak Investment Holding states the fund (managed by Limerock Investment Holding, formerly Limerock Fund Manager) had its investment period 2014-2016, has completed divestment and is in liquidation (https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/limerock-fund-manager-kapitalova-investicia). Known 2015 deal: Žltý melón (SITA 2015-09-17), not recorded because no single sentence names both fund and company. Hard cap per company EUR 2.75M."
+      "investments": [
+        {
+          "company": "Žltý melón",
+          "deal_date": "2015-09-17",
+          "in_window": false,
+          "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+          "source_date": "2015-09-17",
+          "quote": "Na investícii do spoločnosti sa podieľali fond JEREMIE Co-Investment Fund, ktorý spravuje spoločnosť Limerock Fund Manager",
+          "status": "verified"
+        }
+      ],
+      "last_evidence_date": "2015-09-17",
+      "notes": "Inactive: Slovak Investment Holding states the fund (managed by Limerock Investment Holding, formerly Limerock Fund Manager) had its investment period 2014-2016, has completed divestment and is in liquidation (https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/limerock-fund-manager-kapitalova-investicia). Known 2015 deal: Žltý melón (SITA 2015-09-17), not recorded because no single sentence names both fund and company. Hard cap per company EUR 2.75M. Manual check 2026-10-09: the 2015 Žltý melón deal added (company named in the article headline)."
     },
     {
       "candidate_id": "c058",

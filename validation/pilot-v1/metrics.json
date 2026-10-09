@@ -10,15 +10,15 @@
       "value": 1.0
     },
     "exclusion_accuracy": {
-      "correct": 39,
+      "correct": 36,
       "total": 40,
-      "value": 0.975
+      "value": 0.9
     },
     "field_accuracy": {
       "aum_eur": {
         "correct": 5,
-        "total": 5,
-        "value": 1.0
+        "total": 6,
+        "value": 0.8333333333333334
       },
       "investor_type": {
         "correct": 10,
@@ -78,20 +78,20 @@
         "value": 0.7
       },
       "aum_eur": {
-        "correct": 5,
+        "correct": 6,
         "total": 10,
-        "value": 0.5
+        "value": 0.6
       }
     },
     "human_checked": {
-      "correct": 101,
-      "total": 101,
+      "correct": 102,
+      "total": 102,
       "value": 1.0
     },
     "ai_agrees_with_human": {
-      "correct": 71,
-      "total": 74,
-      "value": 0.9594594594594594
+      "correct": 75,
+      "total": 78,
+      "value": 0.9615384615384616
     }
   },
   "combined": {
@@ -105,15 +105,15 @@
       "value": 1.0
     },
     "exclusion_accuracy": {
-      "correct": 39,
+      "correct": 36,
       "total": 40,
-      "value": 0.975
+      "value": 0.9
     },
     "field_accuracy": {
       "aum_eur": {
         "correct": 5,
-        "total": 5,
-        "value": 1.0
+        "total": 6,
+        "value": 0.8333333333333334
       },
       "investor_type": {
         "correct": 10,
@@ -173,20 +173,20 @@
         "value": 0.7
       },
       "aum_eur": {
-        "correct": 5,
+        "correct": 6,
         "total": 10,
-        "value": 0.5
+        "value": 0.6
       }
     },
     "human_checked": {
-      "correct": 101,
-      "total": 101,
+      "correct": 102,
+      "total": 102,
       "value": 1.0
     },
     "ai_agrees_with_human": {
-      "correct": 71,
-      "total": 74,
-      "value": 0.9594594594594594
+      "correct": 75,
+      "total": 78,
+      "value": 0.9615384615384616
     }
   }
 }

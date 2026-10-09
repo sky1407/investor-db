@@ -4,7 +4,9 @@
   "legal_name": "Slovenský Rozvojový Fond, a.s.",
   "reg_no": null,
   "country": "SK",
-  "active_in": ["SK"],
+  "active_in": [
+    "SK"
+  ],
   "website": null,
   "entity_kind": {
     "value": "investor",
@@ -19,7 +21,9 @@
     "quote": "V rámci verejných fondov u nás pôsobí Národný holdingový fond."
   },
   "stages": {
-    "value": ["growth"],
+    "value": [
+      "growth"
+    ],
     "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
     "source_date": "2016-02-17",
     "quote": "Slovenský Rozvojový Fond (SRF) realizuje investície do zabehnutých alebo začínajúcich spoločností, ktoré potrebujú expanzný kapitál."
@@ -32,8 +36,16 @@
     "quote": "Slovenský Rozvojový Fond - maximálna výška investície 2,3 milióna eur"
   },
   "funds": [],
-  "investments": [],
+  "investments": [
+    {
+      "company": "FUN MEDIA GROUP",
+      "deal_date": "2016-02-17",
+      "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+      "source_date": "2016-02-17",
+      "quote": "Investície tohto fondu smerovali napr. do projektov FUN MEDIA GROUP, Cromwell, Kláštorná."
+    }
+  ],
   "duplicate_of": null,
-  "notes": "Public fund under Národný holdingový fond (c008), managed by QUADRICA Private Equity per a 2016 article; the only source found is that 2016 overview. The current nhfond.sk site no longer lists SRF (only NHF, Fond inovácií a technológií and Eterus Capital), and no investments or news since were found, so it is very likely inactive or wound down. Not marked as duplicate because it was a separate legal fund, but it may be treated as part of c008.",
+  "notes": "Public fund under Národný holdingový fond (c008), managed by QUADRICA Private Equity per a 2016 article; the only source found is that 2016 overview. The current nhfond.sk site no longer lists SRF (only NHF, Fond inovácií a technológií and Eterus Capital), and no investments or news since were found, so it is very likely inactive or wound down. Not marked as duplicate because it was a separate legal fund, but it may be treated as part of c008. Manual check 2026-10-09: deal_date is the article date (upper bound, exact deal date unknown).",
   "researched_at": "2026-10-09"
 }

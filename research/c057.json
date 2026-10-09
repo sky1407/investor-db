@@ -4,7 +4,9 @@
   "legal_name": null,
   "reg_no": null,
   "country": "SK",
-  "active_in": ["SK"],
+  "active_in": [
+    "SK"
+  ],
   "website": null,
   "entity_kind": {
     "value": "investor",
@@ -19,7 +21,10 @@
     "quote": "Spoločnosť Limerock Fund Manager na základe mandátu od Európskeho investičného fondu (www.eif.org) spravuje fond rizikového kapitálu a poskytuje tak start-up ako aj rozvojový kapitál pre investične atraktívne slovenské spoločnosti."
   },
   "stages": {
-    "value": ["seed", "growth"],
+    "value": [
+      "seed",
+      "growth"
+    ],
     "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
     "source_date": "2015-09-17",
     "quote": "Spoločnosť Limerock Fund Manager na základe mandátu od Európskeho investičného fondu (www.eif.org) spravuje fond rizikového kapitálu a poskytuje tak start-up ako aj rozvojový kapitál pre investične atraktívne slovenské spoločnosti."
@@ -45,9 +50,19 @@
     "source_date": "2016-02-17",
     "quote": "Fond disponuje kapitálom vo výške 12 miliónov eur, ktorý je určený pre investície do podnikov, ktoré potrebujú rastový kapitál, pričom do jednotlivých spoločností investuje spoločne s privátnymi spoluinvestormi."
   },
-  "funds": ["JEREMIE Co-Investment Fund"],
-  "investments": [],
+  "funds": [
+    "JEREMIE Co-Investment Fund"
+  ],
+  "investments": [
+    {
+      "company": "Žltý melón",
+      "deal_date": "2015-09-17",
+      "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+      "source_date": "2015-09-17",
+      "quote": "Na investícii do spoločnosti sa podieľali fond JEREMIE Co-Investment Fund, ktorý spravuje spoločnosť Limerock Fund Manager"
+    }
+  ],
   "duplicate_of": null,
-  "notes": "Inactive: Slovak Investment Holding states the fund (managed by Limerock Investment Holding, formerly Limerock Fund Manager) had its investment period 2014-2016, has completed divestment and is in liquidation (https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/limerock-fund-manager-kapitalova-investicia). Known 2015 deal: Žltý melón (SITA 2015-09-17), not recorded because no single sentence names both fund and company. Hard cap per company EUR 2.75M.",
+  "notes": "Inactive: Slovak Investment Holding states the fund (managed by Limerock Investment Holding, formerly Limerock Fund Manager) had its investment period 2014-2016, has completed divestment and is in liquidation (https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/limerock-fund-manager-kapitalova-investicia). Known 2015 deal: Žltý melón (SITA 2015-09-17), not recorded because no single sentence names both fund and company. Hard cap per company EUR 2.75M. Manual check 2026-10-09: the 2015 Žltý melón deal added (company named in the article headline).",
   "researched_at": "2026-10-09"
 }
