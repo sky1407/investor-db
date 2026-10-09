@@ -146,7 +146,7 @@
 
 <script>
 "use strict";
-const state = { data: null, records: [], byId: new Map(), checks: [], selected: null };
+const state = { data: null, records: [], byId: new Map(), checks: [], selected: null, keep: new Set() };
 const TYPE_LABELS = { vc: "VC", pe: "PE", cvc: "Korporátne VC", family_office: "Family office", angel: "Angel",
   private_investor: "Súkromný investor", public_fund: "Verejný fond", fund_of_funds: "Fond fondov" };
 const REASON_LABELS = { not_investor_service: "Služby (nie investor)", debt_only: "Iba dlh", platform_only: "Iba platforma",
@@ -325,26 +325,32 @@ function renderChecks() {
   const done = inScope.filter(c => c.human_verdict).length;
   document.getElementById("c-progress").style.width = inScope.length ? `${(done / inScope.length) * 100}%` : "0";
   document.getElementById("c-count").textContent = `${done} / ${inScope.length} skontrolovaných človekom`;
-  const visible = inScope.filter(c => filter === "all" || (filter === "todo" && !c.human_verdict)
+  const visible = inScope.filter(c => filter === "all" || state.keep.has(checkKey(c))
+    || (filter === "todo" && !c.human_verdict)
     || (filter === "disagree" && c.ai_verdict !== "correct"));
   const list = document.getElementById("check-list");
   if (!visible.length) { list.replaceChildren(el("div", { class: "empty" }, "Hotovo, nič tu nie je.")); return; }
   list.replaceChildren(...visible.map(c => checkRow(c)));
 }
 
+function checkKey(c) { return `${c.candidate_id}/${c.item}`; }
+
 function checkRow(c) {
   const r = state.byId.get(c.candidate_id) || { name: c.candidate_id };
   const note = el("input", { type: "text", placeholder: "Poznámka (nepovinné)", value: c.human_note, maxlength: "500" });
-  const save = async verdict => {
+  const save = async (verdict, button) => {
+    if (c.human_verdict === verdict && c.human_note === note.value.trim()) return;
+    button.disabled = true;
     try {
       const updated = await api(`/api/check/${encodeURIComponent(c.candidate_id)}/${encodeURIComponent(c.item)}`,
         { method: "PUT", body: JSON.stringify({ human_verdict: verdict, human_note: note.value }) });
       Object.assign(c, updated);
+      state.keep.add(checkKey(c));
       renderChecks();
-    } catch (err) { showFatal(err); }
+    } catch (err) { button.disabled = false; showFatal(err); }
   };
   const btn = (verdict, label) => el("button", { class: c.human_verdict === verdict ? `on-${verdict}` : "",
-    onclick: () => save(c.human_verdict === verdict ? "" : verdict) }, label);
+    "aria-pressed": String(c.human_verdict === verdict), onclick: e => save(verdict, e.currentTarget) }, label);
   const quote = quoteFor(c);
   return el("div", { class: "check-row" },
     el("div", {}, el("div", { class: "who" }, r.name), el("div", { class: "item" }, ITEM_LABELS[c.item] || c.item)),
@@ -402,7 +408,10 @@ async function init() {
 document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
 ["q", "f-status", "f-type", "f-country"].forEach(id =>
   document.getElementById(id).addEventListener("input", renderTable));
-["c-filter", "c-scope"].forEach(id => document.getElementById(id).addEventListener("input", renderChecks));
+["c-filter", "c-scope"].forEach(id => document.getElementById(id).addEventListener("input", () => {
+  state.keep.clear();
+  renderChecks();
+}));
 init();
 </script>
 </body>
