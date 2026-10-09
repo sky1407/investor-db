@@ -20,6 +20,7 @@ Pilot bežal v rámci predplatného Claude Code. Uvedené sumy sú teda **ekviva
 |---|---|---|---|---|---|---|---|
 | Rešerš 75 kandidátov | 5 paralelne | 6 – 20 min na agenta | 66,1 M | 1,03 M | 23 k | 142 | **≈ $23,3** |
 | Predkontrola (AI) c001–c050 | 1 | 8 min | 4,7 M | 0,18 M | 2 k | 15 (+61 fetch) | **≈ $2,6** |
+| Predkontrola (AI) c051–c075 | 1 | 6 min | – | – | – | 68 nástrojov | ≈ 120 k tokenov celkom |
 | `verify.py` (329 dôkazov, 260 URL) | – | < 1 min | – | – | – | – | $0 |
 
 \* Výstupné tokeny v logu sú podhodnotené (pravdepodobne sa zapisujú pri začiatku streamu). Berte ich ako dolnú hranicu. Ani 10-násobok by však celkovú sumu nezmenil o viac ako $5.
@@ -67,7 +68,7 @@ Postup ostáva rovnaký: Opus 5.5, agent na každého kandidáta, AI predkontrol
 
 V pilote kontrolujem 100 % záznamov. Pri celosvetovom rozsahu sa robí **stratifikovaná vzorka** podľa typu a regiónu: 5 typov × 6 regiónov × 60 záznamov, spolu **≈ 1 800 záznamov**. Pri precision okolo 95 % dáva vzorka 60 záznamov interval spoľahlivosti ±5,5 p. b. na jednu bunku a vzorka 1 800 záznamov ±1 p. b. celkovo.
 
-K tomu treba ručne vyriešiť položky, ktoré AI predkontrola označila ako nesprávne. V pilote to bolo 8 zo 117 položiek, teda **≈ 7 %**.
+K tomu treba ručne vyriešiť položky, ktoré AI predkontrola označila ako nesprávne. V pilote to bolo 15 z 211 položiek, teda **≈ 7 %**.
 
 | Položka | Výpočet | Hodiny | Náklad pri 25 €/h |
 |---|---|---|---|

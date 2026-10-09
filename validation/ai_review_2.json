@@ -1,0 +1,566 @@
+[
+ {
+  "candidate_id": "c051",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Vylúčenie je správne, ale dôvod nie je no_evidence: zdroj menuje investície SRF (FUN MEDIA GROUP, Cromwell, Kláštorná), len bez dátumu a fond už neexistuje; správne excluded:inactive."
+ },
+ {
+  "candidate_id": "c052",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Najnovší nájdený obchod je Piano Media 2011, novší obchod Monogram Ventures sa nenašiel; inactive sedí."
+ },
+ {
+  "candidate_id": "c053",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Zdroj potvrdzuje len investíciu GROWWS do Finaxu z 15. 3. 2019, novší obchod LRJ Capital sa nenašiel; inactive sedí."
+ },
+ {
+  "candidate_id": "c054",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Zdroj je z roku 2015 a overený obchod v okne chýba; pozor, Heuking 23. 4. 2025 uvádza investíciu „Pioneer Ventures“ do Fuxam (heuking.de), identita s Pioneers Ventures je však neistá."
+ },
+ {
+  "candidate_id": "c055",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Vylúčenie je správne, ale zdroj menuje investície Arca Capital (Zentiva, KASA.cz, GEODÉZIA) a firma je v konkurze od 07/2025; správne excluded:inactive."
+ },
+ {
+  "candidate_id": "c056",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "SRKF (rastový kapitál, minoritné podiely 0,5–2,5 mil. EUR) zodpovedá dnešnému Eterus Capital (c004); väzba je odvodená, explicitné premenovanie sa nenašlo."
+ },
+ {
+  "candidate_id": "c057",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Vylúčenie je správne, ale samotný zdroj (SITA 17. 9. 2015) dokladá investíciu fondu Limerock do Žltého melóna a fond je v likvidácii; správne excluded:inactive."
+ },
+ {
+  "candidate_id": "c058",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka Forbes vrátila 2× HTTP 403; cc.cz (2022) však potvrdzuje, že Zero Gravity Capital bol prvý fond Zero One Hundred, takže duplicita s c059 je pravdepodobná."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "0100.vc je VC firma s Fondom II a investovala do Readmio vo februári 2026 v rámci okna."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup ho opisuje ako venture kapitálový fond."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "sectors",
+  "ai_verdict": "",
+  "ai_note": "Stránka eu-startups.com vrátila 2× HTTP 403, nedá sa overiť."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz: nový fond cieli na fázy od pre-seed po sériu A."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "ticket_min_eur",
+  "ai_verdict": "",
+  "ai_note": "Stránka eu-startups.com vrátila 2× HTTP 403, nedá sa overiť."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "ticket_max_eur",
+  "ai_verdict": "",
+  "ai_note": "Stránka eu-startups.com vrátila 2× HTTP 403, nedá sa overiť."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "aum_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "23 mil. EUR je len prvý fond Zero Gravity Capital z roku 2019; ten istý článok uvádza nový fond s cieľom 60 mil. EUR, takže hodnota je zastaraná a nepokrýva aktuálny fond."
+ },
+ {
+  "candidate_id": "c059",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Vestbee 5. 2. 2026: Readmio získalo 1 mil. EUR od Simpact Ventures s účasťou Zero One Hundred."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Seed Starter vedie kolo do Webout a investuje 400 tis. EUR (jún 2026), ide o korporátny VC program."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Zdroj ho výslovne nazýva korporátny venture kapitálový program Slovenskej sporiteľne."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza startupy „nielen v oblasti finančných služieb“, teda fintech + generalista."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza „Pre-seed a seed investičné kolá“."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza 200 000 € – 1 000 000 €."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza 200 000 € – 1 000 000 €."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "5 mil. EUR je alokácia na prvú fázu programu (2022), nie formálna veľkosť fondu, ale je to najbližšia dostupná hodnota kapitálu."
+ },
+ {
+  "candidate_id": "c060",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Tlačová správa SLSP (URL 2026/6/2) potvrdzuje, že Seed Starter vedie kolo do Webout."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Simpact je impact VC fond a viedol kolo ForActive 3,6 mil. USD (24. 7. 2026)."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Web: „first VC investment fund in Poland based on the idea of Impact Investing“."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "AIN: Fund II robí „sector agnostic“ investície, impact je celý zameraním fondu."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "AIN: preferencia pre-seed, seed a Series A."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "AIN: tikety od takmer 100 000 EUR (500 000 PLN)."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web: tikety do 2 mil. EUR."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "AIN: Fund II má pod správou viac ako 21 mil. EUR (100 mil. PLN), je to najnovší fond."
+ },
+ {
+  "candidate_id": "c061",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "xyz.pl 24. 7. 2026: Simpact Ventures viedol kolo ForActive."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Jediný fond CB ESPRI Impact One mal investičné obdobie 2022–2023, je v poinvestičnom období a nové žiadosti neprijíma (Lupa 01/2024), Elv.ai je pravdepodobne obchod z 2023; správne excluded:inactive."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Správcovská spoločnosť impaktového investičného fondu; vc je prijateľné, hoci nástroje sú skôr návratné/kvázi-equity."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza vzdelávanie, zdravotnú starostlivosť, ochranu životného prostredia (impact)."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Podnikajte.sk: investícia od 10 000 do 500 000 eur."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Podnikajte.sk: investícia od 10 000 do 500 000 eur."
+ },
+ {
+  "candidate_id": "c062",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Lupa 15. 1. 2024: Elv.ai získal 0,5 mil. EUR od CB ESPRI Impact One (dátum je dátum článku)."
+ },
+ {
+  "candidate_id": "c063",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Vylúčenie je správne, ale dôvod nie je no_evidence: web uvádza ~19 mil. EUR investovaných do menovaných firiem a investičné obdobie skončilo 31. 12. 2023; správne excluded:inactive."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "J&T Ventures je VC, ktorý viedol seed kolo Definic 2,5 mil. EUR (12. 6. 2026)."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz ho nazýva „český fond“, ide o early-stage VC."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza B2B, B2C, Marketplaces, Sector Agnostic."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza „Pre-seed až Series A“."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza €300K – €3M."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web uvádza €300K – €3M."
+ },
+ {
+  "candidate_id": "c064",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz 12. 6. 2026: kolo Definic viedol J&T Ventures."
+ },
+ {
+  "candidate_id": "c065",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka intellinews.com vrátila 2× HTTP 403; InoBat (12/2024) je však overený, ide skôr o insider investíciu skupiny."
+ },
+ {
+  "candidate_id": "c065",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "IPM Growth je VC/rastový fond IPM Group (vestbee uvádza fázu Growth); vc je prijateľné."
+ },
+ {
+  "candidate_id": "c065",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Vestbee: InfraTech, mobilita, AI-infraštruktúra a energetika."
+ },
+ {
+  "candidate_id": "c065",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Tlačová správa 20. 12. 2024 menuje IPM Group medzi investormi Series C InoBat (pozor: pravdepodobne insider, Boček je spoluzakladateľ)."
+ },
+ {
+  "candidate_id": "c066",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "BIC Bratislava ponúka poradenstvo a konzultácie k prístupu k financiám, o vlastnom kapitáli alebo fonde sa nič neuvádza."
+ },
+ {
+  "candidate_id": "c067",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "365.fintech je fintech investor a 24. 10. 2023 sa zúčastnil kola Ctrl Alt (tesne v okne); web je však od 2022 neaktívny, aktivita je hraničná."
+ },
+ {
+  "candidate_id": "c067",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Investičná platforma ekosystému 365 (365.bank), cvc sedí."
+ },
+ {
+  "candidate_id": "c067",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web: FinTech, InsurTech a Big Data startupy."
+ },
+ {
+  "candidate_id": "c067",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web: investuje okolo seed fázy."
+ },
+ {
+  "candidate_id": "c067",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Silicon Canals (24. 10. 2023) menuje 365.fintech medzi follow-on investormi Ctrl Alt."
+ },
+ {
+  "candidate_id": "c068",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "McWin je PE/VC firma a investovala 5 mil. EUR do Incapto (apríl 2026)."
+ },
+ {
+  "candidate_id": "c068",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Goodwin: „specialist private equity and venture capital firm“, pe sedí."
+ },
+ {
+  "candidate_id": "c068",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Goodwin: Food Tech, Foodservice a Restaurants."
+ },
+ {
+  "candidate_id": "c068",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "The Caterer 24. 4. 2026: McWin Capital Partners investoval 5 mil. EUR do Incapto."
+ },
+ {
+  "candidate_id": "c069",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Jediný zdroj je agregátor Tracxn s nevierohodným portfóliom (Facebook, Kraken), žiadny verejný dôkaz investície; no_evidence sedí."
+ },
+ {
+  "candidate_id": "c070",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Vestbee: Jet Ventures je nový 50 mil. EUR fond firmy Jet Investment, teda duplicita s c007."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Look AI Ventures je AI VC fond a investoval do Embodied AI (22. 9. 2026)."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Web: „pre-Series A venture capital fund based in Prague“."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web: fond sa zameriava výlučne na AI startupy."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web: pre-Series A, teda pre-seed a seed."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Tech.eu 2023: cieľová investícia do jedného startupu je 250 000 EUR (typický tiket, nie striktné maximum)."
+ },
+ {
+  "candidate_id": "c071",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Web 22. 9. 2026: Look AI Ventures podporil Embodied AI."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Presto je aktívny VC, jeho fond Presto Tech Horizons viedol kolo Occam (feb 2026)."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz: venture kapitálové Presto Ventures."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web: security, defense, aerospace a dual-use."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web: post-revenue firmy s kolami 0,8–8 mil. EUR, od seed po Series A."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web: tikety od 500 tis. do 5 mil. EUR."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web: tikety od 500 tis. do 5 mil. EUR."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web a cc.cz: nový fond má 150 mil. EUR (najnovší fond; spolu s 40 mil. z dvoch starších fondov)."
+ },
+ {
+  "candidate_id": "c072",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz 11. 2. 2026: kolo Occam (3 mil. EUR) viedol Presto Tech Horizons."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Chorvátsky VC s AUM nad 100 mil. EUR viedol Series A FaceUp (máj 2026)."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Lider: „the first Croatian venture capital fund“."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "stages",
+  "ai_verdict": "incorrect",
+  "ai_note": "Príliš úzke: FAQ na stránke uvádza pre-seed, seed a Series A (plus growth/follow-on) a FRC viedol Series A FaceUp; správne pre-seed; seed; series-a."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web: investujú od 10 tis. do 2 mil. EUR."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Web: investujú od 10 tis. do 2 mil. EUR."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Lider 11. 2. 2026: FRC spravuje viac ako 100 mil. EUR."
+ },
+ {
+  "candidate_id": "c073",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup 19. 5. 2026: kolo Series A FaceUp viedol Fil Rouge Capital."
+ },
+ {
+  "candidate_id": "c074",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Gi21 investuje vlastný kapitál a zúčastnil sa Series A FaceUp (máj 2026)."
+ },
+ {
+  "candidate_id": "c074",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Pulse2: vyvinul sa z family office, investuje vlastné peniaze bez LP; private_investor sedí (family_office by bolo tiež obhájiteľné)."
+ },
+ {
+  "candidate_id": "c074",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Web: Deep Tech, B2B SaaS, AI (pre VC/PE vetvu)."
+ },
+ {
+  "candidate_id": "c074",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup 19. 5. 2026 menuje pražský Gi21 Capital medzi investormi FaceUp."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "JIC Ventures je VC fond založený 04/2026 a investoval do FaceUp (máj 2026)."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Web: „Brno-born VC fund“."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup a web: deep tech, SaaS a ďalšie vyspelé technológie."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup a web: pre-seed a seed."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup a web: investície až do 1 mil. EUR."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "cc.cz 7. 4. 2026: alokovaných 320 mil. CZK z cieľa 400 mil. CZK, prepočet ~13,1 mil. EUR sedí."
+ },
+ {
+  "candidate_id": "c075",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup 19. 5. 2026: JIC Ventures vstúpil do Series A FaceUp."
+ }
+]

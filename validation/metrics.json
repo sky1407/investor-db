@@ -100,49 +100,49 @@
     "records_in_scope": 50,
     "included_in_scope": 10,
     "inclusion_precision": {
-      "correct": 4,
-      "total": 4,
-      "value": 1.0
+      "correct": 7,
+      "total": 8,
+      "value": 0.875
     },
     "exclusion_accuracy": {
-      "correct": 23,
-      "total": 24,
-      "value": 0.9583333333333334
+      "correct": 28,
+      "total": 33,
+      "value": 0.8484848484848485
     },
     "field_accuracy": {
       "aum_eur": {
-        "correct": 1,
-        "total": 2,
+        "correct": 2,
+        "total": 4,
         "value": 0.5
       },
       "investor_type": {
-        "correct": 4,
-        "total": 4,
+        "correct": 8,
+        "total": 8,
         "value": 1.0
       },
       "latest_investment": {
+        "correct": 8,
+        "total": 8,
+        "value": 1.0
+      },
+      "sectors": {
         "correct": 4,
         "total": 4,
         "value": 1.0
       },
-      "sectors": {
-        "correct": 1,
-        "total": 1,
-        "value": 1.0
-      },
       "stages": {
-        "correct": 2,
-        "total": 2,
+        "correct": 5,
+        "total": 5,
         "value": 1.0
       },
       "ticket_max_eur": {
-        "correct": 2,
-        "total": 2,
+        "correct": 4,
+        "total": 4,
         "value": 1.0
       },
       "ticket_min_eur": {
-        "correct": 2,
-        "total": 2,
+        "correct": 4,
+        "total": 4,
         "value": 1.0
       }
     },
