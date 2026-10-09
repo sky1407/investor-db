@@ -1,97 +1,97 @@
-# Odhad nákladov na rozšírenie na celý svet
+# Cost estimate for worldwide expansion
 
-Stav k 2026-10-09. Odhad vychádza z **nameraných** hodnôt pilotu (75 kandidátov, Slovensko), nie z odhadu od oka.
+Status as of 2026-10-09. The estimate is based on **measured** values from the pilot (75 candidates, Slovakia), not on a rough guess.
 
-## 1. Namerané v pilote
+## 1. Measured in the pilot
 
-Spotrebu tokenov som vytiahol z transkriptov subagentov v Claude Code. Odpovede sú deduplikované podľa ID správy, lebo jedna odpoveď sa v logu zapisuje do viacerých riadkov. Ceny sú cenníkové ceny Claude API pre `claude-opus-5-5` (stav 2026-10-06):
+I extracted token usage from the subagent transcripts in Claude Code. Responses are deduplicated by message ID, because a single response is written to several lines in the log. Prices are Claude API list prices for `claude-opus-5-5` (as of 2026-10-06):
 
-| Cena | Hodnota |
+| Price | Value |
 |---|---|
-| Vstup | $4 / 1M tokenov |
-| Výstup | $20 / 1M tokenov |
-| Čítanie z cache | $0,20 / 1M tokenov |
-| Zápis do cache (1 h) | $8 / 1M tokenov |
-| Web search | $10 / 1 000 vyhľadávaní |
+| Input | $4 / 1M tokens |
+| Output | $20 / 1M tokens |
+| Cache read | $0.20 / 1M tokens |
+| Cache write (1 h) | $8 / 1M tokens |
+| Web search | $10 / 1,000 searches |
 
-Pilot bežal v rámci predplatného Claude Code. Uvedené sumy sú teda **ekvivalent v cenách API**, nie skutočne zaplatená suma.
+The pilot ran under a Claude Code subscription. The amounts below are therefore the **equivalent at API prices**, not the amount actually paid.
 
-| Fáza | Agenti | Čas (wall clock) | Čítanie z cache | Zápis do cache | Výstup* | Vyhľadávania | Náklad |
+| Phase | Agents | Time (wall clock) | Cache read | Cache write | Output* | Searches | Cost |
 |---|---|---|---|---|---|---|---|
-| Rešerš 75 kandidátov | 5 paralelne | 6 – 20 min na agenta | 66,1 M | 1,03 M | 23 k | 142 | **≈ $23,3** |
-| Predkontrola (AI) c001–c050 | 1 | 8 min | 4,7 M | 0,18 M | 2 k | 15 (+61 fetch) | **≈ $2,6** |
-| Predkontrola (AI) c051–c075 | 1 | 6 min | – | – | – | 68 nástrojov | ≈ 120 k tokenov celkom |
-| `verify.py` (329 dôkazov, 260 URL) | – | < 1 min | – | – | – | – | $0 |
+| Research of 75 candidates | 5 in parallel | 6–20 min per agent | 66.1 M | 1.03 M | 23 k | 142 | **≈ $23.3** |
+| AI pre-review c001–c050 | 1 | 8 min | 4.7 M | 0.18 M | 2 k | 15 (+61 fetches) | **≈ $2.6** |
+| AI pre-review c051–c075 | 1 | 6 min | – | – | – | 68 tool calls | ≈ 120 k tokens total |
+| `verify.py` (329 pieces of evidence, 260 URLs) | – | < 1 min | – | – | – | – | $0 |
 
-\* Výstupné tokeny v logu sú podhodnotené (pravdepodobne sa zapisujú pri začiatku streamu). Berte ich ako dolnú hranicu. Ani 10-násobok by však celkovú sumu nezmenil o viac ako $5.
+\* Output tokens in the log are underreported (probably recorded at the start of the stream). Treat them as a lower bound. Even a 10× increase would not change the total by more than $5.
 
-**Jednotkové náklady:**
-- rešerš: **≈ $0,31 na kandidáta**,
-- predkontrola: **≈ $0,05 na kandidáta**,
-- spolu **≈ $0,36 na kandidáta**.
+**Unit costs:**
+- research: **≈ $0.31 per candidate**,
+- pre-review: **≈ $0.05 per candidate**,
+- total **≈ $0.36 per candidate**.
 
-Približne 95 % nákladov tvorí čítanie a zápis cache, teda opakované čítanie kontextu v cykle agenta. Výstup a vyhľadávanie sú zanedbateľné.
+About 95 % of the cost is cache reads and writes, i.e. repeatedly re-reading the context in the agent loop. Output and search are negligible.
 
-## 2. Koľko kandidátov treba spracovať
+## 2. How many candidates need to be processed
 
-Podľa `PLAN.md` vychádza databáza na približne **15 – 20 tis. inštitucionálnych investorov** (VC, PE, CVC, FO) a **5 – 20 tis. angel investorov** s verejnou stopou.
+According to `PLAN.md`, the database comes to roughly **15–20 thousand institutional investors** (VC, PE, CVC, FO) and **5–20 thousand angel investors** with a public footprint.
 
-V pilote prešlo zaradením **29 zo 75 kandidátov (39 %)**. Toto číslo je však skreslené: 31 kandidátov boli pridružení členovia SLOVCA, teda prevažne advokáti a audítori. Bez nich je výťažnosť 29 zo 44, teda **66 %**.
+In the pilot, **29 of 75 candidates (39 %)** passed inclusion. This figure is skewed, however: 31 candidates were SLOVCA associate members, mostly lawyers and auditors. Without them the yield is 29 of 44, i.e. **66 %**.
 
-Pri celosvetovom zbere (asociácie, verejné programy, deal-first zdroje) rátam s výťažnosťou **40 – 60 %**. To znamená **50 – 90 tis. kandidátov**, z toho 30 – 40 tis. investorov.
+For worldwide collection (associations, public programmes, deal-first sources) I assume a yield of **40–60 %**. That means **50–90 thousand candidates**, of which 30–40 thousand are investors.
 
-## 3. Scenáre
+## 3. Scenarios
 
-### A. Naivné škálovanie súčasného postupu
+### A. Naive scaling of the current approach
 
-Postup ostáva rovnaký: Opus 5.5, agent na každého kandidáta, AI predkontrola každého záznamu.
+The approach stays the same: Opus 5.5, one agent per candidate, AI pre-review of every record.
 
-| Položka | Výpočet | Náklad |
+| Item | Calculation | Cost |
 |---|---|---|
-| Rešerš | 50 – 90 tis. × $0,31 | $15 – 28 tis. |
-| Predkontrola | 30 – 40 tis. zaradených × $0,05 × 1,5 (viac polí) | $2 – 3 tis. |
-| **LLM spolu** | | **$17 – 31 tis.** |
+| Research | 50–90 k × $0.31 | $15–28 k |
+| Pre-review | 30–40 k included × $0.05 × 1.5 (more fields) | $2–3 k |
+| **LLM total** | | **$17–31 k** |
 
-### B. Optimalizovaný postup (odporúčaný)
+### B. Optimised approach (recommended)
 
-1. **Deterministický predfilter.** Členov asociácií, ktorí sú advokáti, audítori či banky, vyradí pravidlo podľa kľúčových slov a registrov (NACE kód, typ licencie). V pilote by to odbremenilo 31 zo 75 kandidátov.
-2. **Krátky kontext namiesto dlhého cyklu agenta.** Stiahnutie stránok rieši kód a model dostane iba text kandidátových stránok. Odhadom to dá 5 – 10× menej tokenov z cache.
-3. **Model podľa úlohy.** Extrakciu robí Claude Sonnet 5.5 ($2 / $10) a predkontrolu iba vzorka plus položky, ktoré skript označí. Opus 5.5 ostáva len pre hraničné prípady.
-4. **Batch API** (-50 %) pre všetko, čo nie je interaktívne.
+1. **Deterministic pre-filter.** Association members who are lawyers, auditors or banks are excluded by a rule based on keywords and registers (NACE code, licence type). In the pilot this would have removed 31 of 75 candidates.
+2. **Short context instead of a long agent loop.** Page fetching is handled by code and the model only receives the text of the candidate's pages. Estimated 5–10× fewer cache tokens.
+3. **Model per task.** Extraction is done by Claude Sonnet 5.5 ($2 / $10), and pre-review covers only a sample plus items flagged by the script. Opus 5.5 is kept only for edge cases.
+4. **Batch API** (−50 %) for everything that is not interactive.
 
-| Položka | Náklad |
+| Item | Cost |
 |---|---|
-| LLM (extrakcia + cielená predkontrola) | **$3 – 6 tis.** |
-| Vyhľadávanie (2 – 3 dotazy na kandidáta) | $1 – 3 tis. |
+| LLM (extraction + targeted pre-review) | **$3–6 k** |
+| Search (2–3 queries per candidate) | $1–3 k |
 
-### Ľudská kontrola (v oboch scenároch)
+### Human review (in both scenarios)
 
-V pilote kontrolujem 100 % záznamov. Pri celosvetovom rozsahu sa robí **stratifikovaná vzorka** podľa typu a regiónu: 5 typov × 6 regiónov × 60 záznamov, spolu **≈ 1 800 záznamov**. Pri precision okolo 95 % dáva vzorka 60 záznamov interval spoľahlivosti ±5,5 p. b. na jednu bunku a vzorka 1 800 záznamov ±1 p. b. celkovo.
+In the pilot I review 100 % of records. At worldwide scale a **stratified sample** by type and region is used: 5 types × 6 regions × 60 records, **≈ 1,800 records** in total. With precision around 95 %, a sample of 60 records gives a confidence interval of ±5.5 pp per cell, and the 1,800-record sample ±1 pp overall.
 
-K tomu treba ručne vyriešiť položky, ktoré AI predkontrola označila ako nesprávne. V pilote to bolo 15 z 211 položiek, teda **≈ 7 %**.
+On top of that, items flagged as incorrect by the AI pre-review must be resolved manually. In the pilot that was 15 of 211 items, i.e. **≈ 7 %**.
 
-| Položka | Výpočet | Hodiny | Náklad pri 25 €/h |
+| Item | Calculation | Hours | Cost at €25/h |
 |---|---|---|---|
-| Kontrola vzorky | 1 800 záznamov × ~4 položky × 0,5 min | ≈ 60 h | ≈ 1 500 € |
-| Riešenie označených | 35 tis. × 4 položky × 7 % × 3 min | ≈ 490 h | ≈ 12 000 € |
-| **Spolu** | | **≈ 550 h** | **≈ 13 – 14 tis. €** |
+| Sample review | 1,800 records × ~4 items × 0.5 min | ≈ 60 h | ≈ €1,500 |
+| Resolving flagged items | 35 k × 4 items × 7 % × 3 min | ≈ 490 h | ≈ €12,000 |
+| **Total** | | **≈ 550 h** | **≈ €13–14 k** |
 
-Ľudská práca je teda **najdrahšia položka**, nie LLM. Najväčšia úspora preto leží v lepšom zadaní pre AI. Najčastejšia chyba AI (AUM, ktoré nie je spravovaný kapitál) sa dá z veľkej časti odstrániť presnejšou definíciou v pokynoch pre agentov.
+Human work is therefore **the most expensive item**, not the LLM. The biggest savings lie in better instructions for the AI. The most common AI error (AUM that is not managed capital) can largely be eliminated with a more precise definition in the agent instructions.
 
-## 4. Údržba
+## 4. Maintenance
 
-- **Kontrola aktivity každých 6 mesiacov.** `verify.py` je iba HTTP, takže stojí takmer nič. Nové dealy sa sledujú cez deal-first zdroje (RSS, tlačové správy), čo je ≈ $0,02 – 0,05 na investora a rok, spolu **≈ $1 – 2 tis. ročne**.
-- **Zastarané odkazy:** v pilote boli nedostupné 2 z 329 dôkazov (0,6 %). Rátam s 5 – 10 % ročne, ktoré treba obnoviť.
+- **Activity check every 6 months.** `verify.py` is HTTP only, so it costs almost nothing. New deals are tracked via deal-first sources (RSS, press releases), at ≈ $0.02–0.05 per investor per year, **≈ $1–2 k per year** in total.
+- **Stale links:** in the pilot, 2 of 329 pieces of evidence (0.6 %) were unreachable. I assume 5–10 % per year will need refreshing.
 
-## 5. Zhrnutie
+## 5. Summary
 
-| | Jednorazovo | Ročne |
+| | One-off | Per year |
 |---|---|---|
-| LLM + vyhľadávanie (scenár B) | $4 – 9 tis. | $1 – 2 tis. |
-| Ľudská kontrola | ≈ 13 – 14 tis. € | ≈ 3 – 5 tis. € |
-| **Spolu** | **≈ 17 – 23 tis. €** | **≈ 4 – 7 tis. €** |
+| LLM + search (scenario B) | $4–9 k | $1–2 k |
+| Human review | ≈ €13–14 k | ≈ €3–5 k |
+| **Total** | **≈ €17–23 k** | **≈ €4–7 k** |
 
-**Neistoty:**
-- výťažnosť mimo Slovenska,
-- podiel stránok blokovaných proti botom (v pilote 1 z 260 URL, v USA a UK bude vyšší),
-- angel investori, ktorých verejná stopa je slabá: odhad 1 – 5 % aktívnych, viď `PLAN.md`.
+**Uncertainties:**
+- yield outside Slovakia,
+- share of pages blocked against bots (1 of 260 URLs in the pilot; will be higher in the US and UK),
+- angel investors, whose public footprint is weak: estimated 1–5 % of active ones, see `PLAN.md`.

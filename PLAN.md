@@ -1,146 +1,146 @@
-# Plán: spoľahlivá databáza investorov
+# Plan: a reliable investor database
 
-Stav k 2026-10-09. Pilot: VC fondy pôsobiace na Slovensku.
+Status as of 2026-10-09. Pilot: VC funds active in Slovakia.
 
-## 1. Kto v databáze je a kto nie
+## 1. Who is in the database and who is not
 
-### Definícia investora
+### Investor definition
 
-Subjekt je **investor**, ak súčasne platí:
+An entity is an **investor** if all of the following hold:
 
-1. **Kapitál:** investuje vlastný kapitál alebo kapitál, ktorý spravuje v mene investorov (LP).
-2. **Nástroj:** investuje do **súkromných firiem** formou vlastníckeho podielu alebo kvázi-equity (konvertibilná pôžička, SAFE).
-3. **Opakovanosť:** má investičnú stratégiu alebo aspoň 2 verejne doložené investície.
-4. **Aktivita:** má aspoň 1 verejne doloženú investíciu alebo nový fond za posledných **36 mesiacov**. Overuje sa ku dňu zberu.
+1. **Capital:** it invests its own capital or capital it manages on behalf of investors (LPs).
+2. **Instrument:** it invests in **private companies** through an ownership stake or quasi-equity (convertible loan, SAFE).
+3. **Recurrence:** it has an investment strategy or at least 2 publicly documented investments.
+4. **Activity:** it has at least 1 publicly documented investment or a new fund within the last **36 months**. Checked as of the collection date.
 
-### Typy (pole `investor_type`)
+### Types (`investor_type` field)
 
-| Typ | Kritérium navyše |
+| Type | Additional criterion |
 |---|---|
-| `vc` | Investuje do fáz pre-seed až growth, typicky menšinový podiel |
-| `pe` | Buyout alebo growth, typicky väčšinový či významný podiel, etablované firmy |
-| `cvc` | Korporátna investičná jednotka so samostatnou značkou alebo mandátom |
-| `family_office` | Spravuje majetok jednej (SFO) alebo viacerých (MFO) rodín a priamo investuje do firiem |
-| `angel` | Fyzická osoba, aspoň 2 doložené investície vlastnými peniazmi |
-| `private_investor` | Súkromný investičný holding alebo jednotlivec s veľkým kapitálom, ktorý nespadá do typov vyššie |
-| `public_fund` | Štátny alebo nadnárodný fond, ktorý **priamo** investuje equity do firiem (SIH, NHF) |
-| `fund_of_funds` | Investuje len do iných fondov (napr. EIF). Zaraďuje sa, ale s príznakom, lebo do firiem neinvestuje priamo |
+| `vc` | Invests from pre-seed to growth stage, typically a minority stake |
+| `pe` | Buyout or growth, typically a majority or significant stake, established companies |
+| `cvc` | Corporate investment unit with its own brand or mandate |
+| `family_office` | Manages the wealth of one (SFO) or several (MFO) families and invests directly in companies |
+| `angel` | Individual with at least 2 documented investments of their own money |
+| `private_investor` | Private investment holding or high-net-worth individual that does not fit the types above |
+| `public_fund` | State or supranational fund that invests equity in companies **directly** (SIH, NHF) |
+| `fund_of_funds` | Invests only in other funds (e.g. EIF). Included, but flagged, because it does not invest in companies directly |
 
-### Vyradenie (pole `exclusion_reason`)
+### Exclusion (`exclusion_reason` field)
 
-| Kód | Kto | Prečo |
+| Code | Who | Why |
 |---|---|---|
-| `not_investor_service` | Advokáti, audítori, M&A poradcovia, konzultanti (napr. pridružení členovia SLOVCA) | Neinvestujú kapitál, iba poskytujú služby investorom |
-| `debt_only` | Banky, lízing, nebankové úvery | Nezískavajú vlastnícky podiel |
-| `platform_only` | Crowdfundingové platformy, ktoré len sprostredkúvajú | Investujú tretie strany. Ak má platforma vlastný fond (Crowdberry, CB Investment Management), zaraďuje sa **fond**, nie platforma |
-| `grant_only` | Grantové schémy, dotácie | Nezískavajú podiel |
-| `public_markets_only` | Hedge fondy, podielové fondy na verejné akcie | Neinvestujú do súkromných firiem |
-| `inactive` | Bez doloženej investície alebo nového fondu za 36 mesiacov | Údaje by mohli byť zavádzajúce |
-| `no_evidence` | Nenašiel sa žiadny overiteľný verejný dôkaz investície | Nedá sa overiť pravosť |
-| `duplicate` | Rovnaký subjekt pod iným názvom (správca vs. fond) | Jeden záznam na investičnú platformu |
+| `not_investor_service` | Lawyers, auditors, M&A advisers, consultants (e.g. SLOVCA associate members) | They do not invest capital, they only provide services to investors |
+| `debt_only` | Banks, leasing, non-bank lenders | They do not acquire an ownership stake |
+| `platform_only` | Crowdfunding platforms that only act as intermediaries | Third parties invest. If a platform has its own fund (Crowdberry, CB Investment Management), the **fund** is included, not the platform |
+| `grant_only` | Grant schemes, subsidies | They do not acquire a stake |
+| `public_markets_only` | Hedge funds, mutual funds investing in public equities | They do not invest in private companies |
+| `inactive` | No documented investment or new fund within 36 months | The data could be misleading |
+| `no_evidence` | No verifiable public evidence of an investment was found | Authenticity cannot be verified |
+| `duplicate` | The same entity under a different name (manager vs. fund) | One record per investment platform |
 
-### Granularita
+### Granularity
 
-Jeden záznam = **investičná platforma (správca)**, nie jednotlivý fond. Napríklad „Neulogy Ventures“ je jeden záznam a jeho fondy sú v poli `funds`. Dôvod: v praxi chce používateľ databázy osloviť správcu a fondy sa každých pár rokov menia.
+One record = **investment platform (manager)**, not an individual fund. For example, "Neulogy Ventures" is one record and its funds are in the `funds` field. Reason: in practice, database users want to approach the manager, and funds change every few years.
 
-**Hraničný prípad:** fond, ktorý je samostatnou právnickou osobou s vlastným tímom (Venture to Future Fund), je samostatný záznam.
+**Edge case:** a fund that is a separate legal entity with its own team (Venture to Future Fund) is a separate record.
 
-### Geografia
+### Geography
 
-Krajina záznamu je **sídlo správcu**. Zahraničný fond, ktorý aktívne investuje na Slovensku (Jet Ventures, Credo), dostane `country` podľa sídla a do `active_in` sa pridá `SK`. V pilote vytvárame zoznam „VC aktívne na Slovensku“, ale **presnosť meriame iba na fondoch so sídlom na Slovensku**, aby vzorka bola jednoznačná.
+A record's country is the **manager's headquarters**. A foreign fund actively investing in Slovakia (Jet Ventures, Credo) gets its `country` by HQ, and `SK` is added to `active_in`. In the pilot we build a list of "VC active in Slovakia", but **accuracy is measured only on funds headquartered in Slovakia**, so that the sample is unambiguous.
 
-## 2. Polia záznamu a zdroje
+## 2. Record fields and sources
 
-Každé fakticky tvrdené pole má vlastný dôkaz `{value, source_url, source_date, retrieved_at, quote}`:
+Every factual field has its own evidence `{value, source_url, source_date, retrieved_at, quote}`:
 
-| Pole | Význam |
+| Field | Meaning |
 |---|---|
-| `name`, `legal_name`, `ico` / `reg_no`, `country`, `website` | Identita |
-| `investor_type` | Viď tabuľka vyššie |
-| `sectors` | Sektory, do ktorých investuje (napr. fintech, B2B SaaS, deep tech) |
+| `name`, `legal_name`, `ico` / `reg_no`, `country`, `website` | Identity |
+| `investor_type` | See the table above |
+| `sectors` | Sectors it invests in (e.g. fintech, B2B SaaS, deep tech) |
 | `stages` | pre-seed / seed / A / B+ / growth / buyout |
-| `ticket_min_eur`, `ticket_max_eur` | Bežná výška jednej investície |
-| `aum_eur` | Celkový investičný kapitál (veľkosť fondu alebo fondov) |
-| `evidence_investments[]` | Aspoň 1 doložená investícia: firma, dátum, URL |
+| `ticket_min_eur`, `ticket_max_eur` | Typical size of a single investment |
+| `aum_eur` | Total investment capital (size of the fund or funds) |
+| `evidence_investments[]` | At least 1 documented investment: company, date, URL |
 | `confidence` | `high` / `medium` / `low` |
 
-`quote` je doslovný úryvok zo zdroja. Umožňuje automaticky overiť, že tvrdenie na stránke naozaj je (pozri časť 3).
+`quote` is a verbatim excerpt from the source. It makes it possible to verify automatically that the claim really is on the page (see section 3).
 
-## 3. Ako overím pravosť a zaradenie
+## 3. How I verify authenticity and inclusion
 
-**Pipeline (koncept C, hybrid):**
+**Pipeline (concept C, hybrid):**
 
-1. **Kandidáti** (`data/candidates.csv`) z troch typov zdrojov, pri každom je URL, kde sa kandidát našiel:
-   - **asociácie:** SLOVCA, Invest Europe, CVCA,
-   - **verejné programy:** SIH, NHF, EIF, NRF (Národný rozvojový fond),
-   - **deal-first:** tlačové správy a médiá o investičných kolách (Forbes, Startitup, The Recursive, Vestbee).
-2. **Rešerš (AI agent):** pre každého kandidáta nájde web, portfólio a aspoň 1 datovaný deal. Do JSON zapíše dôkazy vrátane doslovných citácií.
-3. **Automatická kontrola (`verify.py`):**
-   - URL odpovedá HTTP 2xx,
-   - doslovná `quote` sa nachádza v texte stránky (normalizované medzery a diakritika). Toto chytá **halucinované zdroje**, najčastejšiu chybu LLM,
-   - dátum dôkazu je v okne 36 mesiacov,
-   - schéma (pydantic): ticket_min ≤ ticket_max, mena prepočítaná na EUR, typy z číselníka.
-4. **Pravidlá zaradenia (`build.py`):** deterministicky z overených dôkazov priradí `included` alebo `exclusion_reason`. Rozhoduje kód, nie LLM.
-5. **Ručná kontrola:** človek otvorí zdroj a pre každý záznam vyplní `validation/manual_check.csv`.
-   - Pre každý zaradený záznam: je to skutočný aktívny investor? Sedí typ?
-   - Pre každé pole: zhoduje sa so zdrojom?
-   - Pre vyradené záznamy: je dôvod vyradenia správny?
+1. **Candidates** (`data/candidates.csv`) from three types of sources, each with the URL where the candidate was found:
+   - **associations:** SLOVCA, Invest Europe, CVCA,
+   - **public programmes:** SIH, NHF, EIF, NRF (National Development Fund),
+   - **deal-first:** press releases and media coverage of funding rounds (Forbes, Startitup, The Recursive, Vestbee).
+2. **Research (AI agent):** for each candidate, finds the website, portfolio and at least 1 dated deal. Writes the evidence, including verbatim quotes, to JSON.
+3. **Automated check (`verify.py`):**
+   - the URL responds with HTTP 2xx,
+   - the verbatim `quote` appears in the page text (normalised whitespace and diacritics). This catches **hallucinated sources**, the most common LLM error,
+   - the evidence date is within the 36-month window,
+   - schema (pydantic): ticket_min ≤ ticket_max, currency converted to EUR, types from the code list.
+4. **Inclusion rules (`build.py`):** deterministically assign `included` or an `exclusion_reason` from the verified evidence. Code decides, not the LLM.
+5. **Manual review:** a human opens the source and fills in `validation/manual_check.csv` for every record.
+   - For every included record: is it a real active investor? Is the type correct?
+   - For every field: does it match the source?
+   - For excluded records: is the exclusion reason correct?
 
-**Metriky (`metrics.py`):**
-- **Precision zaradenia** = správne zaradené / všetky zaradené. Toto je hlavná požiadavka zadania („každý záznam je skutočný investor“).
-- **Správnosť vyradenia** = správne vyradené / všetky vyradené.
-- **Presnosť polí** = správne hodnoty / vyplnené hodnoty pre `investor_type`, `sectors`, ticket a AUM zvlášť.
-- **Vyplnenosť polí** = podiel záznamov, kde pole nie je prázdne.
-- **Recall** sa nedá zmerať presne, lebo neexistuje úplný zoznam. Odhadujem ho cez **capture-recapture**: koľko fondov z deal-first zdroja už bolo v asociačných zdrojoch.
+**Metrics (`metrics.py`):**
+- **Inclusion precision** = correctly included / all included. This is the core requirement of the assignment ("every record is a real investor").
+- **Exclusion correctness** = correctly excluded / all excluded.
+- **Field accuracy** = correct values / filled values, separately for `investor_type`, `sectors`, ticket and AUM.
+- **Field fill rate** = share of records where the field is not empty.
+- **Recall** cannot be measured exactly, because no complete list exists. I estimate it via **capture-recapture**: how many funds from the deal-first sources were already in the association sources.
 
-## 4. Odhad: koľko investorov sa dá získať z verejných zdrojov
+## 4. Estimate: how many investors can be obtained from public sources
 
-| Typ | Odhad počtu aktívnych vo svete | Zdroj odhadu | Verejne overiteľné (môj odhad) | Očakávaná spoľahlivosť |
+| Type | Estimated number active worldwide | Source of estimate | Publicly verifiable (my estimate) | Expected reliability |
 |---|---|---|---|---|
-| VC | 4 000 – 7 000 | Decile Group, „guesstimate“ z panelových dát | 80 – 90 % (fondy zverejňujú portfólio) | vysoká |
-| PE | ~ 7 000 (z toho ~ 6 000 v USA) | American Investment Council cez Vault; Preqin 2009: 4 270 až 6 000 | 70 – 85 % (deal PR, v USA SEC Form ADV) | vysoká |
-| CVC | 2 300 – 3 100 | Global Corporate Venturing 2024/2025 | 70 – 80 % | vysoká |
-| Single family office | ~ 8 000 (2024) | Deloitte, Defining the Family Office Landscape | **10 – 25 %** (FO zámerne nezverejňujú) | stredná |
-| Angel | ~ 445 000 aktívnych iba v USA (2024) | UNH Center for Venture Research | **1 – 5 %** (verejne doložené ≥2 investície) | nízka až stredná |
+| VC | 4,000 – 7,000 | Decile Group, "guesstimate" from panel data | 80 – 90 % (funds publish their portfolio) | high |
+| PE | ~ 7,000 (of which ~ 6,000 in the US) | American Investment Council via Vault; Preqin 2009: 4,270 to 6,000 | 70 – 85 % (deal PR, SEC Form ADV in the US) | high |
+| CVC | 2,300 – 3,100 | Global Corporate Venturing 2024/2025 | 70 – 80 % | high |
+| Single family office | ~ 8,000 (2024) | Deloitte, Defining the Family Office Landscape | **10 – 25 %** (FOs deliberately stay private) | medium |
+| Angel | ~ 445,000 active in the US alone (2024) | UNH Center for Venture Research | **1 – 5 %** (≥2 publicly documented investments) | low to medium |
 
-**Realistický rozsah databázy:** približne 15 – 20 tisíc inštitucionálnych investorov (VC, PE, CVC, FO), k tomu 5 – 20 tisíc angel investorov s verejnou stopou.
+**Realistic database size:** roughly 15–20 thousand institutional investors (VC, PE, CVC, FO), plus 5–20 thousand angel investors with a public footprint.
 
-**Obmedzenia odhadov:** čísla pochádzajú z rôznych rokov a definícií a čiastočne sa prekrývajú (VC aj PE). Ide o rádový odhad, nie o súpis.
+**Limitations of the estimates:** the figures come from different years and definitions and partly overlap (VC and PE). This is an order-of-magnitude estimate, not a census.
 
-**Očakávaná spoľahlivosť podľa poľa:**
-- identita a aktivita: vysoká, lebo je doložená URL a dátumom,
-- sektor a fáza: vysoká, lebo ich fondy samy deklarujú,
-- ticket: stredná, často chýba alebo je zastaraný,
-- AUM: stredná až nízka, lebo PE a FO ho často neuvádzajú.
+**Expected reliability by field:**
+- identity and activity: high, because they are backed by a URL and a date,
+- sector and stage: high, because funds declare them themselves,
+- ticket: medium, often missing or outdated,
+- AUM: medium to low, because PE firms and FOs often do not disclose it.
 
-**Vyplnenosť:**
-- ticket očakávam pri 50 – 70 % VC,
-- AUM pri 60 – 80 % VC (veľkosť fondu býva v tlačovej správe),
-- pri FO a angel investoroch AUM takmer vôbec nebude.
+**Fill rate:**
+- ticket expected for 50–70 % of VCs,
+- AUM for 60–80 % of VCs (fund size is usually in a press release),
+- for FOs and angel investors AUM will be almost entirely missing.
 
-## 5. Pilot (Slovensko, VC)
+## 5. Pilot (Slovakia, VC)
 
-**Odhad veľkosti:** 15 – 30 aktívnych VC so sídlom na Slovensku a 20 – 40 zahraničných, ktoré investujú na Slovensku.
+**Size estimate:** 15–30 active VCs headquartered in Slovakia and 20–40 foreign ones investing in Slovakia.
 
-**Podklady:**
-- 12 riadnych členov SLOVCA, z ktorých časť je PE a časť sídli v CZ alebo PL,
-- Invest Europe: na Slovensko išlo v roku 2025 iba 7 mil. EUR VC.
+**Background:**
+- 12 full members of SLOVCA, some of which are PE and some headquartered in CZ or PL,
+- Invest Europe: only EUR 7 m of VC went to Slovakia in 2025.
 
-**Postup:**
-1. Zber kandidátov z SLOVCA, verejných programov a deal-first zdrojov.
-2. Rešerš a `verify.py` na **všetkých** kandidátoch.
-3. Ručná kontrola **100 %** zaradených aj vyradených slovenských záznamov. Vzorka je malá, preto nevzorkujem.
-4. Výsledné metriky, zoznam chýb AI a ich príčin.
+**Steps:**
+1. Collect candidates from SLOVCA, public programmes and deal-first sources.
+2. Research and `verify.py` on **all** candidates.
+3. Manual review of **100 %** of included and excluded Slovak records. The sample is small, so I do not sample.
+4. Resulting metrics, a list of AI errors and their causes.
 
-## 6. Odhad nákladov na celý svet
+## 6. Worldwide cost estimate
 
-Dopočíta sa z nameraných hodnôt pilotu:
-- tokeny a čas na jeden záznam,
-- podiel záznamov, ktoré potrebujú ručný zásah,
-- čas ručnej kontroly na jeden záznam.
+Extrapolated from values measured in the pilot:
+- tokens and time per record,
+- share of records needing manual intervention,
+- manual review time per record.
 
-Model nákladov:
+Cost model:
 
-`náklad = N_kandidátov × (LLM rešerš + vyhľadávacie API) + N_zaradených × podiel ručnej kontroly × čas × hodinová sadzba + údržba (opakovaná kontrola aktivity každých 6 – 12 mesiacov)`
+`cost = N_candidates × (LLM research + search API) + N_included × manual review share × time × hourly rate + maintenance (re-checking activity every 6–12 months)`
 
-Konkrétne čísla sú v `COSTS.md`.
+Concrete figures are in `COSTS.md`.
