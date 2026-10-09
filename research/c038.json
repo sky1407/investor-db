@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c038",
+  "name": "Montward",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.montward.com/",
+  "entity_kind": {
+    "source_url": "https://www.montward.com/",
+    "quote": "Montward je poradenská spoločnosť, ktorá firmám pomáha rásť, zvládať zmeny a prekonať aj tie najnáročnejšie obdobia.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Advisory firm (M&A sell/buy-side, restructuring, business excellence). Website also mentions 'Správa kapitálu a investícií' (access for investors via direct stakes or PE structures), but no fund, own investments or deals were found, so classified as service_provider.",
+  "researched_at": "2026-10-09"
+}

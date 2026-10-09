@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c042",
+  "name": "CLA Slovakia",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.claslovakia.sk/",
+  "entity_kind": {
+    "source_url": "https://www.claslovakia.sk/",
+    "quote": "Už viac ako 20 rokov poskytujeme na Slovensku prvotriedne služby pre viac ako 1 000 klientov v rôznych oblastiach podnikania.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Accounting, payroll, tax, audit and business advisory firm (member of CLA Global).",
+  "researched_at": "2026-10-09"
+}

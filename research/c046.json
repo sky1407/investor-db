@@ -1,0 +1,66 @@
+{
+  "candidate_id": "c046",
+  "name": "Credo Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "PL", "SK"],
+  "website": "https://www.credoventures.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Credo Ventures has closed Credo Stage 5, an $88 million fund raised in a single closing, continuing the Prague and Krakow firm’s fifteen-year strategy of writing the first institutional cheque for founders from Central and Eastern Europe and its diaspora."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Credo Ventures has closed Credo Stage 5, an $88 million fund raised in a single closing, continuing the Prague and Krakow firm’s fifteen-year strategy of writing the first institutional cheque for founders from Central and Eastern Europe and its diaspora."
+  },
+  "sectors": {
+    "value": ["generalist", "ai", "developer tools"],
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Sectoral focus is deliberately loose, Credo describes itself as founder-first rather than theme-driven, but the team is specifically attuned to technical founders with global ambitions, and has a growing eye on AI companies after the pace of growth in its fourth fund portfolio."
+  },
+  "stages": {
+    "value": ["pre-seed", "seed"],
+    "source_url": "https://www.credoventures.com/",
+    "quote": "Pre-seed — Onwards. Leading rounds since ‘09."
+  },
+  "ticket_min": {
+    "amount": 1000000,
+    "currency": "USD",
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Typical cheques will fall in the $1–5 million range, though Krikava told start-up.ro the firm remains flexible."
+  },
+  "ticket_max": {
+    "amount": 5000000,
+    "currency": "USD",
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Typical cheques will fall in the $1–5 million range, though Krikava told start-up.ro the firm remains flexible."
+  },
+  "aum": {
+    "amount": 88000000,
+    "currency": "USD",
+    "source_url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+    "source_date": "2026-03-23",
+    "quote": "Credo Ventures has closed Credo Stage 5, an $88 million fund raised in a single closing, continuing the Prague and Krakow firm’s fifteen-year strategy of writing the first institutional cheque for founders from Central and Eastern Europe and its diaspora."
+  },
+  "funds": ["Credo Stage 5"],
+  "investments": [
+    {
+      "company": "SuperPlane",
+      "deal_date": "2026-06-24",
+      "source_url": "https://thesaasnews.com/news/superplane-raises-2-28m-pre-seed",
+      "source_date": "2026-06-24",
+      "quote": "SuperPlane raises €2.28M in pre-seed funding led by Credo Ventures to build an open-source control plane for AI agents and production infrastructure."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "AUM is the size of the newest fund (Credo Stage 5, USD 88M, March 2026); the previous fund was EUR 75M (2022). Invests across CEE; SK included based on the CEE mandate and the older Photoneo seed deal, no 2025-2026 Slovak deal found. Participation in Supernova (Sep 2025) and Resistant AI is reported but no single quote names both.",
+  "researched_at": "2026-10-09"
+}

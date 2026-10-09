@@ -1,0 +1,49 @@
+{
+  "candidate_id": "c037",
+  "name": "Slovak Investment Holding",
+  "legal_name": "Slovak Investment Holding, a. s.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.sih.sk/",
+  "entity_kind": {
+    "source_url": "https://www.sih.sk/",
+    "quote": "Kapitál môžu získať etablované firmy so zámerom ďalšieho rastu, ako aj inovatívne podniky v raných fázach vývoja.",
+    "value": "investor"
+  },
+  "investor_type": {
+    "source_url": "https://www.startitup.sk/?p=1237737",
+    "quote": "SIH je akciová spoločnosť v 100-percentnom vlastníctve štátu a investíciu realizovala formou konvertibilného úveru so splatnosťou v máji 2028.",
+    "source_date": "2026-09-15",
+    "value": "public_fund"
+  },
+  "investments": [
+    {
+      "source_url": "https://www.startitup.sk/?p=1239607",
+      "quote": "VisionFlow rieši práve túto kľúčovú časť AI ekosystému. Veríme, že investícia SIH mu pomôže urýchliť technologický aj obchodný rast,“ uviedol v tlačovej správe Juraj Jusko, riaditeľ priamych investícií Slovak Investment Holding.",
+      "source_date": "2026-09-22",
+      "company": "VisionFlow",
+      "deal_date": "2026-09-22"
+    },
+    {
+      "source_url": "https://www.startitup.sk/?p=1237737",
+      "quote": "Podľa tlačovej správy štátny Slovak Investment Holding (SIH) investoval do AT Crystals 280-tisíc eur ako súčasť kola v celkovej výške 400-tisíc eur, ktoré doplnil súkromný spoluinvestor.",
+      "source_date": "2026-09-15",
+      "company": "AT Crystals",
+      "deal_date": "2026-09-15"
+    },
+    {
+      "source_url": "https://www.sih.sk/aktuality/ai-proti-nenavisti-na-internete-startup-trollwall-ai-ziskal-investiciu-vo-vyske-800-000-eur",
+      "quote": "Na investícii sa podieľajú Seed Starter Slovenskej sporiteľne, Slovak Investment Holding (SIH) a angel investor Miroslav Fedor.",
+      "source_date": "2026-04-09",
+      "company": "TrollWall AI",
+      "deal_date": "2026-04-09"
+    }
+  ],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "State-owned (100%) holding managing EU/Recovery Plan financial instruments: guarantees and loans via banks, investments into funds (e.g. Vision Ventures, Zero Gravity Capital, CB Investment Management) and, since June 2024, direct equity and convertible-loan investments into innovative companies; classified as public_fund because it also invests directly. Many direct deals are convertible loans (quasi-equity). Homepage figure '2,37 MLD. EUR' not used as AUM because it is not clearly capital under management.",
+  "researched_at": "2026-10-09"
+}

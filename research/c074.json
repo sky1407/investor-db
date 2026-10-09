@@ -1,0 +1,53 @@
+{
+  "candidate_id": "c074",
+  "name": "Gi21 Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "US"
+  ],
+  "website": "https://gi21capital.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://gi21capital.com/",
+    "source_date": null,
+    "quote": "Gi21 Capital is a multi-stage investment group bridging the gap between entrepreneurial agility and institutional-grade scale."
+  },
+  "investor_type": {
+    "value": "private_investor",
+    "source_url": "https://pulse2.com/gi21-capital-profile-damir-spoljaric-interview/",
+    "quote": "Gi21 has evolved from a family office into a founder-first firm driven by an operator’s DNA. We built the vehicle I wish I’d had at 17, one that offers the speed of a founder and the patience of permanent capital. By investing our own money, we eliminate LP pressure"
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "FaceUp",
+      "deal_date": "2026-05-19",
+      "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+      "source_date": "2026-05-19",
+      "quote": "JIC Ventures vstúpil do investičného kola Series A spoločnosti FaceUp v hodnote 5 miliónov dolárov. Kolo viedol chorvátsky fond Fil Rouge Capital. Pridali sa aj slovenský Venture to Future Fund, pražský Gi21 Capital"
+    },
+    {
+      "company": "Zerops",
+      "deal_date": "2024-06-20",
+      "source_url": "https://en.ain.ua/2024/06/20/zerops-raises-500k-pre-seed-cloud-platform-expansion",
+      "source_date": "2024-06-20",
+      "quote": "Zerops, a Prague-based developer of a cloud platform that builds, deploys, and manages apps, has raised $500,000 in a pre-Seed investment round backed by Presto Ventures and Gi21 Capital."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Prague investment group of founder Damir Špoljarič investing own (permanent) capital; also runs AI data-center infrastructure, hospitality and arts activities, so classified private_investor (could be seen as family_office). Website claims 25+ companies backed and 6 exits. No Slovak investment found; FaceUp is Czech. Ticket sizes and AUM not published.",
+  "researched_at": "2026-10-09",
+  "sectors": {
+    "value": [
+      "deep tech",
+      "b2b saas",
+      "ai"
+    ],
+    "source_url": "https://gi21capital.com/",
+    "source_date": null,
+    "quote": "Backing technical founders solving complex problems through Deep Tech, B2B SaaS, AI."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "candidate_id": "c018",
+  "name": "BHM group",
+  "legal_name": "BHM group a.s.",
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK",
+    "DE",
+    "PL",
+    "ES",
+    "CH",
+    "GB",
+    "FI",
+    "DK",
+    "EE",
+    "LT"
+  ],
+  "website": "https://www.bhmgroup.eu/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.bhmgroup.eu/o-nas",
+    "source_date": null,
+    "quote": "BHM group je dynamicky rostoucí středoevropská investiční skupina, která řídí desítky společností napříč Evropou."
+  },
+  "investor_type": {
+    "value": "private_investor",
+    "source_url": "https://www.bhmgroup.eu/o-nas",
+    "quote": "BHM group je soukromá investiční společnost založená v roce 2013 podnikatelem a filantropem Tomášem Krskem."
+  },
+  "sectors": {
+    "value": [
+      "medtech",
+      "renewable energy",
+      "real estate",
+      "tech startups"
+    ],
+    "source_url": "https://www.bhmgroup.eu/o-nas",
+    "quote": "Zpočátku se BHM group soustředila na strojírenství, ale postupně rozšířila své portfolio o dlouhodobé investice do obnovitelných zdrojů energie, zdravotnictví, nových technologií a realit."
+  },
+  "stages": {
+    "value": [
+      "buyout"
+    ],
+    "source_url": "https://www.bhmgroup.eu/news/bhm-group-rozsiruje-reinsberg-group-o-spanelskou-spolecnost-tedisel-medical",
+    "quote": "Investiční firma BHM group dokončila akvizici španělské společnosti Tedisel Medical, kterou začlení do své medtech skupiny Reinsberg Group."
+  },
+  "aum": {
+    "amount": 1000000000,
+    "currency": "EUR",
+    "source_url": "https://www.bhmgroup.eu/portfolio",
+    "quote": "BHM group spravuje aktiva v hodnotě 1 miliardy eur, působí ve více než 20 evropských zemích a zaměstnává přes 2000 lidí po celé Evropě."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Schaerer Medical Schweiz AG",
+      "deal_date": "2026-08-24",
+      "source_url": "https://www.bhmgroup.eu/news/reinsberg-group-posiluje-sve-portfolio-operacnich-stolu-akvizici-schaerer-medical-schweiz-ag",
+      "source_date": "2026-08-24",
+      "quote": "BHM group pokračuje v rozšiřování své medtech skupiny Reinsberg Group akvizicí švýcarské společnosti Schaerer Medical Schweiz AG, tradičního výrobce prémiových mobilních operačních stolů a specializovaného příslušenství pro ortopedii."
+    },
+    {
+      "company": "Tedisel Medical",
+      "deal_date": "2026-07-15",
+      "source_url": "https://www.bhmgroup.eu/news/bhm-group-rozsiruje-reinsberg-group-o-spanelskou-spolecnost-tedisel-medical",
+      "source_date": "2026-07-15",
+      "quote": "Investiční firma BHM group dokončila akvizici španělské společnosti Tedisel Medical, kterou začlení do své medtech skupiny Reinsberg Group."
+    },
+    {
+      "company": "Rein Medical",
+      "deal_date": "2026-02-02",
+      "source_url": "https://www.bhmgroup.eu/news/bhm-group-posiluje-globalni-ambice-reinsberg-group-akvizici-rein-medical",
+      "source_date": "2026-02-02",
+      "quote": "Investiční firma BHM group prostřednictvím své medtech společnosti Reinsberg Group dokončila akvizici německé společnosti Rein Medical, jednoho z předních poskytovatelů zdravotnických IT řešení a video managementu pro nemocnice a kliniky."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Prague-based private investment group of Tomáš Krsek investing only his own capital (buy-and-build in medtech via Reinsberg Group, renewables, real estate, plus a small tech-startup portfolio incl. Slovak CloudTalk). Type private_investor chosen over pe/family_office; the 1 bn EUR is total managed assets, not a fund. active_in taken from the portfolio country filter (includes Slovakia); recent deals are buyouts outside SK.",
+  "researched_at": "2026-10-09"
+}

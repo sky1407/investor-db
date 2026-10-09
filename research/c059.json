@@ -1,0 +1,63 @@
+{
+  "candidate_id": "c059",
+  "name": "Zero One Hundred (0100 Ventures)",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK", "CZ", "CY", "AE"],
+  "website": "https://www.0100.vc/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.0100.vc/",
+    "quote": "A venture capital company founded by builders, with a unique ecosystem, backing the best startups from Emerging Europe and the Middle East."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://www.startitup.sk/startupy-zo-slovenska-ziskali-kluc-k-najbohatsim-trhom-planety-miliardove-biznisy-maju-na-dosah/",
+    "source_date": "2024-12-17",
+    "quote": "Fond Zero One Hundred, ktorý svoje korene zapustil v Bratislave, dnes funguje ako významný hráč na poli venture kapitálu v CEE regióne."
+  },
+  "sectors": {
+    "value": ["blockchain", "e-commerce", "ar/vr", "fintech", "mobile games", "ai", "b2b", "healthtech"],
+    "source_url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+    "quote": "Investment Areas: Blockchain, E-Commerce, AR/VR, Fintech, Mobile Games, AI, B2B, Healthcare"
+  },
+  "stages": {
+    "value": ["pre-seed", "seed", "series-a"],
+    "source_url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+    "source_date": "2022-12-20",
+    "quote": "Soustředit se chce na rané fáze firem od takzvaných pre-seed po sérii A, s důrazem na schopnost firem rychle růst a působit globálně."
+  },
+  "ticket_min": {
+    "amount": 100000,
+    "currency": "EUR",
+    "source_url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+    "quote": "Typical Investment: €100k-€1.5M"
+  },
+  "ticket_max": {
+    "amount": 1500000,
+    "currency": "EUR",
+    "source_url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+    "quote": "Typical Investment: €100k-€1.5M"
+  },
+  "aum": {
+    "amount": 23000000,
+    "currency": "EUR",
+    "source_url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+    "source_date": "2022-12-20",
+    "quote": "Investiční aktivity Zero One Hundred začaly před třemi lety založením samostatného fondu Zero Gravity Capital s prostředky v hodnotě 23 milionů eur, aktuálně přibližně 560 milionů korun."
+  },
+  "funds": ["Zero Gravity Capital (Fund I)", "Zero One Hundred Fund II"],
+  "investments": [
+    {
+      "company": "Readmio",
+      "deal_date": "2026-02-05",
+      "source_url": "https://vestbee.com/insights/articles/readmio-secures-1-m",
+      "source_date": "2026-02-05",
+      "quote": "Prague-based Readmio, which develops interactive children’s story apps with sound and learning features, has secured €1 million in new funding from Simpact Ventures, with support from ZAKA VC, Zero One Hundred, and DEPO Ventures, as Vestbee was informed."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Zero Gravity Capital (c058) was the first fund of Zero One Hundred (c058 marked as duplicate of this record). AUM is Fund I (EUR 23M); Fund II (reported EUR 25M, Sept 2025, CEE + MENA co-investments) is only in paywalled/JS-rendered sources. Tickets and sectors are from the EU-Startups investor profile (self-reported, undated); the same profile states Series A/B as stage, while CzechCrunch (2022) says pre-seed to Series A.",
+  "researched_at": "2026-10-09"
+}

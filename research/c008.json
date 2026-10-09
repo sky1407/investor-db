@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c008",
+  "name": "Národný holdingový fond",
+  "legal_name": "Národný holdingový fond, s.r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.nhfond.sk/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.nhfond.sk/", "source_date": null, "quote": "Podporuje rastovo orientované podnikateľské projekty formou poskytovania rizikového kapitálu (vkladu do základného imania spoločností)."},
+  "investor_type": {"value": "public_fund", "source_url": "https://www.nhfond.sk/", "source_date": null, "quote": "Špecializovaná dcérska spoločnosť Slovak Business Agency, ktorá implementuje podporu formou rizikového kapitálu."},
+  "sectors": {"value": ["industrial manufacturing", "manufacturing services", "tourism", "innovative companies", "business services"], "source_url": "https://www.nhfond.sk/fondy-rizikoveho-kapitalu/narodny-holdingovy-fond/podmienky-poskytnutia-investicie/", "source_date": null, "quote": "priemyselná výroba, výrobné služby, aktívny cestovný ruch, inovatívne podniky, obchodné služby."},
+  "stages": {"value": ["seed", "growth"], "source_url": "https://www.nhfond.sk/fondy-rizikoveho-kapitalu/narodny-holdingovy-fond/podmienky-poskytnutia-investicie/", "source_date": null, "quote": "počiatočné, štartovacie a rozvojové štádium / inovatívne projekty."},
+  "ticket_min": {"amount": 200000, "currency": "EUR", "source_url": "https://www.slovca.sk/sk/riadni-clenovia/narodny-holdingovy-fond-s-r-o.html", "source_date": null, "quote": "Preferovaná výška jednej investície: 200 – 266 tis. EUR"},
+  "ticket_max": {"amount": 266000, "currency": "EUR", "source_url": "https://www.slovca.sk/sk/riadni-clenovia/narodny-holdingovy-fond-s-r-o.html", "source_date": null, "quote": "Preferovaná výška jednej investície: 200 – 266 tis. EUR"},
+  "aum": null,
+  "funds": ["Eterus Capital a.s.", "Fond inovácií a technológií, a.s.", "Mikropôžičkový fond"],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "State-owned subsidiary of Slovak Business Agency (founded 1994 as Seed Capital Company, later Fond fondov). Its site says it manages two VC funds, Eterus Capital a.s. (c004) and Fond inovácií a technológií, a.s. (c005), plus a microloan fund; not marked as duplicate because it relates to two separate candidates. No dated direct investment found; site content looks outdated (SLOVCA cites 91 transactions since inception), so it is likely inactive as a direct investor.",
+  "researched_at": "2026-10-09"
+}

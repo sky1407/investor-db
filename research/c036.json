@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c036",
+  "name": "PwC",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.pwc.com/sk/sk.html",
+  "entity_kind": {
+    "source_url": "https://www.pwc.com/sk/sk.html",
+    "quote": "Pomáhame spoločnostiam vytvárať hodnotu, ktorú hľadajú, poskytovaním vysokej kvality v oblasti audítorských, daňových a poradenských služieb.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Big Four audit, tax and advisory firm (PwC Slovensko).",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c020",
+  "name": "ČSOB",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.csob.sk",
+  "entity_kind": {
+    "value": "lender",
+    "source_url": "https://www.csob.sk/o-nas/csob-financna-skupina",
+    "source_date": null,
+    "quote": "Ako jedna z najväčších a najsilnejších finančných skupín prinášame klientom široké portfólio služieb pre retailový, podnikateľský, korporátny a privátny segment."
+  },
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Československá obchodná banka, a.s. (KBC group) - universal bank, insurance and leasing group. No venture/equity investment vehicle of ČSOB Slovakia found; classified as lender.",
+  "researched_at": "2026-10-09"
+}

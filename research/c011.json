@@ -1,0 +1,83 @@
+{
+  "candidate_id": "c011",
+  "name": "Venture to Future Fund",
+  "legal_name": "Venture to Future Fund, a.s.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK",
+    "CZ"
+  ],
+  "website": "https://vff.sk/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://vff.sk/",
+    "source_date": null,
+    "quote": "Sme slovenský venture kapitálový fond so zameraním na podporu inovatívnych lokálnych podnikov."
+  },
+  "investor_type": {
+    "value": "public_fund",
+    "source_url": "https://vff.sk/novinky/cesky-startup-patron-go-ziskava-investiciu-v-hodnote-1-milion-eur-30",
+    "source_date": "2024-08-14",
+    "quote": "Fond s počiatočným kapitálom 40,4 miliónov eur bol založený v roku 2019 ako výsledok spoločnej iniciatívy Európskej investičnej banky a Ministerstva financií SR prostredníctvom Slovak Investment Holding."
+  },
+  "sectors": null,
+  "stages": {
+    "value": [
+      "seed",
+      "series-a",
+      "series-b-plus"
+    ],
+    "source_url": "https://vff.sk/",
+    "source_date": null,
+    "quote": "Cielime na malé a stredné podniky v rastovej fáze od neskoršieho Seed kola po Series A,B s aspoň čiastočne funkčným produktom, ktorý je životaschopný, bol otestovaný na trhu a má už prvých platiacich zákazníkov alebo dojednané zmluvné vzťahy."
+  },
+  "ticket_min": {
+    "amount": 400000,
+    "currency": "EUR",
+    "source_url": "https://vff.sk/",
+    "source_date": null,
+    "quote": "Minimálna výška našej investície je 400tis. EUR, aj keď optimálne investujeme medzi 1,5 – 2,0 mil. EUR."
+  },
+  "ticket_max": {
+    "amount": 7000000,
+    "currency": "EUR",
+    "source_url": "https://vff.sk/",
+    "source_date": null,
+    "quote": "Vieme byť pomerne flexibilní a prispôsobiť výšku investície potrebám vášho projektu až do výšky 7mil. EUR, vrátane follow-on investícií."
+  },
+  "aum": {
+    "amount": 55000000,
+    "currency": "EUR",
+    "source_url": "https://vff.sk/",
+    "source_date": null,
+    "quote": "V rokoch 2020 - 2026 máme vyčlenených 55 mil. EUR, aby sme našli a zafinancovali práve váš projekt."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Talentiqa",
+      "deal_date": "2025-09-30",
+      "source_url": "https://en.ain.ua/2025/09/30/talentiqa-raises-eur1m/",
+      "source_date": "2025-09-30",
+      "quote": "Talentiqa, a Czech recruitment automation startup, has secured €1 million in funding to expand its AI-powered hiring assistant. The round was backed by Purple Ventures and Venture to Future Fund, EU-Startups reports."
+    },
+    {
+      "company": "Patron GO",
+      "deal_date": "2024-08-12",
+      "source_url": "https://vff.sk/novinky/cesky-startup-patron-go-ziskava-investiciu-v-hodnote-1-milion-eur-30",
+      "source_date": "2024-08-14",
+      "quote": "Najnovšia investícia do startupu Patron GO, chytrej aplikácie na optimalizáciu osobných financií, prichádza zo Slovenska. Slovenský fond Venture to Future Fund sa vo štvrtom investičnom kole pridáva k ďalším investorom a do aplikácie spoločne vkladajú celkom 1 milión eur."
+    },
+    {
+      "company": "Spinbotics",
+      "deal_date": "2024-04-17",
+      "source_url": "https://vff.sk/novinky/podpora-buducnosti-robotiky-v-podobe-novej-investicie-do-spolocnosti-spinbotics-26",
+      "source_date": "2024-04-17",
+      "quote": "Venture to Future Fund uzavrel investíciu do slovenskej spoločnosti Spinbotics, ktorá vyvíja a vyrába modulárne robotické systémy pre širokú škálu priemyselných aplikácií."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Slovak state-backed VC fund (EIB + Ministry of Finance via Slovak Investment Holding, topped up by EUR 15.3m from the Recovery Plan in 2024); co-invests pari-passu 50:50 with private investors. Typical ticket EUR 1.5-2.0m; min EUR 0.4m, max EUR 7m incl. follow-ons. Investment period stated as 2020-2026, so new deals may stop soon. A May 2025 IAG (International Automotive Group) co-investment with Jet Investment was found but no quote names both VFF and IAG in one passage.",
+  "researched_at": "2026-10-09"
+}

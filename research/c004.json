@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c004",
+  "name": "Eterus Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.eterus.sk/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.eterus.sk/", "source_date": null, "quote": "Sme kapitálovým fondom investujúcim do akcií a iných nástrojov vlastného imania spoločností s domicilom na Slovensku. Neponúkame dlhové financovanie."},
+  "investor_type": {"value": "pe", "source_url": "https://www.oaklins.com/at/en/deals/110584/", "source_date": null, "quote": "Eterus Capital is a private equity fund founded in 2008, specializing in supporting small and medium-sized enterprises with proven business models and growth potential."},
+  "sectors": null,
+  "stages": {"value": ["growth"], "source_url": "https://www.eterus.sk/", "source_date": null, "quote": "Eterus je partner pre financovanie spoločností vo fáze rastu, so schopným managementom a overeným konceptom."},
+  "ticket_min": {"amount": 2000000, "currency": "EUR", "source_url": "https://www.eterus.sk/", "source_date": null, "quote": "Zameriavame sa na investície v rozmedzí 2 - 2,5 mil. EUR, pričom preferovaná dĺžka investície predstavuje 5-7 rokov."},
+  "ticket_max": {"amount": 2500000, "currency": "EUR", "source_url": "https://www.eterus.sk/", "source_date": null, "quote": "Zameriavame sa na investície v rozmedzí 2 - 2,5 mil. EUR, pričom preferovaná dĺžka investície predstavuje 5-7 rokov."},
+  "aum": null,
+  "funds": [],
+  "investments": [
+    {"company": "EC Pharmacies", "deal_date": "2024-08-01", "source_url": "https://www.oaklins.com/at/en/deals/110584/", "source_date": null, "quote": "August 2024 — Eterus Capital has acquired a majority stake in EC Pharmacies, a consolidation platform established in partnership with Ethernum Capital."},
+    {"company": "Dr. Martin", "deal_date": "2024-06-12", "source_url": "https://eterus.sk/2024/06/12/dr-martin-a-eterus-capital-spaja-sily-pre-expanziu-a-rozvoj-siete-zubnych-klinik/", "source_date": "2024-06-12", "quote": "Bratislava, 12. jún 2024 – Dr. Martin, popredná slovenská sieť moderných stomatologických kliník, dnes oznámila významnú investíciu od Eterus Capital a Ethernum Capital."},
+    {"company": "MTBIKER", "deal_date": "2023-05-15", "source_url": "https://eterus.sk/2023/05/15/mtbiker-ziskal-silneho-partnera-eterus-capital-investuje-do-jeho-rozvoja/", "source_date": "2023-05-15", "quote": "Jeden z najväčších a najnavštevovanejších cyklistických portálov v strednej Európe MTBIKER získal pre svoj ďalší rast silného partnera. Do spoločnosti vstupuje private equity fond Eterus Capital."}
+  ],
+  "duplicate_of": null,
+  "notes": "Slovak growth/minority PE fund (contacts on wood.com addresses, i.e. linked to WOOD & Company). Ticket from its own site (EUR 2-2.5m preferred); SLOVCA profile gives a wider 500k-5m range. Only 'invested over EUR 40m' is stated, which is not AUM, so aum is empty; generalist, no sector list.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,98 @@
+{
+  "candidate_id": "c072",
+  "name": "Presto Ventures",
+  "legal_name": "Presto Ventures II a.s., osoba rizikového kapitálu",
+  "reg_no": "11678704",
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK",
+    "US",
+    "UA",
+    "GE"
+  ],
+  "website": "https://www.prestoventures.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Since 2016, we’ve invested €40M from two funds. Our new €150M fund targets the best of security, defense, and aerospace tech, with focus on dual-use."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/",
+    "quote": "Venture kapitálové Presto Ventures patří mezi vůbec nejaktivnější startupové fondy u nás."
+  },
+  "sectors": {
+    "value": [
+      "defense",
+      "security",
+      "aerospace",
+      "dual-use"
+    ],
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Security, defense, and aerospace. Cutting-edge and dual-use solutions, both software and hardware, capable of solving the most pressing global challenges."
+  },
+  "stages": {
+    "value": [
+      "seed",
+      "series-a"
+    ],
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Mostly post-revenue companies raising a €800k to €8M financing round, looking to accelerate their growth. Tickets ranging from €500k to €5M."
+  },
+  "ticket_min": {
+    "amount": 500000,
+    "currency": "EUR",
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Tickets ranging from €500k to €5M."
+  },
+  "ticket_max": {
+    "amount": 5000000,
+    "currency": "EUR",
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Tickets ranging from €500k to €5M."
+  },
+  "aum": {
+    "amount": 150000000,
+    "currency": "EUR",
+    "source_url": "https://www.prestoventures.com/",
+    "source_date": null,
+    "quote": "Since 2016, we’ve invested €40M from two funds. Our new €150M fund targets the best of security, defense, and aerospace tech, with focus on dual-use."
+  },
+  "funds": [
+    "Presto Ventures I",
+    "Presto Ventures II",
+    "Presto Tech Horizons"
+  ],
+  "investments": [
+    {
+      "company": "Occam",
+      "deal_date": "2026-02-11",
+      "source_url": "https://cc.cz/investori-v-cele-s-miliardarem-michalem-strnadem-posilaji-desitky-milionu-na-vyvoj-autonomnich-dronu/",
+      "source_date": "2026-02-11",
+      "quote": "které vedl fond český Presto Tech Horizons, jejž založila společnost Presto Ventures a zbrojařská skupina CSG miliardáře Michala Strnada. K fondu se připojily i další mezinárodní investoři jako Antler, Freedom Fund a TYR.vc. Kapitál Occam využije k urychlení adopce své technologie napříč ukrajinskou frontou"
+    },
+    {
+      "company": "DiffuseDrive",
+      "deal_date": "2025-05-15",
+      "source_url": "https://cc.cz/dronum-i-robotum-chybi-treninkova-data-z-terenu-a-z-boje-madary-kteri-je-vytvari-podporili-cesti-investori/",
+      "source_date": "2025-05-15",
+      "quote": "Americko-maďarský startup DiffuseDrive z oblasti tzv. fyzické umělé inteligence dokáže takový fotorealistický obsah vytvářet v řádu hodin. To zaujalo mimo jiné i české investory – fond Presto Tech Horizons společně s americkým Outlanderem vedly seed investici ve výši 3,5 milionu dolarů, v přepočtu 78 milionů korun."
+    },
+    {
+      "company": "Zerops",
+      "deal_date": "2024-06-20",
+      "source_url": "https://en.ain.ua/2024/06/20/zerops-raises-500k-pre-seed-cloud-platform-expansion",
+      "source_date": "2024-06-20",
+      "quote": "Zerops, a Prague-based developer of a cloud platform that builds, deploys, and manages apps, has raised $500,000 in a pre-Seed investment round backed by Presto Ventures and Gi21 Capital."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Prague VC (formerly Bohemia Venture Capital); new fund Presto Tech Horizons is a JV with CSG (4 bn CZK / €150M), focus on defense/dual-use. AUM is the new fund size. Founder Přemysl Rubeš left (cooperation ended Sept 2025, detained by police March 2026, not business-related per press). No verified Slovak deal; SK in active_in based on Czech-Slovak portfolio company Sloneek (Presto invested in 2022 per CzechCrunch, 2024-09-10) — uncertain.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c010",
+  "name": "Sandberg Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK", "CZ", "PL", "HR", "SI"],
+  "website": "https://sandbergcapital.com/en/",
+  "entity_kind": {"value": "investor", "source_url": "https://sandbergcapital.com/en/about-us/", "source_date": null, "quote": "We are an alternative investment fund management company that focuses on investing in small and medium-sized companies in the region of Central and Eastern Europe, with a primary focus on Slovakia and Czech Republic."},
+  "investor_type": {"value": "pe", "source_url": "https://sandbergcapital.com/en/sandberg-acquires-a-majority-stake-in-czech-technology-company-hoteltime/", "source_date": "2025-12-12", "quote": "Sandberg Capital, a private equity investment group, is entering HotelTime, a leading provider of hotel software, through its second fund, Sandberg Investment Fund II (SIF2)."},
+  "sectors": {"value": ["it", "agriculture", "telecommunications", "retail", "education"], "source_url": "https://sandbergcapital.com/en/about-us/", "source_date": null, "quote": "Our portfolio consists of investments in the IT, agriculture, telecommunications, retail and education sectors."},
+  "stages": {"value": ["growth"], "source_url": "https://sandbergcapital.com/en/how-we-invest/", "source_date": null, "quote": "are in the growth or mature stage of the company´s life cycle."},
+  "ticket_min": null,
+  "ticket_max": {"amount": 50000000, "currency": "EUR", "source_url": "https://sandbergcapital.com/en/our-fonds/", "source_date": null, "quote": "The typical investment size per project is up to EUR 50 million, targeting companies with a minimum of EUR 2 million in EBITDA."},
+  "aum": {"amount": 500000000, "currency": "EUR", "source_url": "https://sandbergcapital.com/en/about-us/", "source_date": null, "quote": "We manage assets in the value of more than 500 mil. EUR."},
+  "funds": ["Sandberg Investment Fund", "Sandberg Investment Fund II"],
+  "investments": [
+    {"company": "Carrot", "deal_date": "2026-08-28", "source_url": "https://sandbergcapital.com/en/sandberg-enters-the-polish-market-through-the-acquisition-of-a-majority-stake-in-carrot/", "source_date": "2026-09-01", "quote": "Private equity group Sandberg Capital, through its second fund Sandberg Investment Fund II, has acquired a majority stake in Carrot, a leading Polish digital B2B platform for online auctions of vehicles following insurance claims."},
+    {"company": "Rentlio", "deal_date": "2026-07-24", "source_url": "https://sandbergcapital.com/en/sandberg-and-arx-continue-hospitality-tech-consolidation-with-the-acquisition-of-croatias-rentlio/", "source_date": "2026-07-24", "quote": "Travelnode, a hospitality technology platform majority-owned by private equity firms Sandberg Capital and ARX Equity Partners, has acquired Rentlio, Croatia’s second-largest hospitality software provider."},
+    {"company": "HotelTime", "deal_date": "2025-12-12", "source_url": "https://sandbergcapital.com/en/sandberg-acquires-a-majority-stake-in-czech-technology-company-hoteltime/", "source_date": "2025-12-12", "quote": "Sandberg Capital, a private equity investment group, is entering HotelTime, a leading provider of hotel software, through its second fund, Sandberg Investment Fund II (SIF2)."}
+  ],
+  "duplicate_of": null,
+  "notes": "Bratislava-based mid-market PE (tech-heavy, also agriculture, retail, education and real estate). Carrot was the final investment of SIF II, so no fund is currently in its investment period unless a successor fund exists (not found). SLOVCA profile lists EUR 4-15m tickets, the fund page says up to EUR 50m, so only ticket_max from the own site is recorded. Rentlio is an add-on via portfolio company Travelnode (co-owned with ARX, c001); HotelTime date = article publication date.",
+  "researched_at": "2026-10-09"
+}

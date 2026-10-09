@@ -1,0 +1,32 @@
+{
+  "candidate_id": "c058",
+  "name": "Zero Gravity Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://zerogravitycap.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.forbes.sk/investicny-fond-zero-gravity-capital-hlada-mlade-firmy-rozdelit-ma-12-milionov-eur/",
+    "quote": "Jedným z fondov, ktorý sa spustil v utorok 12. novembra, je fond Zero Gravity Capital. Za úlohu bude mať alokovať 12 miliónov eur do začínajúcich firiem."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+    "source_date": "2022-12-20",
+    "quote": "Investiční aktivity Zero One Hundred začaly před třemi lety založením samostatného fondu Zero Gravity Capital s prostředky v hodnotě 23 milionů eur, aktuálně přibližně 560 milionů korun."
+  },
+  "aum": {
+    "amount": 23000000,
+    "currency": "EUR",
+    "source_url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+    "source_date": "2022-12-20",
+    "quote": "Investiční aktivity Zero One Hundred začaly před třemi lety založením samostatného fondu Zero Gravity Capital s prostředky v hodnotě 23 milionů eur, aktuálně přibližně 560 milionů korun."
+  },
+  "funds": ["Zero Gravity Capital"],
+  "investments": [],
+  "duplicate_of": "c059",
+  "notes": "First fund (2019, co-financed by National Development Fund II / Slovak Investment Holding) of Zero One Hundred (c059), which is the current brand; zerogravitycap.com points to the new website 0100.vc. Per Forbes (2019) the fund was a joint platform of 0100 Ventures and Limerock Advisory and was to allocate about EUR 12M from the state program. Investments are recorded under c059.",
+  "researched_at": "2026-10-09"
+}

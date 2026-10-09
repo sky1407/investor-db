@@ -1,0 +1,24 @@
+{
+  "candidate_id": "c012",
+  "name": "Vision Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://visionventures.vc/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.visionventures.vc/", "source_date": null, "quote": "Vision Ventures is a VC investor focused on pre-seed and seed investments in Slovakia, providing investment up to EUR 1.6 million."},
+  "investor_type": {"value": "vc", "source_url": "https://www.visionventures.vc/", "source_date": null, "quote": "Vision Ventures is a VC investor focused on pre-seed and seed investments in Slovakia, providing investment up to EUR 1.6 million."},
+  "sectors": null,
+  "stages": {"value": ["pre-seed", "seed"], "source_url": "https://www.visionventures.vc/", "source_date": null, "quote": "Vision Ventures is a VC investor focused on pre-seed and seed investments in Slovakia, providing investment up to EUR 1.6 million."},
+  "ticket_min": {"amount": 100000, "currency": "EUR", "source_url": "https://www.visionventures.vc/", "source_date": null, "quote": "We usually make investments between €100 thousand and €800 thousand, maximum up to €1,6 million."},
+  "ticket_max": {"amount": 800000, "currency": "EUR", "source_url": "https://www.visionventures.vc/", "source_date": null, "quote": "We usually make investments between €100 thousand and €800 thousand, maximum up to €1,6 million."},
+  "aum": null,
+  "funds": [],
+  "investments": [
+    {"company": "Eatster", "deal_date": "2020-11-17", "source_url": "https://ceelegalmatters.com/slovakia/15111-havel-partners-advises-vision-ventures-on-investment-in-eatster", "source_date": "2020-11-17", "quote": "Havel & Partners has advised Vision Ventures on its venture capital investment in Slovakian start-up Eatster, which operates an online food order application."},
+    {"company": "Sloneek", "deal_date": "2020-11-04", "source_url": "https://cc.cz/cesko-slovensky-startup-sloneek-nabira-miliony-od-vision-ventures-se-svym-personalnim-systemem-miri-do-evropy/", "source_date": "2020-11-04", "quote": "S novým názvem a teď už jako online systém pro řízení personální agendy zejména v malých a středních podnicích Sloneek získal investici 350 tisíc eur (9,5 milionu korun) od slovenského venture kapitálového fondu Vision Ventures výměnou za dvacetiprocentní podíl ve firmě."}
+  ],
+  "duplicate_of": null,
+  "notes": "Bratislava pre-seed/seed VC whose fund is backed by Slovak Investment Holding; per SIH the fund 'finalised its investment period in December 2023' and is in divestment phase, and its own site says it could invest only until end of 2023, so it is effectively inactive for new deals. Generalist (no sector focus). Aggregators (PitchBook) list 2023-2024 deals (Seerlinq, Cequence, BiteBerry) but no primary source with a quote was found, so only 2020 deals are recorded; typical ticket EUR 100-800k, max EUR 1.6m. No AUM figure found.",
+  "researched_at": "2026-10-09"
+}

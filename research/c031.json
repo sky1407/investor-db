@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c031",
+  "name": "Ments",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://ments.sk/",
+  "entity_kind": {
+    "source_url": "https://ceelegalmatters.com/slovakia/24859-ments-opens-doors-in-slovakia",
+    "quote": "Former HKV Partner Lukas Michalik has opened up a new law firm in Slovakia: Ments.",
+    "source_date": "2023-11-16",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Bratislava law firm (Ments attorneys) founded in 2023; practice includes M&A, VC and PE.",
+  "researched_at": "2026-10-09"
+}

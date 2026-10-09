@@ -1,0 +1,83 @@
+{
+  "candidate_id": "c006",
+  "name": "Genesis Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK",
+    "PL",
+    "HU",
+    "AT",
+    "DE"
+  ],
+  "website": "https://www.genesis.cz/en/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.genesis.cz/en/private-equity",
+    "source_date": "2026-02-04",
+    "quote": "Genesis Capital, one of the leading private equity firms in Central Europe, announces the expansion of its investment activities into Germany and the strengthening of its partnership through the appointment of Jörgen Hausberger as Partner."
+  },
+  "investor_type": {
+    "value": "pe",
+    "source_url": "https://www.lupa.cz/aktuality/zpatky-do-ceskych-rukou-slevomat-ma-noveho-majitele-vetsinu-v-nem-koupil-genesis-capital/",
+    "source_date": "2025-11-19",
+    "quote": "Genesis Capital funguje od roku 1999 a je to skupina fondů private equity, které poskytují malým a středním podnikům ve střední Evropě financování jejich dalšího růstu a rozvoje."
+  },
+  "sectors": null,
+  "stages": null,
+  "ticket_min": {
+    "amount": 10000000,
+    "currency": "EUR",
+    "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+    "source_date": "2026-06-10",
+    "quote": "The funds primarily target investments with equity tickets ranging between EUR 10 million and EUR 45 million"
+  },
+  "ticket_max": {
+    "amount": 45000000,
+    "currency": "EUR",
+    "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+    "source_date": "2026-06-10",
+    "quote": "The funds primarily target investments with equity tickets ranging between EUR 10 million and EUR 45 million"
+  },
+  "aum": {
+    "amount": 286000000,
+    "currency": "EUR",
+    "source_url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+    "source_date": "2026-06-10",
+    "quote": "Genesis Capital is approaching a year since it successfully launched Genesis Private Equity Fund V (GPEF V), its largest fund to date, with the current size of EUR 286 million and expected final size potentially exceeding EUR 300 million."
+  },
+  "funds": [
+    "Genesis Private Equity Fund V",
+    "Genesis Private Equity Fund IV",
+    "Genesis Private Equity Fund III",
+    "Genesis Growth Equity Fund I"
+  ],
+  "investments": [
+    {
+      "company": "POS Media Europe",
+      "deal_date": "2026-04-13",
+      "source_url": "https://www.genesis.cz/en/private-equity",
+      "source_date": "2026-04-13",
+      "quote": "Genesis Private Equity Fund V (GPEF V), a private equity fund from the Genesis Capital group, has agreed to invest in POS Media Europe with the aim of supporting its further development and strengthening its position in European markets."
+    },
+    {
+      "company": "Fyzioterapie s úsměvem",
+      "deal_date": "2026-02-11",
+      "source_url": "https://www.genesis.cz/en/private-equity",
+      "source_date": "2026-02-11",
+      "quote": "Genesis Capital signed an agreement to acquire a majority stake in Fyzioterapie s úsměvem, one of the leading private providers of outpatient rehabilitation services in the Czech Republic"
+    },
+    {
+      "company": "Slevomat Group",
+      "deal_date": "2025-11-19",
+      "source_url": "https://www.lupa.cz/aktuality/zpatky-do-ceskych-rukou-slevomat-ma-noveho-majitele-vetsinu-v-nem-koupil-genesis-capital/",
+      "source_date": "2025-11-19",
+      "quote": "Většina ve skupině Slevomat přešla do rukou Genesis Capital, skupiny fondů, za níž jako investoři stojí mimo jiné Česká spořitelna, členové Erste Group, Tatra Banka, SPM Capital nebo Naše Česko (fond skupiny J&T)."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Prague-based mid-market PE group. aum = current size of latest fund GPEF V (EUR 286m, June 2026), not firm-wide AUM; cumulative size of all funds is stated as over EUR 550m. The Genesis Growth Equity Fund I team (EUR 1-4m tickets) is going independent per AmCham, so tickets reflect the PE funds. Generalist; no sector/stage list recorded. The genesis.cz/en/private-equity page is a news listing, so its content may rotate.",
+  "researched_at": "2026-10-09"
+}

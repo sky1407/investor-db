@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c039",
+  "name": "Majerník & Miháliková",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://mmlaw.sk/",
+  "entity_kind": {
+    "source_url": "https://ceelegalmatters.com/interviews/20051-the-ceelmdirect-profile-pick-an-interview-with-katarina-mihalikova-of-majernik-mihalikova",
+    "quote": "Majernik & Mihalikova is a boutique law firm based in Bratislava.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Bratislava boutique law firm advising VC funds, startups and founders; own website is JS-rendered, so a CEE Legal Matters interview is used as source.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c070",
+  "name": "Jet Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "DE", "AT", "SK", "PL"],
+  "website": "https://www.jetinvestment.cz/en",
+  "entity_kind": {"value": "investor", "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "source_date": "2025-06-13", "quote": "The funding round was led by Jet Ventures, a newly launched €50 million fund under the Czech investment firm Jet Investment."},
+  "investor_type": {"value": "vc", "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "quote": "The funding round was led by Jet Ventures, a newly launched €50 million fund under the Czech investment firm Jet Investment."},
+  "sectors": {"value": ["industrial b2b"], "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "source_date": "2025-06-13", "quote": "Jet Ventures focuses on supporting startups in the industrial B2B sector across Czechia, Germany, Austria, Slovakia, and Poland, with initial investments of up to €2 million."},
+  "ticket_max": {"amount": 2000000, "currency": "EUR", "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "source_date": "2025-06-13", "quote": "Jet Ventures focuses on supporting startups in the industrial B2B sector across Czechia, Germany, Austria, Slovakia, and Poland, with initial investments of up to €2 million."},
+  "aum": {"amount": 50000000, "currency": "EUR", "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "source_date": "2025-06-13", "quote": "The funding round was led by Jet Ventures, a newly launched €50 million fund under the Czech investment firm Jet Investment."},
+  "funds": ["Jet Venture 1 SICAV"],
+  "investments": [
+    {"company": "Cequence", "deal_date": "2025-06-13", "source_url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m", "source_date": "2025-06-13", "quote": "Slovak startup Cequence secures €2M led by Czech Jet Ventures"}
+  ],
+  "duplicate_of": "c007",
+  "notes": "Jet Ventures is the VC fund (Jet Venture 1 SICAV) of Jet Investment (c007); per one-record-per-manager rule it is a duplicate of c007. Cequence (Bratislava) is a verified Slovak deal that can be merged into c007. AUM is the fund size.",
+  "researched_at": "2026-10-09"
+}

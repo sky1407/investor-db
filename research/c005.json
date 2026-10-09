@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c005",
+  "name": "Fond inovácií a technológií",
+  "legal_name": "Fond inovácií a technológií, a.s.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.fondfit.sk/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.fondfit.sk/index.php/sba/", "source_date": null, "quote": "Fond inovácií a technológií, a.s. vznikol ako reakcia na vznikajúci dopyt po rizikovom kapitáli na podporu podnikateľov s nápadmi. Je výsledkom spolupráce Slovak Business Agency (SBA) s investormi."},
+  "investor_type": {"value": "public_fund", "source_url": "https://www.podnikajte.sk/investor/fit-fond-financovanie", "source_date": "2014-09-22", "quote": "Jeden z fondov, ktorý podporuje takéto podniky je aj FIT (Fond inovácií a technológií), ktorý vznikol spojením štátu ako majoritného akcionára a súkromného investora."},
+  "sectors": {"value": ["environment", "renewable energy", "industrial innovation", "e-commerce", "it", "telecommunications", "software"], "source_url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/", "source_date": null, "quote": "Oblasti, ktorým venujeme osobitnú pozornosť sú životné prostredie, obnoviteľné zdroje energie, priemyselné inovácie, e-commerce, informačné technológie, telekomunikácie, technológie, ktoré zlepšia život alebo softvérové riešenia."},
+  "stages": {"value": ["seed", "growth"], "source_url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/", "source_date": null, "quote": "predštartovací (seed) kapitál, štartovací (start-up) kapitál ako aj kapitál na rozšírenie (expansion)"},
+  "ticket_min": {"amount": 20000, "currency": "EUR", "source_url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/", "source_date": null, "quote": "Výška investície: od 20 000 EUR do 1 500 000 EUR"},
+  "ticket_max": {"amount": 1500000, "currency": "EUR", "source_url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/", "source_date": null, "quote": "Výška investície: od 20 000 EUR do 1 500 000 EUR"},
+  "aum": null,
+  "funds": [],
+  "investments": [
+    {"company": "Bitmap Galaxy", "deal_date": "2015-06-30", "source_url": "https://www.startitup.sk/?p=12849", "source_date": "2015-06-30", "quote": "Fond inovácií a technológií sa tento krát rozhodol podporiť a investovať do ďalších dvoch inovatívnych projektov, ktorými sa stali herné štúdiá Bitmap Galaxy a Joint Custody."},
+    {"company": "Joint Custody", "deal_date": "2015-06-30", "source_url": "https://www.startitup.sk/?p=12849", "source_date": "2015-06-30", "quote": "Fond inovácií a technológií sa tento krát rozhodol podporiť a investovať do ďalších dvoch inovatívnych projektov, ktorými sa stali herné štúdiá Bitmap Galaxy a Joint Custody."},
+    {"company": "Datamolino", "deal_date": "2014-09-22", "source_url": "https://www.podnikajte.sk/investor/fit-fond-financovanie", "source_date": "2014-09-22", "quote": "Prvou investíciou Fondu inovácií a technológií je startup Datamolino. FIT doň investoval 500 000 eur."}
+  ],
+  "duplicate_of": null,
+  "notes": "State-majority (via Slovak Business Agency) VC vehicle, historically managed by Investeers, a.s.; fondfit.sk says it entered the post-investment phase in 2025, so it is no longer investing. Newest deals found are from 2014-2015 (deal dates = article dates). 'Start-up' stage on its site may also correspond to series-a; only seed and growth (expansion) recorded.",
+  "researched_at": "2026-10-09"
+}

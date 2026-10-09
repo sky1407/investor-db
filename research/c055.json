@@ -1,0 +1,32 @@
+{
+  "candidate_id": "c055",
+  "name": "Arca Capital Slovakia",
+  "legal_name": "Arca Capital Slovakia",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK", "CZ"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Arca Capital je private equity skupina pôsobiaca predovšetkým v regióne strednej a východnej Európy. Investuje svoje vlastné finančné prostriedky, najmä formou vstupu do základného kapitálu."
+  },
+  "investor_type": {
+    "value": "pe",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Arca Capital je private equity skupina pôsobiaca predovšetkým v regióne strednej a východnej Európy."
+  },
+  "stages": {
+    "value": ["seed", "growth"],
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Ide o financovanie rannej fázy firmy (tzv. seed alebo start-up kapitál) až po fázu expanzie."
+  },
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Not an active investor: per Startitup (2025-07-17) the Bratislava court opened bankruptcy proceedings against Arca Capital Slovakia in July 2025; the group (parent Arca Investments) has debts over EUR 770M and has been selling assets since 2020. No new investments found in the activity window; historical deals (Zentiva, KASA.cz, GEODÉZIA Bratislava) are only listed in the 2016 overview without dates. Source for insolvency: https://www.startitup.sk/arca-capital-celi-konkurzu-po-rokoch-pravnych-manevrov-trzby-klesli-na-144-tisic-eur-dlhy-presiahli-miliardu/",
+  "researched_at": "2026-10-09"
+}

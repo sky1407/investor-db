@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c030",
+  "name": "Forvis Mazars Slovensko",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.forvismazars.com/sk/sk",
+  "entity_kind": {
+    "source_url": "https://www.forvismazars.com/sk/sk",
+    "quote": "Forvis Mazars ponúka audítorské, daňové a poradenské služby po celom svete.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Audit, tax and advisory firm; Slovak branch of the Forvis Mazars network.",
+  "researched_at": "2026-10-09"
+}

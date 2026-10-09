@@ -1,0 +1,45 @@
+{
+  "candidate_id": "c013",
+  "name": "Across Private Investments",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://across.sk",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://en.ain.ua/2024/11/25/slovakian-startup-superscale-raises-12m-investment",
+    "source_date": "2024-11-25",
+    "quote": "Slovakian firm Across Private Investments is the lead investor in this round."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://en.ain.ua/2024/11/25/slovakian-startup-superscale-raises-12m-investment",
+    "quote": "The firm focuses on early-stage investments in app marketing, blockchain, and mobile advertising industries across Europe and Northern America."
+  },
+  "aum": {
+    "amount": 450000000,
+    "currency": "EUR",
+    "source_url": "https://across.sk/o-nas",
+    "quote": "450+ mil. eur pod správou"
+  },
+  "investments": [
+    {
+      "company": "SuperScale",
+      "deal_date": "2024-11-19",
+      "source_url": "https://www.mrweb.com/drno/news37546.htm",
+      "source_date": "2024-11-19",
+      "quote": "The funding round was led by existing investors including Across Private Investments, LevelUp Ventures, Zero One Hundred, and Venture to Future Fund, along with new investor Strecko Investments."
+    },
+    {
+      "company": "SuperScale",
+      "deal_date": "2023-06-27",
+      "source_url": "https://mobidictum.com/superscale-secures-five-point-four-million-dollars-funding/",
+      "source_date": "2023-06-27",
+      "quote": "Led by Venture to Future Fund, with participation from Across Private Investments and Zero One Hundred, this Series A round marks SuperScale’s first significant capital raise"
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Across is primarily a Slovak wealth/asset manager (securities dealer licensed by NBS) that also makes direct private/venture investments for its clients; classified as investor with type vc as closest fit, but it is not a dedicated VC fund. AUM of 450+ mil. EUR covers the whole wealth management business, not a venture vehicle. No deals after Nov 2024 found; Tachyum/Brightpick appear only on aggregators.",
+  "researched_at": "2026-10-09"
+}

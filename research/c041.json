@@ -1,0 +1,24 @@
+{
+  "candidate_id": "c041",
+  "name": "V4 Legal",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK",
+    "CZ",
+    "PL",
+    "HU"
+  ],
+  "website": "https://www.v4g.sk/sk",
+  "entity_kind": {
+    "source_url": "https://www.v4g.sk/sk",
+    "quote": "Poskytujeme právne, audítorské, daňové a účtovné služby pre malé, stredné a veľké firmy na Slovensku, v Česku, Poľsku a Maďarsku.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "V4Group legal/tax/audit/accounting advisory group; v4legal.sk redirects to v4g.sk.",
+  "researched_at": "2026-10-09"
+}

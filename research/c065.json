@@ -1,0 +1,19 @@
+{
+  "candidate_id": "c065",
+  "name": "IPM Group",
+  "legal_name": "InfraPartners Management LLP",
+  "reg_no": null,
+  "country": "GB",
+  "active_in": ["SK", "US", "GB"],
+  "website": "https://ipmgrowth.com/",
+  "entity_kind": {"value": "investor", "source_url": "https://intellinews.com/infratech-investment-pioneer-ipm-tackles-the-big-themes-of-the-coming-decades-181060", "source_date": null, "quote": "IPM, an asset manager that has pioneered investment into the emerging infratech area — the intersection between infrastructure and technology — is planning to raise a $1bn investment fund"},
+  "investor_type": {"value": "vc", "source_url": "https://www.vestbee.com/vc-list/ipm-growth", "quote": "IPM Growth is managed by asset and wealth management company IPM Group and is interested in companies that have an actual influence on society and the environment."},
+  "sectors": {"value": ["infratech", "mobility", "ai", "energy"], "source_url": "https://www.vestbee.com/vc-list/ipm-growth", "source_date": null, "quote": "The fund is a response to the lack of capital for local and innovative scaleups with a global approach and is focused on InfraTech companies from industries like: mobility, AI-enabled infrastructure and energy."},
+  "funds": ["IPM Growth", "Avanea"],
+  "investments": [
+    {"company": "InoBat", "deal_date": "2024-12-20", "source_url": "https://www.batterypoweronline.com/view-press-releases/entry/5335/", "source_date": "2024-12-20", "quote": "Investmentfrom strategic investors Amara Raja and Rio Tinto are complemented with significant contributions from SIH (Slovakia’s sovereign wealth fund), Lilium, Bromo Capital, IPM Group and Cielo Capital (InoBat’s founders)."}
+  ],
+  "duplicate_of": null,
+  "notes": "IPM (InfraPartners Management LLP, London, FCA-regulated) is an infrastructure + technology asset manager with a Bratislava office led by Marián Boček; IPM Growth is its VC vehicle. Mixed infra/PE/VC profile, so investor_type 'vc' refers to IPM Growth. InoBat is a group-related company (Boček co-founded InoBat), so the Series C contribution may be an insider investment. Ticket sizes only on aggregators; AUM not verified.",
+  "researched_at": "2026-10-09"
+}

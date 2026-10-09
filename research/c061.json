@@ -1,0 +1,24 @@
+{
+  "candidate_id": "c061",
+  "name": "Simpact VC",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "PL",
+  "active_in": ["PL", "LT"],
+  "website": "https://simpact.vc/",
+  "entity_kind": {"value": "investor", "source_url": "https://simpact.vc/en/", "source_date": null, "quote": "Simpact Ventures is the first VC investment fund in Poland based on the idea of Impact Investing."},
+  "investor_type": {"value": "vc", "source_url": "https://simpact.vc/en/", "quote": "Simpact Ventures is the first VC investment fund in Poland based on the idea of Impact Investing."},
+  "sectors": {"value": ["impact", "sector agnostic"], "source_url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund", "source_date": "2022-11-23", "quote": "It will provide sector agnostic investments with a preference for pre-seed, seed, and Series A investments (equity & convert)."},
+  "stages": {"value": ["pre-seed", "seed", "series-a"], "source_url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund", "source_date": "2022-11-23", "quote": "It will provide sector agnostic investments with a preference for pre-seed, seed, and Series A investments (equity & convert)."},
+  "ticket_min": {"amount": 100000, "currency": "EUR", "source_url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund", "source_date": "2022-11-23", "quote": "The tickets will range from nearly €100,000 (500,000 PLN) to over €2 million (10 million PLN), with strong follow-on strategy."},
+  "ticket_max": {"amount": 2000000, "currency": "EUR", "source_url": "https://simpact.vc/en/", "quote": "We support founders from the early stages of development, offering ticket sizes of up to EUR 2 million."},
+  "aum": {"amount": 21000000, "currency": "EUR", "source_url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund", "source_date": "2022-11-23", "quote": "The fund has over €21 million (100 million PLN) under management, dedicated to early-stage startups, mainly from CEE."},
+  "funds": ["Simpact 1.0", "Simpact 2.0"],
+  "investments": [
+    {"company": "ForActive", "deal_date": "2026-07-24", "source_url": "https://xyz.pl/polski-startup-pozyskal-36-mln-usd-wspoltworca-booksy-pomaga-mu-podbic-usa/", "source_date": "2026-07-24", "quote": "Fundusz Simpact Ventures stanął na czele rundy finansowania ForActive, w której startup pozyskał 3,6 mln dolarów."},
+    {"company": "Ligence", "deal_date": "2024-11-19", "source_url": "https://ceelegalmatters.com/lithuania/28040-tgs-baltic-advises-simpact-ventures-on-investment-in-ligence", "source_date": "2024-11-19", "quote": "TGS Baltic has advised Simpact Ventures on its investment in Ligence as part of a round that also saw the participation of Coinvest Capital"}
+  ],
+  "duplicate_of": null,
+  "notes": "Warsaw-based impact VC. AUM is the size of Fund II (Simpact 2.0, PLN 100M). Portfolio includes CulturePulse (US/Slovak, investment date December 2024 per simpact.vc), but no source explicitly confirming investment activity in Slovakia was found, so SK is not in active_in.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_id": "c064",
+  "name": "J&T Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "SK"],
+  "website": "https://jtventures.cz/",
+  "entity_kind": {"value": "investor", "source_url": "https://jtventures.cz/blog", "source_date": null, "quote": "S desetiletými investičními zkušenostmi jsme podpořili 31 společností ve 7 zemích a dosáhli 5 úspěšných exitů."},
+  "investor_type": {"value": "vc", "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/", "quote": "Investiční kolo vedl český fond J&T Ventures, ke kterému se připojil Seed Starter patřící pod Českou spořitelnu a Slovak Investment Holding."},
+  "sectors": {"value": ["sector agnostic", "b2b", "b2c", "marketplaces"], "source_url": "https://jtventures.cz/", "source_date": null, "quote": "Sector Agnostic"},
+  "stages": {"value": ["pre-seed", "seed", "series-a"], "source_url": "https://jtventures.cz/", "source_date": null, "quote": "Pre-seed až Series A"},
+  "ticket_min": {"amount": 300000, "currency": "EUR", "source_url": "https://jtventures.cz/", "source_date": null, "quote": "€300K – €3M"},
+  "ticket_max": {"amount": 3000000, "currency": "EUR", "source_url": "https://jtventures.cz/", "source_date": null, "quote": "€300K – €3M"},
+  "funds": [],
+  "investments": [
+    {"company": "Definic", "deal_date": "2026-06-12", "source_url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/", "source_date": "2026-06-12", "quote": "Investiční kolo vedl český fond J&T Ventures, ke kterému se připojil Seed Starter patřící pod Českou spořitelnu a Slovak Investment Holding."},
+    {"company": "ValkaAI", "deal_date": "2026-02-24", "source_url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/", "source_date": "2026-02-24", "quote": "Startup v pre-seedovém kole získal rekordní investici 12 milionů eur, tedy necelých 300 milionů korun, a to od tuzemských fondů J&T Ventures, Tensor Ventures"}
+  ],
+  "duplicate_of": null,
+  "notes": "Prague-based early-stage VC of the J&T group (office in J&T Banka building). Definic (Košice, SK) is a Slovak deal. Website states €120M assets and region CEE & SEE & Baltics, but those are short standalone labels, so AUM was not recorded. Not the same entity as c048 J&T ARCH Investments.",
+  "researched_at": "2026-10-09"
+}

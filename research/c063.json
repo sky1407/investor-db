@@ -1,0 +1,19 @@
+{
+  "candidate_id": "c063",
+  "name": "Sociálni Inovátori Impact Capital",
+  "legal_name": "Sociálni Inovátori Impact Capital, s.r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.socialniinovatori.sk/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.socialniinovatori.sk/investicny-fond", "source_date": null, "quote": "fond SIIC Fund, s.r.o. (pod správou Sociálni Inovátori Impact Capital, s.r.o.) zainvestoval do slovenských spoločností s pozitívnym spoločenským dopadom (s impactom) celkovo takmer 19 mil EUR, formou equity a/alebo quasi-equity."},
+  "investor_type": {"value": "vc", "source_url": "https://www.socialniinovatori.sk/investicny-fond", "quote": "fond SIIC Fund, s.r.o. (pod správou Sociálni Inovátori Impact Capital, s.r.o.) zainvestoval do slovenských spoločností s pozitívnym spoločenským dopadom (s impactom) celkovo takmer 19 mil EUR, formou equity a/alebo quasi-equity."},
+  "sectors": {"value": ["impact", "social services", "edtech", "fintech"], "source_url": "https://www.socialniinovatori.sk/investicny-fond", "source_date": null, "quote": "Stratégia fondu je zameraná na rozvoj 3 základných pilierov, naprieč ktorými podporujeme rozvoj zamestnanosti, sociálnu inklúziu, digitalizáciu, impact médiá, fintech a sociálne inovácie."},
+  "ticket_min": {"amount": 50000, "currency": "EUR", "source_url": "https://www.podnikajte.sk/financie-na-podnikanie/investicny-fond-pre-socialnu-ekonomiku", "source_date": "2022-09-11", "quote": "Čo sa týka správcu Sociálni Inovátori Impact Capital, zo spomínaných vyčlenených 10 miliónov eur slovenským organizáciám s pozitívnym spoločenským dopadom ponúka investíciu vo výške 50 000 eur - 800 000 eur."},
+  "ticket_max": {"amount": 800000, "currency": "EUR", "source_url": "https://www.podnikajte.sk/financie-na-podnikanie/investicny-fond-pre-socialnu-ekonomiku", "source_date": "2022-09-11", "quote": "Čo sa týka správcu Sociálni Inovátori Impact Capital, zo spomínaných vyčlenených 10 miliónov eur slovenským organizáciám s pozitívnym spoločenským dopadom ponúka investíciu vo výške 50 000 eur - 800 000 eur."},
+  "funds": ["SIIC Fund"],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Manager of SIIC Fund (co-financed by SIH from ESF). Per its website the 19-month investment period ended 31.12.2023 (almost 19M EUR invested) and the fund is now in an ~8-year holding period. Portfolio companies are listed on the website (Renso, Silvers, Smartbooks, Medicloud...) but no dated deal announcement naming the fund was found. Related cooperative Sociálni inovátori also does advisory work.",
+  "researched_at": "2026-10-09"
+}

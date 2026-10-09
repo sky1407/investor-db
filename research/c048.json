@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c048",
+  "name": "J&T ARCH Investments",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+    "source_date": "2026-03-27",
+    "quote": "Fond investuje do podniků, projektů a partnerství, které skupina vybudovala v posledních 30 letech."
+  },
+  "investor_type": {
+    "value": "pe",
+    "source_url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+    "source_date": "2026-03-27",
+    "quote": "J&T Arch Investments je hlavní investiční platformou skupiny J&T."
+  },
+  "aum": {
+    "amount": 202900000000,
+    "currency": "CZK",
+    "source_url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+    "source_date": "2026-03-27",
+    "quote": "Aktiva pod správou fondu kvalifikovaných investorů J&T Arch Investments v roce 2025 stoupla o 81,4 miliardy korun na 202,9 miliardy korun."
+  },
+  "funds": ["J&T ARCH INVESTMENTS SICAV"],
+  "investments": [
+    {
+      "company": "Allwyn",
+      "deal_date": "2025-08-28",
+      "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/kkcg-prodala-jt-arch-investment-minoritni-podil-v-allwyn.html",
+      "source_date": "2025-08-28",
+      "quote": "KKCG, an international investment group owned by Karel Komárek, sold a 4.27% stake in Allwyn to the Czech fund J&T Arch Investment for 500 million euros."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Qualified-investor holding fund of the J&T group (managed by J&T Investiční společnost), listed on the Prague Stock Exchange; invests in large group and partner holdings (EPH, Allwyn, Moneta, EPEI preferred shares in Dec 2025), not in startups or SME rounds. Related to but distinct from J&T Ventures (c064). investor_type pe is an approximation; stages/tickets not stated.",
+  "researched_at": "2026-10-09"
+}

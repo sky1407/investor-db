@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c033",
+  "name": "Noerr",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "DE",
+  "active_in": [
+    "DE"
+  ],
+  "website": "https://www.noerr.com/",
+  "entity_kind": {
+    "source_url": "https://www.noerr.com/en/press/transfer-of-offices-in-central-and-eastern-europe-eoerr-successfully-completes-closing",
+    "quote": "Following successful management buyouts in Budapest in May and Warsaw in June, Noerr completed its exit from Central and Eastern Europe by transferring its offices in Bratislava and Prague to the leading law firm in the region Kinstellar, effective 1 September 2024.",
+    "source_date": "2024-09-02",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "German law firm; its Bratislava office was transferred to Kinstellar effective 1 September 2024, so the SLOVCA listing appears outdated.",
+  "researched_at": "2026-10-09"
+}

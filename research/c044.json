@@ -1,0 +1,49 @@
+{
+  "candidate_id": "c044",
+  "name": "Benson Oak Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK"
+  ],
+  "website": "http://bensonoak.cz/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "http://bensonoak.cz/",
+    "quote": "Benson Oak is the exclusive advisor to Benson Oak Capital Cooperatif U.A., a buy-out and growth equity firm investing into leading businesses based in the Czech Republic and Slovakia."
+  },
+  "investor_type": {
+    "value": "pe",
+    "source_url": "http://bensonoak.cz/",
+    "quote": "Benson Oak is the exclusive advisor to Benson Oak Capital Cooperatif U.A., a buy-out and growth equity firm investing into leading businesses based in the Czech Republic and Slovakia."
+  },
+  "stages": {
+    "value": [
+      "growth",
+      "buyout"
+    ],
+    "source_url": "http://bensonoak.cz/",
+    "quote": "Benson Oak is the exclusive advisor to Benson Oak Capital Cooperatif U.A., a buy-out and growth equity firm investing into leading businesses based in the Czech Republic and Slovakia."
+  },
+  "ticket_min": {
+    "amount": 5000000,
+    "currency": "EUR",
+    "source_url": "http://bensonoak.cz/",
+    "quote": "We invest in companies which demonstrate significant domestic and/or international growth potential, with transaction sizes typically between €5 and €15 million"
+  },
+  "ticket_max": {
+    "amount": 15000000,
+    "currency": "EUR",
+    "source_url": "http://bensonoak.cz/",
+    "quote": "We invest in companies which demonstrate significant domestic and/or international growth potential, with transaction sizes typically between €5 and €15 million"
+  },
+  "funds": [
+    "Benson Oak Capital Cooperatief U.A."
+  ],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Website is stale (newest press release 2012) and its HTTPS certificate is invalid, so the http URL is used. Newest found activity is the May 2020 exit from Klikpojisteni.cz (funded since 2011, per lupa.cz 2020-05-21); no new investments found since then, likely inactive. Strategy page states controlling stakes of EUR 5-30 million, homepage EUR 5-15 million.",
+  "researched_at": "2026-10-09"
+}

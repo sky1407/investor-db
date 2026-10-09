@@ -1,0 +1,48 @@
+{
+  "candidate_id": "c053",
+  "name": "LRJ Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+    "source_date": "2019-03-15",
+    "quote": "Finax sa na partnerstve dohodol s GROWWS SICAV, a.s., ktorého významným akcionárom je investičný holding LRJ Capital."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+    "source_date": "2019-03-15",
+    "quote": "GROWWS je profesionálnym venture fondom, ktorého predsedom správnej rady je Peter Irikovský."
+  },
+  "ticket_min": {
+    "amount": 100000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "LRJ Capital - investícia sa pohybuje od 100 000 do 2 miliónov eur"
+  },
+  "ticket_max": {
+    "amount": 2000000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "LRJ Capital - investícia sa pohybuje od 100 000 do 2 miliónov eur"
+  },
+  "funds": ["GROWWS SICAV, a.s."],
+  "investments": [
+    {
+      "company": "Finax",
+      "deal_date": "2019-03-15",
+      "source_url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+      "source_date": "2019-03-15",
+      "quote": "LRJ Capital cez svoj fond GROWWS SICAV, a.s. podporil inovátora v inteligentnom investovaní, Finax investíciou 1,5 milióna eur."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Investment holding linked to Ivan Chrenko (HB Reavis owner); also reported as lead investor of a EUR 15M Exponea round in 2019 (symsite.sk). lrjcapital.com is now a domain for sale and no deals after 2019 were found, so likely inactive under this name. Ticket range is from a 2016 overview.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c032",
+  "name": "KPMG Slovakia",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://kpmg.com/sk/sk.html",
+  "entity_kind": {
+    "source_url": "https://kpmg.com/sk/sk/o-nas.html",
+    "quote": "KPMG je globálna organizácia nezávislých firiem poskytujúcich audítorské, daňové a poradenské služby.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Big Four audit, tax and advisory firm.",
+  "researched_at": "2026-10-09"
+}

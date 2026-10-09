@@ -1,0 +1,34 @@
+{
+  "candidate_id": "c029",
+  "name": "M3 Partners",
+  "legal_name": "M3 PARTNERS s.r.o.",
+  "reg_no": "44736371",
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://m3partners.sk/",
+  "entity_kind": {
+    "source_url": "https://m3partners.sk/",
+    "quote": "Pôsobíme ako developer, investor a konzultant s hlbokým prienikom do IT projektov a PropTechu.",
+    "value": "investor"
+  },
+  "investor_type": {
+    "source_url": "https://m3partners.sk/",
+    "quote": "Ako Private Equity Boutique a investičný holding nevnímame nehnuteľnosti len ako pasívne metre štvorcové, ale ako živú súčasť širšieho ekosystému.",
+    "value": "pe"
+  },
+  "sectors": {
+    "source_url": "https://m3partners.sk/",
+    "quote": "Boutique Investment Holding s fokusom na prepájanie komerčného real estate a technologických inovácií v regióne CEE.",
+    "value": [
+      "real estate",
+      "proptech"
+    ]
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Self-described 'Private Equity Boutique' and investment holding (Senica) investing mainly own capital with private co-investors in commercial real estate, development and proptech (brand Oxidra); not a classic VC/PE fund, classification as investor/pe is borderline. No disclosed investments in third-party companies, ticket or AUM found.",
+  "researched_at": "2026-10-09"
+}

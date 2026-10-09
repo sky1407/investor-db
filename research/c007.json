@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c007",
+  "name": "Jet Investment",
+  "legal_name": "Jet Investment, a.s.",
+  "reg_no": "03890333",
+  "country": "CZ",
+  "active_in": ["CZ", "SK", "AT", "DE", "PL"],
+  "website": "https://www.jetinvestment.cz/en",
+  "entity_kind": {"value": "investor", "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol", "source_date": "2026-09-11", "quote": "Jet Investment’s private equity funds invest in medium-sized industrial companies in Central Europe with strong growth potential."},
+  "investor_type": {"value": "pe", "source_url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html", "source_date": null, "quote": "Typ fondu: Private Equity"},
+  "sectors": {"value": ["industrial"], "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol", "source_date": "2026-09-11", "quote": "Jet Investment a.s., a Czech investment company founded in 1997, specializes in investments in Central European industry."},
+  "stages": null,
+  "ticket_min": {"amount": 15000000, "currency": "EUR", "source_url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html", "source_date": null, "quote": "Preferovaná výška jednej investície: min. 15 mil. EUR equity, max. 50 mil. EUR equity investícia"},
+  "ticket_max": {"amount": 50000000, "currency": "EUR", "source_url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html", "source_date": null, "quote": "Preferovaná výška jednej investície: min. 15 mil. EUR equity, max. 50 mil. EUR equity investícia"},
+  "aum": {"amount": 17000000000, "currency": "CZK", "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol", "source_date": "2026-09-11", "quote": "It manages assets totaling CZK 17 billion, including uncalled capital, across four qualified investor funds."},
+  "funds": ["Jet 3", "Jet 4", "Jet Venture 1 SICAV", "Jet Industrial Lease"],
+  "investments": [
+    {"company": "AppNava", "deal_date": "2026-09-17", "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-vstupuje-do-americkeho-startupu-appnava-ktery-pomoci-ai-predpovida-chovani-uzivatelu", "source_date": "2026-09-17", "quote": "The Jet Investment Group has made its eleventh investment through the venture capital fund Jet Venture 1 SICAV, investing $1.8 million in AppNava Inc., a technology company that has developed an AI-powered SaaS platform for predictive analytics in mobile apps."},
+    {"company": "PEKAŘI a spol.", "deal_date": "2026-09-11", "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol", "source_date": "2026-09-11", "quote": "The Jet Investment Group, through its Jet 3 fund, is expanding the Náš Chléb group with the addition of Ostrava-based bakery PEKAŘI a spol."},
+    {"company": "Phantasma Labs", "deal_date": "2026-09-01", "source_url": "https://www.jetinvestment.cz/en/news/jet-investment-announces-eu2-1-million-investment-in-berlin-ai-startup-phantasma-labs", "source_date": "2026-09-01", "quote": "The Jet Investment has made its tenth investment through the Jet Venture 1 SICAV venture capital fund investing €2.1 million in Phantasma Labs"}
+  ],
+  "duplicate_of": null,
+  "notes": "Brno-based industrial PE manager that also runs a VC fund (Jet Venture 1, target EUR 50m, early-stage tech) and an industrial real estate fund. AUM (CZK 17bn incl. uncalled capital) covers all four funds incl. real estate; homepage separately states EUR 700m+ AUM. Tickets are for the PE strategy (SLOVCA profile). No Slovak deal verified; SK in active_in per SLOVCA geographic focus.",
+  "researched_at": "2026-10-09"
+}

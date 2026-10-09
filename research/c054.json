@@ -1,0 +1,58 @@
+{
+  "candidate_id": "c054",
+  "name": "Pioneers Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "AT",
+  "active_in": ["AT", "SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+    "source_date": "2015-10-19",
+    "quote": "Pioneers Ventures is Pioneers’ pre-seed investment vehicle empowering startups with our global network of corporates, industry experts, and entrepreneurs."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+    "source_date": "2015-10-19",
+    "quote": "Pioneers Ventures is our investment vehicle at Pioneers. The fund was officially launched at Pioneers Festival 2015."
+  },
+  "sectors": {
+    "value": ["iot", "fintech", "cloud", "healthtech", "media", "e-commerce"],
+    "source_url": "https://www.trendingtopics.eu/pioneers-ventures-neuer-8-millionen-euro-fonds-investiert-erste-100-000-euro-in-das-start-up-cloudo/",
+    "quote": "Pro Start-up sollen im Schnitt 100.000 Euro investiert werden, interessiert ist man an Jungfirmen aus den Bereichen IoT, FinTech, Cloud, Health, Media oder Commerce."
+  },
+  "stages": {
+    "value": ["pre-seed"],
+    "source_url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+    "source_date": "2015-10-19",
+    "quote": "Pioneers Ventures is Pioneers’ pre-seed investment vehicle empowering startups with our global network of corporates, industry experts, and entrepreneurs."
+  },
+  "ticket_max": {
+    "amount": 125000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Pioneers Ventures - počiatočný kapitál až do výšky 125 000 eur"
+  },
+  "aum": {
+    "amount": 8000000,
+    "currency": "EUR",
+    "source_url": "https://www.trendingtopics.eu/pioneers-ventures-neuer-8-millionen-euro-fonds-investiert-erste-100-000-euro-in-das-start-up-cloudo/",
+    "quote": "Der etwa 8 Millionen Euro schwere Fonds steckt die ersten 100.000 Euro in das slowakische Start-up Cloudo, dessen Software die über Dienste wie Dropbox, Google Drive, Asana, Gmail, Trello, Slack, Evernote oder GitHub verteilte Daten einfach zugänglich machen will."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Cloudo",
+      "deal_date": "2015-10-19",
+      "source_url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+      "source_date": "2015-10-19",
+      "quote": "We are more than proud that Cloudo becomes the first member of the Pioneers Ventures family."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Vienna-based pre-seed vehicle of the Pioneers festival organiser. Per tech.eu (2018) the fund was restructured and Speedinvest took over its portfolio; a Fund III (EUR 10M) was announced in 2019 and aggregators list a 2022 deal (Triply), but no deal in the activity window was verified, so likely inactive. AUM is the size of the first fund (about EUR 8M, 2015).",
+  "researched_at": "2026-10-09"
+}

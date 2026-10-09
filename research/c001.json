@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c001",
+  "name": "ARX Equity Partners",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "PL", "HU", "SI", "HR"],
+  "website": "https://www.arxequity.com/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.arxequity.com/about-arx/", "source_date": null, "quote": "With more than € 300 million raised in four funds, ARX has become a leading private equity firm in its segment operating in the Central European (“CE”) region."},
+  "investor_type": {"value": "pe", "source_url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-medicofit-slovenias-leading-private-physiotherapy-provider/", "source_date": "2026-08-26", "quote": "ARX Equity Partners (“ARX”), a leading Central European private equity firm, today announced the acquisition of a majority stake in Medicofit, fizioterapija d.o.o. (“Medicofit” or the “Company”), Slovenia’s foremost private provider of integrated musculoskeletal care."},
+  "sectors": null,
+  "stages": {"value": ["buyout"], "source_url": "https://www.arxequity.com/about-arx/", "source_date": null, "quote": "Our firm also provides financing to entrepreneurially-minded managers in order to fund management buy-out and management buy-in (MBO & MBI) transactions."},
+  "ticket_min": null,
+  "ticket_max": null,
+  "aum": {"amount": 300000000, "currency": "EUR", "source_url": "https://www.arxequity.com/working-with-arx/", "source_date": null, "quote": "ARX has successfully raised and managed four successive private equity funds, with more than € 300 million under management."},
+  "funds": ["ARX IV Fund"],
+  "investments": [
+    {"company": "Medicofit", "deal_date": "2026-08-26", "source_url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-medicofit-slovenias-leading-private-physiotherapy-provider/", "source_date": "2026-08-26", "quote": "ARX Equity Partners (“ARX”), a leading Central European private equity firm, today announced the acquisition of a majority stake in Medicofit, fizioterapija d.o.o. (“Medicofit” or the “Company”), Slovenia’s foremost private provider of integrated musculoskeletal care."},
+    {"company": "Direct4me", "deal_date": "2026-03-16", "source_url": "https://www.arxequity.com/arx-equity-partners-invests-in-direct4me/", "source_date": "2026-03-17", "quote": "ARX Equity Partners (“ARX”) has become a lead investor in Direct4me, d.o.o. (“Direct4me” or the “Company”)"},
+    {"company": "HLB PROXY", "deal_date": "2026-01-30", "source_url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-hlb-proxy/", "source_date": "2026-01-30", "quote": "ARX Equity Partners has acquired a majority stake in PROXY Holding a.s., the holding company of PROXY, a.s. and PROXY – AUDIT, s.r.o., a professional services provider in the Czech Republic, operating under the brand HLB PROXY."}
+  ],
+  "duplicate_of": null,
+  "notes": "Generalist mid-market PE (HQ Prague, office in Poland). Investments page lists deals only in CZ, PL, HU, SI, HR; no Slovak portfolio company found, so SK is not in active_in. SLOVCA lists 'Preferovaná výška investície: EUR 10-50 mil.' but ARX's own site says companies 'typically valued between € 10 million and € 50 million', so ticket fields were left empty; AUM is total commitments since inception.",
+  "researched_at": "2026-10-09"
+}

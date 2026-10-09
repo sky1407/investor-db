@@ -1,0 +1,53 @@
+{
+  "candidate_id": "c057",
+  "name": "Limerock Fund Manager",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+    "source_date": "2015-09-17",
+    "quote": "Spoločnosť Limerock Fund Manager na základe mandátu od Európskeho investičného fondu (www.eif.org) spravuje fond rizikového kapitálu a poskytuje tak start-up ako aj rozvojový kapitál pre investične atraktívne slovenské spoločnosti."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+    "source_date": "2015-09-17",
+    "quote": "Spoločnosť Limerock Fund Manager na základe mandátu od Európskeho investičného fondu (www.eif.org) spravuje fond rizikového kapitálu a poskytuje tak start-up ako aj rozvojový kapitál pre investične atraktívne slovenské spoločnosti."
+  },
+  "stages": {
+    "value": ["seed", "growth"],
+    "source_url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+    "source_date": "2015-09-17",
+    "quote": "Spoločnosť Limerock Fund Manager na základe mandátu od Európskeho investičného fondu (www.eif.org) spravuje fond rizikového kapitálu a poskytuje tak start-up ako aj rozvojový kapitál pre investične atraktívne slovenské spoločnosti."
+  },
+  "ticket_min": {
+    "amount": 500000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Pre minimálnu veľkosť investície neexistujú formálne obmedzenia, typická veľkosť investície sa pohybuje v intervale 500 000 – 2 miliónov eur."
+  },
+  "ticket_max": {
+    "amount": 2000000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Pre minimálnu veľkosť investície neexistujú formálne obmedzenia, typická veľkosť investície sa pohybuje v intervale 500 000 – 2 miliónov eur."
+  },
+  "aum": {
+    "amount": 12000000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Fond disponuje kapitálom vo výške 12 miliónov eur, ktorý je určený pre investície do podnikov, ktoré potrebujú rastový kapitál, pričom do jednotlivých spoločností investuje spoločne s privátnymi spoluinvestormi."
+  },
+  "funds": ["JEREMIE Co-Investment Fund"],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Inactive: Slovak Investment Holding states the fund (managed by Limerock Investment Holding, formerly Limerock Fund Manager) had its investment period 2014-2016, has completed divestment and is in liquidation (https://www.sih.sk/en/investicie/investicie-cez-financnych-sprostredkovatelov/limerock-fund-manager-kapitalova-investicia). Known 2015 deal: Žltý melón (SITA 2015-09-17), not recorded because no single sentence names both fund and company. Hard cap per company EUR 2.75M.",
+  "researched_at": "2026-10-09"
+}

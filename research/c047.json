@@ -1,0 +1,37 @@
+{
+  "candidate_id": "c047",
+  "name": "Crowdberry",
+  "legal_name": "CB Investment Management s. r. o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK", "CZ"],
+  "website": "https://www.cbim.sk/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.cbim.sk/",
+    "quote": "CB Investment Management Growth One fund was founded in 2019 in order to help seed and pre-seed businesses based in Slovakia."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://cc.cz/lokalni-investovani-je-na-vzestupu-hlasi-crowdberry-pres-platformu-a-fondy-loni-proteklo-730-milionu/",
+    "source_date": "2023-03-30",
+    "quote": "Kromě investiční platformy Crowdberry provozuje tři dceřiné fondy – startupový CB Investment Management, nemovitostní CB Property Investors a CB ESPRI se zaměřením na organizace s pozitivním společenským dopadem."
+  },
+  "stages": {
+    "value": ["pre-seed", "seed"],
+    "source_url": "https://www.cbim.sk/founders",
+    "quote": "Outstanding founders of seed and pre-seed businesses with a vision, innovative product, dynamic team, and daring business plan."
+  },
+  "funds": ["CB Investment Management Growth One"],
+  "investments": [
+    {
+      "company": "DNA ERA",
+      "deal_date": "2021-01-01",
+      "source_url": "https://www.cbim.sk/",
+      "quote": "In 2021, DNA ERA received investment worth 250,000 € from the CB Growth One fund managed by CB Investment Management."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Crowdberry itself is a crowdinvesting platform (NBS-licensed); per instructions the record describes its own startup fund CB IM Growth One (fund size EUR 23.2M per cbim.sk, not recorded because the figure is split across page elements). Newest portfolio entry on cbim.sk is WageNow (2023), no fund deals found in the activity window; the group's impact fund CB ESPRI is a separate candidate (c062).",
+  "researched_at": "2026-10-09"
+}

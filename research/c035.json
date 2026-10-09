@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c035",
+  "name": "PFCEU",
+  "legal_name": "PFCEU s.r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.profc.eu/",
+  "entity_kind": {
+    "source_url": "https://www.profc.eu/",
+    "quote": "Podnikateľské poradenstvo pre inovatívne nápady.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Pezinok-based business consultancy (strategy, project financing, EU funds/grants advisory, ESG reporting); website found via the SLOVCA member detail page. No investing activity found.",
+  "researched_at": "2026-10-09"
+}

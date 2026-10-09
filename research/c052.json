@@ -1,0 +1,40 @@
+{
+  "candidate_id": "c052",
+  "name": "Monogram Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Monogram Ventures je zameraná na hi-tech produkty a komercializáciu nových digitálnych trendov."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Od roku 2008 táto investičná spoločnosť pomohla rozbehnúť viacero úspešných spin-off projektov (Colosseo, StreamStar) či start-upov (už spomínané Piano Media, Diagnose.me) alebo Websupport."
+  },
+  "sectors": {
+    "value": ["hi-tech", "digital media"],
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Monogram Ventures je zameraná na hi-tech produkty a komercializáciu nových digitálnych trendov."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Piano Media",
+      "deal_date": "2011-07-01",
+      "source_url": "https://techcrunch.com/2012/04/17/shared-online-paywall-service-piano-media-secures-euro-2-million-from-3ts",
+      "source_date": "2012-04-17",
+      "quote": "In July 2011 it raised €300,000 from MONOGRAM Ventures, Etarget and NextBig."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Likely inactive: monogram.sk is now an unrelated lifestyle blog and monogramventures.com is a parked domain; newest deal found is the 2011 Piano Media seed. Its partner Ivan Štefunko later co-founded Neulogy Ventures (c009), but no source states that Monogram Ventures became Neulogy, so it is not marked as a duplicate.",
+  "researched_at": "2026-10-09"
+}

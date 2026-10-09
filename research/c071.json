@@ -1,0 +1,79 @@
+{
+  "candidate_id": "c071",
+  "name": "Look AI Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK",
+    "AT",
+    "CH",
+    "GB"
+  ],
+  "website": "https://lookai.vc/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://lookai.vc/",
+    "source_date": null,
+    "quote": "Look AI Ventures is a pre-Series A venture capital fund based in Prague, Czech Republic, investing in early-stage AI startups."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://lookai.vc/",
+    "quote": "Look AI Ventures is a pre-Series A venture capital fund based in Prague, Czech Republic, investing in early-stage AI startups."
+  },
+  "sectors": {
+    "value": [
+      "ai"
+    ],
+    "source_url": "https://lookai.vc/",
+    "source_date": null,
+    "quote": "Look AI Ventures fund (LAIV) is the first investment fund in the Czech Republic that focuses exclusively on AI startups worldwide"
+  },
+  "stages": {
+    "value": [
+      "pre-seed",
+      "seed"
+    ],
+    "source_url": "https://lookai.vc/",
+    "source_date": null,
+    "quote": "You are an early-stage startup (pre-Series A)"
+  },
+  "ticket_max": {
+    "amount": 250000,
+    "currency": "EUR",
+    "source_url": "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups",
+    "source_date": "2023-04-13",
+    "quote": "The targeted investment amount in one start-up is €250,000 and mentorship will be provided."
+  },
+  "funds": [
+    "Look AI Ventures fund (LAIV)"
+  ],
+  "investments": [
+    {
+      "company": "Embodied AI",
+      "deal_date": "2026-09-22",
+      "source_url": "https://lookai.vc/look-ai-ventures-backs-embodied-ai-robots-manufacturing/",
+      "source_date": "2026-09-22",
+      "quote": "Look AI Ventures has backed Embodied AI, a Lausanne-based robotics startup building robots that learn new tasks directly on factory production lines."
+    },
+    {
+      "company": "Sodex Innovations",
+      "deal_date": "2026-07-23",
+      "source_url": "https://lookai.vc/look-ai-ventures-sodex-innovations-4m-ai-construction-site-surveying/",
+      "source_date": "2026-07-23",
+      "quote": "Look AI Ventures has joined Sodex Innovations' €4M funding round, led by Capmont Technology, to scale its AI-powered construction site surveying platform globally."
+    },
+    {
+      "company": "Cequence",
+      "deal_date": "2025-06-13",
+      "source_url": "https://lookai.vc/new-investment-cequence-secures-e2m-to-expand-ai-powered-contract-automation-platform/",
+      "source_date": "2025-06-17",
+      "quote": "Slovak startup Cequence, which helps companies automate contract workflows using artificial intelligence, has successfully raised €2 million in seed funding to accelerate its growth. The round was led by Czech Jet Ventures, with participation from our Look AI Ventures fund"
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Prague-based AI-only early-stage VC (SICAV), launched Q4 2022 on top of AI Startup Incubator; operations managed by Look AI Investments. Ticket €250K is the 2023 launch target (follow-ons reportedly up to €1M, not verified). Target fund size €20M at launch; final close not found, so AUM omitted.",
+  "researched_at": "2026-10-09"
+}

@@ -1,0 +1,67 @@
+{
+  "candidate_id": "c050",
+  "name": "3TS Capital Partners",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "AT",
+  "active_in": ["AT", "CZ", "SK", "PL", "HU", "FI", "DE"],
+  "website": "https://3tscapital.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.heuking.de/en/career/latest-news/detail/heuking-advises-3ts-capital-partners-as-lead-investor-in-11-million-euro-financing-round-for-patronus.html",
+    "source_date": "2026-05-04",
+    "quote": "3TS Capital Partners is a technology-focused growth equity firm that invests across Europe in sectors such as technology, media, and technology-enabled services."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "3TS is an established technology growth-stage VC firm in Central Europe and Eastern Europe and will contribute to technological and industrial innovation capital in the region."
+  },
+  "sectors": {
+    "value": ["software", "tech-enabled services", "e-commerce"],
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "With Fund IV, 3TS will continue to back rapidly growing technology companies across software, tech-enabled services, and e-commerce sectors, by leading investment rounds of €5-20M."
+  },
+  "stages": {
+    "value": ["series-a", "series-b-plus", "growth"],
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "3TS Capital Partners, a European technology-focused growth capital investor, has announced the first closing of its Fund IV with a target size of €150M."
+  },
+  "ticket_min": {
+    "amount": 5000000,
+    "currency": "EUR",
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "With Fund IV, 3TS will continue to back rapidly growing technology companies across software, tech-enabled services, and e-commerce sectors, by leading investment rounds of €5-20M."
+  },
+  "ticket_max": {
+    "amount": 20000000,
+    "currency": "EUR",
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "With Fund IV, 3TS will continue to back rapidly growing technology companies across software, tech-enabled services, and e-commerce sectors, by leading investment rounds of €5-20M."
+  },
+  "aum": {
+    "amount": 150000000,
+    "currency": "EUR",
+    "source_url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+    "source_date": "2021-09-22",
+    "quote": "3TS Capital Partners, a European technology-focused growth capital investor, has announced the first closing of its Fund IV with a target size of €150M."
+  },
+  "funds": ["3TS Fund IV (TCEE Fund IV)"],
+  "investments": [
+    {
+      "company": "Patronus (RR Technologies GmbH)",
+      "deal_date": "2026-05-04",
+      "source_url": "https://www.heuking.de/en/career/latest-news/detail/heuking-advises-3ts-capital-partners-as-lead-investor-in-11-million-euro-financing-round-for-patronus.html",
+      "source_date": "2026-05-04",
+      "quote": "A cross-office team led by Stuttgart-based partners Benedikt Raisch and Alexander Schott provided comprehensive legal advice to investor 3TS Capital Partners on its investment in Berlin-based startup RR Technologies GmbH (Patronus)."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "HQ Vienna (contact data on 3tscapital.com). AUM is the Fund IV target size (EUR 150M, 2021); total raised across funds is stated as over EUR 450M (Heuking 2026). Invests across CEE/'Engineering Europe'; no specific Slovak deal in the activity window found, SK in active_in is based on the regional mandate. Stages are an interpretation of 'growth capital' with EUR 5-20M rounds.",
+  "researched_at": "2026-10-09"
+}

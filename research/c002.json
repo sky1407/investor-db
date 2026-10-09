@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c002",
+  "name": "CVI",
+  "legal_name": "CVI Dom Maklerski sp. z o.o.",
+  "reg_no": null,
+  "country": "PL",
+  "active_in": ["PL", "CZ", "RO"],
+  "website": "https://cvi.pl/en/",
+  "entity_kind": {"value": "lender", "source_url": "https://cvi.pl/en/", "source_date": null, "quote": "CVI is a leader in the private debt market in Central Europe"},
+  "investor_type": null,
+  "sectors": null,
+  "stages": null,
+  "ticket_min": null,
+  "ticket_max": null,
+  "aum": null,
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Warsaw-based private debt manager (8 funds, AUM EUR 1.1 bn per cvi.pl); instruments are mainly senior/junior debt, unitranche, mezzanine and private bonds, with minority equity only as an add-on, so classified as lender rather than investor. Polish KRS 0000424707 (no IČO). No Slovak deal found on its site; SLOVCA lists CEE as geographic focus.",
+  "researched_at": "2026-10-09"
+}

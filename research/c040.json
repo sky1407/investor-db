@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c040",
+  "name": "TaylorWessing",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.taylorwessing.com/",
+  "entity_kind": {
+    "source_url": "https://www.taylorwessing.com/en/careers/slovakia/vacancies/junior-associate",
+    "quote": "Taylor Wessing is an international full-service law firm with clients in the most dynamic branches worldwide.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "International law firm; Bratislava office (TaylorWessing e|n|w|c advokáti). Country set to SK for the Slovak office.",
+  "researched_at": "2026-10-09"
+}

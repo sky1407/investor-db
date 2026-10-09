@@ -1,0 +1,20 @@
+{
+  "candidate_id": "c068",
+  "name": "McWin",
+  "legal_name": "McWin Capital Partners",
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["DE", "GB", "ES", "FR", "CZ", "CH"],
+  "website": null,
+  "entity_kind": {"value": "investor", "source_url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million", "source_date": "2025-10-14", "quote": "McWin Capital Partners is a specialist private equity and venture capital firm, dedicated to the food ecosystem."},
+  "investor_type": {"value": "pe", "source_url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million", "quote": "McWin Capital Partners is a specialist private equity and venture capital firm, dedicated to the food ecosystem."},
+  "sectors": {"value": ["foodtech", "foodservice", "restaurants"], "source_url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million", "source_date": "2025-10-14", "quote": "With deep industry expertise across three business segments; Food Tech, Foodservice and Restaurants"},
+  "funds": ["McWin Food Tech Fund I", "McWin Restaurant Fund", "McWin Foodservice Fund"],
+  "investments": [
+    {"company": "Incapto", "deal_date": "2026-04-24", "source_url": "https://www.thecaterer.com/products--equipment/mcwin-pours-4m-into-coffee-brand", "source_date": "2026-04-24", "quote": "McWin Capital Partners has invested €5m (£4.3m) in coffee and associated equipment supplier Incapto."},
+    {"company": "Ecorobotix", "deal_date": "2025-10-14", "source_url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million", "source_date": "2025-10-14", "quote": "The London and Cambridge Technology team advised McWin Capital Partners, via its McWin Food Tech Fund, in its participation in the $105 million Series D round of Ecorobotix"}
+  ],
+  "duplicate_of": null,
+  "notes": "Food-ecosystem PE/VC firm co-founded by Henry McGovern (AmRest). Forbes.cz describes it as based in the Czech Republic with offices in UK, Spain and Poland; other sources say London, so country is uncertain. No evidence of investments in Slovakia was found (listed in Tracxn's Slovakia list, likely incorrectly). Official website could not be loaded.",
+  "researched_at": "2026-10-09"
+}

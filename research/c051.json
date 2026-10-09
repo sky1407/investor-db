@@ -1,0 +1,39 @@
+{
+  "candidate_id": "c051",
+  "name": "Slovenský rozvojový fond",
+  "legal_name": "Slovenský Rozvojový Fond, a.s.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": null,
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský Rozvojový Fond (SRF) realizuje investície do zabehnutých alebo začínajúcich spoločností, ktoré potrebujú expanzný kapitál. Investuje formou vkladu do základného imania spoločností a stáva sa spoluvlastníkom na vopred stanovené obdobie."
+  },
+  "investor_type": {
+    "value": "public_fund",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "V rámci verejných fondov u nás pôsobí Národný holdingový fond."
+  },
+  "stages": {
+    "value": ["growth"],
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský Rozvojový Fond (SRF) realizuje investície do zabehnutých alebo začínajúcich spoločností, ktoré potrebujú expanzný kapitál."
+  },
+  "ticket_max": {
+    "amount": 2300000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský Rozvojový Fond - maximálna výška investície 2,3 milióna eur"
+  },
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Public fund under Národný holdingový fond (c008), managed by QUADRICA Private Equity per a 2016 article; the only source found is that 2016 overview. The current nhfond.sk site no longer lists SRF (only NHF, Fond inovácií a technológií and Eterus Capital), and no investments or news since were found, so it is very likely inactive or wound down. Not marked as duplicate because it was a separate legal fund, but it may be treated as part of c008.",
+  "researched_at": "2026-10-09"
+}

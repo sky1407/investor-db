@@ -1,0 +1,21 @@
+{
+  "candidate_id": "c034",
+  "name": "Howden",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "GB",
+  "active_in": [
+    "GB"
+  ],
+  "website": "https://www.howdengroup.com/global-practices/mergers-and-acquisitions",
+  "entity_kind": {
+    "source_url": "https://www.howdengroup.com/global-practices/mergers-and-acquisitions",
+    "quote": "Howden M&A works with the world’s largest investors and their advisors, harnessing the power of the global insurance market to help clients grow and achieve their strategic objectives.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Insurance broker (M&A / W&I insurance). SLOVCA lists the member as HOWDEN M&A (GERMANY) GMBH, Polish branch in Warsaw; country GB refers to the Howden Group headquarters (not verified on a source).",
+  "researched_at": "2026-10-09"
+}

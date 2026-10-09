@@ -1,0 +1,62 @@
+{
+  "candidate_id": "c045",
+  "name": "BHS private equity fund",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK"
+  ],
+  "website": "https://versute.cz/cs_cz/sluzby/private-equity/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.schoenherr.eu/content/czech-republic-schoenherr-advises-bhs-private-equity-fund-on-acquisition-of-alfa-3",
+    "source_date": "2025-11-26",
+    "quote": "BHS Private Equity Fund, whose professional advisor (general partner) is Versute Investments a.s., is a sub-fund of BHS Fund II – Private Equity, an investment fund with variable capital, and focuses on investments in small and medium-sized enterprises in the Czech Republic and Slovakia."
+  },
+  "investor_type": {
+    "value": "pe",
+    "source_url": "https://versute.cz/cs_cz/",
+    "quote": "Versute Investments je investiční a poradenská společnost působící jako manažer Private Equity fondů zejména v segmentu malých a středních podniků."
+  },
+  "sectors": {
+    "value": [
+      "traditional industries",
+      "manufacturing"
+    ],
+    "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+    "quote": "Fokus na podniky ve všech odvětvích, avšak s primárním zaměřením na odvětví tradiční ekonomiky."
+  },
+  "stages": {
+    "value": [
+      "growth",
+      "buyout"
+    ],
+    "source_url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+    "quote": "Versute Investments hledá stabilní, zdravé podniky se silným cash flow, jejichž odkupy lze financovat kombinací vlastního kapitálu a bankovního financování."
+  },
+  "aum": {
+    "amount": 1500000000,
+    "currency": "CZK",
+    "source_url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/dva-fondy-zabalily-unipap.html",
+    "source_date": "2025-09-24",
+    "quote": "BHS Private Equity Fund, advised by Versute Investments, manages assets worth CZK 1.5 billion."
+  },
+  "funds": [
+    "BHS Private Equity Fund (sub-fund of BHS Fund II – Private Equity, renamed VERSUTE Funds SICAV)",
+    "VERSUTE Private Equity Fund Otevřený"
+  ],
+  "investments": [
+    {
+      "company": "ALFA 3",
+      "deal_date": "2025-11-26",
+      "source_url": "https://www.schoenherr.eu/content/czech-republic-schoenherr-advises-bhs-private-equity-fund-on-acquisition-of-alfa-3",
+      "source_date": "2025-11-26",
+      "quote": "Schoenherr advised BHS Private Equity Fund and its professional advisor Versute Investments a.s. on the acquisition of a significant minority stake in ALFA 3, s.r.o. (\"ALFA 3\"), a leading Czech manufacturer of delivery boxes and other industrial metal furniture."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Fund is advised/managed by Versute Investments a.s. (Prague); per a 2026 notice on versute.cz BHS Fund II was renamed to VERSUTE Funds SICAV. UNIPAP (50% with MAM, Deloitte 2025-09-24) and two 2026 entries on versute.cz (healthcare group, PRP) were not recorded because no single quotable sentence names both the fund and the company.",
+  "researched_at": "2026-10-09"
+}

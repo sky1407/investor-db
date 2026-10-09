@@ -1,0 +1,77 @@
+{
+  "candidate_id": "c049",
+  "name": "ZAKA VC",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": [
+    "CZ",
+    "SK",
+    "US",
+    "GB"
+  ],
+  "website": "https://www.zaka.vc/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.zaka.vc/",
+    "quote": "We are a seed & pre-seed VC fund, investing mainly in the US and Europe. Especially looking for startups in the Health & Biotech and Industrial Tech verticals."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://www.zaka.vc/",
+    "quote": "We are a seed & pre-seed VC fund, investing mainly in the US and Europe."
+  },
+  "sectors": {
+    "value": [
+      "healthtech",
+      "biotech",
+      "industrial tech"
+    ],
+    "source_url": "https://www.zaka.vc/",
+    "quote": "Especially looking for startups in the Health & Biotech and Industrial Tech verticals."
+  },
+  "stages": {
+    "value": [
+      "pre-seed",
+      "seed"
+    ],
+    "source_url": "https://www.zaka.vc/",
+    "quote": "We are a seed & pre-seed VC fund, investing mainly in the US and Europe."
+  },
+  "aum": {
+    "amount": 15000000,
+    "currency": "EUR",
+    "source_url": "https://tech.eu/2024/07/19/zaka-unveils-its-fund-i-15m-for-bridging-the-us-with-the-eu-market/",
+    "source_date": "2024-07-19",
+    "quote": "ZAKA VC Fund I sized €15M is now starting with a €10.5M first closing in June 2024 with a minimum LP ticket of €130k."
+  },
+  "funds": [
+    "ZAKA VC Fund I"
+  ],
+  "investments": [
+    {
+      "company": "Sygaldry Technologies",
+      "deal_date": "2026-04-15",
+      "source_url": "https://zaka.vc/sygaldry-backed-by-zaka-vc-raises-139m-to-build-quantum-accelerated-ai-infrastructure/",
+      "source_date": "2026-04-15",
+      "quote": "ZAKA VC first invested in Sygaldry through Fund I in June 2025, shortly after the company emerged from the Y Combinator Spring 2025 batch, and also participated in the Series A round announced this month"
+    },
+    {
+      "company": "Readmio",
+      "deal_date": "2026-02-05",
+      "source_url": "https://vestbee.com/insights/articles/readmio-secures-1-m",
+      "source_date": "2026-02-05",
+      "quote": "Prague-based Readmio, which develops interactive children’s story apps with sound and learning features, has secured €1 million in new funding from Simpact Ventures, with support from ZAKA VC, Zero One Hundred, and DEPO Ventures, as Vestbee was informed."
+    },
+    {
+      "company": "Cirrus Therapeutics",
+      "deal_date": "2026-02-05",
+      "source_url": "https://zaka.vc/zaka-vc-invests-in-cirrus-therapeutics-to-advance-gene-therapies-for-blinding-eye-diseases/",
+      "source_date": "2026-02-05",
+      "quote": "ZAKA VC has invested in Cirrus Therapeutics, a biotechnology company developing next-generation gene therapies for chronic blinding eye diseases, including age-related macular degeneration (AMD)."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Czech-Slovak family office (Kasper and Zálešák families) turned VC; offices in Silicon Valley, London, Prague and Bratislava, HQ given as Prague in tech.eu. AUM is Fund I target (EUR 15M, 2024); the homepage now shows a 17M current fund size without a clean quotable sentence. Recent deals are mostly US/UK; Slovak link e.g. Sensible Biotechnologies (pre-seed 2022).",
+  "researched_at": "2026-10-09"
+}

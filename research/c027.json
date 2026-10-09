@@ -1,0 +1,41 @@
+{
+  "candidate_id": "c027",
+  "name": "G4 INVESTMENTS",
+  "legal_name": "G4 INVESTMENTS s.r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://www.g4.sk/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.g4.sk/",
+    "source_date": null,
+    "quote": "Od roku 2011 sme investovali do 70 projektov v rôznych triedach aktív (equity, nehnuteľnosti, venture capital fondy, startupy, dlh, pasívne investície) hlavne na Slovensku."
+  },
+  "investor_type": {
+    "value": "family_office",
+    "source_url": "https://www.g4.sk/",
+    "quote": "G4 je butikový „invitation-only friends and family” office, ktorý spravuje investície úzkej skupiny ľudí v objeme zhruba 50 mil. eur."
+  },
+  "sectors": {
+    "value": [
+      "technology",
+      "real estate"
+    ],
+    "source_url": "https://www.g4.sk/",
+    "quote": "Od roku 2016 sa zameriavame hlavne na dve oblasti – technológie a nehnuteľnosti."
+  },
+  "aum": {
+    "amount": 50000000,
+    "currency": "EUR",
+    "source_url": "https://www.g4.sk/",
+    "quote": "G4 je butikový „invitation-only friends and family” office, ktorý spravuje investície úzkej skupiny ľudí v objeme zhruba 50 mil. eur."
+  },
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Family office of Karol Gogolák. Since 2021 it invests primarily as LP in global technology VC funds (via Cyprus entities G4 FRIENDS etc., whose site states they do not invest directly in startups), so it is effectively not a direct startup investor today. Historical direct deals (azet.sk, TransData, UiPath co-investment) are undated or old; no dated deal in the activity window found.",
+  "researched_at": "2026-10-09"
+}

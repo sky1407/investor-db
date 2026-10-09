@@ -1,0 +1,15 @@
+{
+  "candidate_id": "c066",
+  "name": "BIC Bratislava",
+  "legal_name": "B I C Bratislava spol. s r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.bic.sk/",
+  "entity_kind": {"value": "service_provider", "source_url": "https://www.bic.sk/o-nas", "source_date": null, "quote": "Naše služby zahŕňajú najmä podnikateľské a inovačné poradenstvo, podporu medzinárodnej spolupráce, konzultácie týkajúce sa prístupu k financiám a tiež podporu rámcových programov EÚ pre výskum, vývoj a inovácie."},
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Business & innovation centre offering consulting, grant advisory and investor matchmaking (coordinates Enterprise Europe Network in SK). Its website describes connecting startups with investors, not investing its own capital. The aggregator claim of 'early-stage co-investment programs' (€50K-€0.3M) could not be confirmed on any source.",
+  "researched_at": "2026-10-09"
+}

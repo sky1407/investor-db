@@ -1,0 +1,63 @@
+{
+  "candidate_id": "c060",
+  "name": "Seed Starter Slovenskej sporiteľne",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://www.seedstarter.sk/sk/uvod",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+    "source_date": "2026-06-02",
+    "quote": "Korporátny venture kapitálový program Seed Starter hľadá podnikateľské plány so silnou víziou a hodnotou pre zákazníkov."
+  },
+  "investor_type": {
+    "value": "cvc",
+    "source_url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+    "source_date": "2026-06-02",
+    "quote": "Korporátny venture kapitálový program Seed Starter hľadá podnikateľské plány so silnou víziou a hodnotou pre zákazníkov."
+  },
+  "sectors": {
+    "value": ["fintech", "generalist"],
+    "source_url": "https://www.seedstarter.sk/sk/uvod",
+    "quote": "Hľadáme nádejné startupy, ktoré prinášajú nové produkty a služby zákazníkom, a to nielen v oblasti finančných služieb."
+  },
+  "stages": {
+    "value": ["pre-seed", "seed"],
+    "source_url": "https://www.seedstarter.sk/sk/uvod",
+    "quote": "Pre-seed a seed"
+  },
+  "ticket_min": {
+    "amount": 200000,
+    "currency": "EUR",
+    "source_url": "https://www.seedstarter.sk/sk/uvod",
+    "quote": "200 000 € – 1 000 000 €"
+  },
+  "ticket_max": {
+    "amount": 1000000,
+    "currency": "EUR",
+    "source_url": "https://www.seedstarter.sk/sk/uvod",
+    "quote": "200 000 € – 1 000 000 €"
+  },
+  "aum": {
+    "amount": 5000000,
+    "currency": "EUR",
+    "source_url": "https://cc.cz/ceska-sporitelna-jde-podporovat-startupy-i-na-slovensko-pro-tamni-mlade-firmy-ma-pres-120-milionu/",
+    "source_date": "2022-09-08",
+    "quote": "Pět milionů eur, tedy v přepočtu více než 123 milionů korun, si připravila Slovenská spořitelna na první fázi podpory startupů na Slovensku."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Webout",
+      "deal_date": "2026-06-02",
+      "source_url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+      "source_date": "2026-06-02",
+      "quote": "Seed Starter Slovenskej sporiteľne vedie investičné kolo do českého startupu Webout, ktorý ukazuje, že video nemusí byť len o pozornosti, ale aj o merateľných tržbách."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Corporate VC program of Slovenská sporiteľňa (Erste Group), launched in Slovakia in Sept 2022 following the Czech Seed Starter of Česká spořitelna. AUM is the initial EUR 5M allocation (2022). Also co-invested in TrollWall AI (EUR 800k, April 2026, with Slovak Investment Holding), but the SIH press release blocks automated fetching so it is not recorded. Ticket and stage quotes are short labels from the program website.",
+  "researched_at": "2026-10-09"
+}

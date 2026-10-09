@@ -1,0 +1,16 @@
+{
+  "candidate_id": "c069",
+  "name": "Ergos",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["US"],
+  "website": null,
+  "entity_kind": {"value": "investor", "source_url": "https://tracxn.com/d/venture-capital/ergos/__WGrR1Qun0G2FVNY3OFYkhRzeqIYHTkx5Q8BaVywuX9I", "source_date": null, "quote": "Ergos is a venture capital firm founded in 2022. It is primarily based out of Kosice, Slovakia. It primarily invests in United States based startups."},
+  "investor_type": {"value": "vc", "source_url": "https://tracxn.com/d/venture-capital/ergos/__WGrR1Qun0G2FVNY3OFYkhRzeqIYHTkx5Q8BaVywuX9I", "quote": "Ergos is a venture capital firm founded in 2022. It is primarily based out of Kosice, Slovakia. It primarily invests in United States based startups."},
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Only aggregator evidence (Tracxn; PitchBook not used) — no website, press release, news article or register entry found. Tracxn's portfolio (88 companies incl. Facebook, Kraken, StoreDot) looks implausible for a Košice firm founded in 2022 and may be secondary/SPV positions or a name mix-up. Treat as no_evidence until verified.",
+  "researched_at": "2026-10-09"
+}

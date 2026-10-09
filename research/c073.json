@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c073",
+  "name": "Fil Rouge Capital",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "HR",
+  "active_in": ["HR", "RO", "CZ"],
+  "website": "https://filrougecapital.com/",
+  "entity_kind": {"value": "investor", "source_url": "https://en.lider.media/?p=214855", "source_date": "2026-02-11", "quote": "Fil Rouge Capital (FRC), the first Croatian venture capital fund, ten years after its establishment, manages over 100 million euros in assets, announced one of its founders and partners Julien Coustaury on LinkedIn."},
+  "investor_type": {"value": "vc", "source_url": "https://en.lider.media/?p=214855", "quote": "Fil Rouge Capital (FRC), the first Croatian venture capital fund, ten years after its establishment, manages over 100 million euros in assets, announced one of its founders and partners Julien Coustaury on LinkedIn."},
+  "stages": {"value": ["pre-seed", "seed"], "source_url": "https://filrougecapital.com/accelerate", "source_date": null, "quote": "We invest from €10k up to €2M across four stages: idea stage, MVP stage, growth stage and follow on stage."},
+  "ticket_min": {"amount": 10000, "currency": "EUR", "source_url": "https://filrougecapital.com/accelerate", "source_date": null, "quote": "We invest from €10k up to €2M across four stages: idea stage, MVP stage, growth stage and follow on stage."},
+  "ticket_max": {"amount": 2000000, "currency": "EUR", "source_url": "https://filrougecapital.com/accelerate", "source_date": null, "quote": "We invest from €10k up to €2M across four stages: idea stage, MVP stage, growth stage and follow on stage."},
+  "aum": {"amount": 100000000, "currency": "EUR", "source_url": "https://en.lider.media/?p=214855", "source_date": "2026-02-11", "quote": "Fil Rouge Capital (FRC), the first Croatian venture capital fund, ten years after its establishment, manages over 100 million euros in assets, announced one of its founders and partners Julien Coustaury on LinkedIn."},
+  "funds": ["FRC3"],
+  "investments": [
+    {"company": "FaceUp", "deal_date": "2026-05-19", "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/", "source_date": "2026-05-19", "quote": "JIC Ventures vstúpil do investičného kola Series A spoločnosti FaceUp v hodnote 5 miliónov dolárov. Kolo viedol chorvátsky fond Fil Rouge Capital."}
+  ],
+  "duplicate_of": null,
+  "notes": "Zagreb-based early-stage VC with accelerator (up to €300K) and VC track; FRC3 fund €60M target (€45M first close, April 2025) with expansion to Romania. Website shows €104M AUM. Sector agnostic per aggregators (not recorded). No Slovak portfolio company found; FaceUp is Czech. Other 2026 deals (Hypefy, Genesis, Metastack) appear only on aggregators.",
+  "researched_at": "2026-10-09"
+}

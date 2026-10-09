@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c003",
+  "name": "Enterprise Investors",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "PL",
+  "active_in": ["PL", "RO", "LT", "SK"],
+  "website": "https://www.ei.com.pl/en/",
+  "entity_kind": {"value": "investor", "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "Enterprise Investors is the most experienced private equity investor in Central and Eastern Europe."},
+  "investor_type": {"value": "pe", "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "Enterprise Investors is the most experienced private equity investor in Central and Eastern Europe."},
+  "sectors": {"value": ["technology", "financial services", "consumer goods", "business services", "healthcare", "retail", "manufacturing"], "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "The firm has raised 10 funds and invested EUR 2.5 billion in 163 companies, focusing on rapidly growing sectors such as technology, financial services, consumer goods, business services, healthcare, retail and manufacturing."},
+  "stages": {"value": ["growth", "buyout"], "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "We invest between EUR 20 million and EUR 75 million for stakes ranging from large minority positions to full ownership"},
+  "ticket_min": {"amount": 20000000, "currency": "EUR", "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "We invest between EUR 20 million and EUR 75 million for stakes ranging from large minority positions to full ownership"},
+  "ticket_max": {"amount": 75000000, "currency": "EUR", "source_url": "https://www.ei.com.pl/en/about/", "source_date": null, "quote": "We invest between EUR 20 million and EUR 75 million for stakes ranging from large minority positions to full ownership"},
+  "aum": null,
+  "funds": ["Enterprise Investors Fund IX"],
+  "investments": [
+    {"company": "Kredito unija \"Saulėgrąža\"", "deal_date": "2026-07-01", "source_url": "https://www.ei.com.pl/en/enterprise-investors-returns-to-lithuania-with-investment-in-kredito-unija-saulegraza", "source_date": "2026-07-01", "quote": "Enterprise Investors Fund IX (EIF IX) has agreed to invest up to EUR 21.8 million to acquire a stake of up to 81.51% in Kredito unija \"Saulėgrąža\", a Lithuanian financial institution."},
+    {"company": "Art Wind", "deal_date": "2026-03-16", "source_url": "https://www.ei.com.pl/en/ei-re-enters-the-renewables-sector-with-majority-investment-in-art-wind", "source_date": "2026-03-16", "quote": "Enterprise Investors Fund IX acquired a 65% stake in Art Wind, a Poland-based provider of wind turbine installation and maintenance services across Europe."},
+    {"company": "18GYM", "deal_date": "2026-03-01", "source_url": "https://www.ei.com.pl/en/18gym-and-stay-fit-gym-join-forces-with-backing-from-enterprise-investors", "source_date": "2026-10-06", "quote": "Enterprise Investors announced its investment in 18GYM in March and completed the transaction in June."}
+  ],
+  "duplicate_of": null,
+  "notes": "Large CEE private equity firm (Warsaw). No current AUM figure found (site states EUR 2.5 bn invested since 1990 across 10 funds, which is not AUM). SK included in active_in only on the basis of the SLOVCA profile listing 4 historical Slovak transactions (NAY, STD Donivo, Orange, CBA Slovakia); no recent Slovak deal found. 18GYM deal_date is month-level (announced March 2026).",
+  "researched_at": "2026-10-09"
+}

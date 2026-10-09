@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c075",
+  "name": "JIC Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "CZ",
+  "active_in": ["CZ", "SK"],
+  "website": "https://www.jic.cz/ventures/",
+  "entity_kind": {"value": "investor", "source_url": "https://jic.cz/ventures", "source_date": null, "quote": "JIC Ventures is a Brno-born VC fund backing technology founders from pre-seed to exit."},
+  "investor_type": {"value": "vc", "source_url": "https://jic.cz/ventures", "quote": "JIC Ventures is a Brno-born VC fund backing technology founders from pre-seed to exit."},
+  "sectors": {"value": ["deep tech", "saas"], "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/", "source_date": "2026-05-19", "quote": "Zameriava sa najmä na oblasti deep tech, SaaS a ďalšie vyspelé technológie."},
+  "stages": {"value": ["pre-seed", "seed"], "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/", "source_date": "2026-05-19", "quote": "Fond sa sústreďuje najmä na startupy v pre-seed a seed fáze, teda na firmy, ktoré ešte len budujú produkt, tím a prvé strategické partnerstvá."},
+  "ticket_max": {"amount": 1000000, "currency": "EUR", "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/", "source_date": "2026-05-19", "quote": "Jednotlivé investície môžu dosiahnuť až 1 milión eur."},
+  "aum": {"amount": 320000000, "currency": "CZK", "source_url": "https://cc.cz/v-brne-vznikl-fond-jaky-nema-obdoby-spojuje-soukromniky-mesto-kraj-univerzity-i-biskupstvi/", "source_date": "2026-04-07", "quote": "Fond cílí na velikost 400 milionů korun, aktuálně má již alokovaných 320 milionů korun, a je tak ještě otevřený dalším kvalifikovaným investorům."},
+  "funds": ["JIC Ventures"],
+  "investments": [
+    {"company": "FaceUp", "deal_date": "2026-05-19", "source_url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/", "source_date": "2026-05-19", "quote": "JIC Ventures vstúpil do investičného kola Series A spoločnosti FaceUp v hodnote 5 miliónov dolárov."}
+  ],
+  "duplicate_of": null,
+  "notes": "Brno VC fund launched 2026-04-07 by innovation agency JIC; target CZK 400M, CZK 320M allocated at launch (AUM = allocated). Slovakia stated as a priority market. FaceUp is its first investment (May 2026); deal_date is the Startitup publication date, the original press release may be a day or two earlier.",
+  "researched_at": "2026-10-09"
+}

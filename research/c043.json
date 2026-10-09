@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c043",
+  "name": "Wezeo",
+  "legal_name": "WEZEO, s.r.o.",
+  "reg_no": "46390227",
+  "country": "SK",
+  "active_in": [
+    "SK",
+    "DK"
+  ],
+  "website": "https://www.wezeo.com/",
+  "entity_kind": {
+    "source_url": "https://www.wezeo.com/",
+    "quote": "Whatever you think could work better, we dig in and build a solution that saves you time and money.",
+    "value": "service_provider"
+  },
+  "investments": [],
+  "funds": [],
+  "duplicate_of": null,
+  "notes": "Software development / product studio (robotics, AI automation, R&D) with offices in Bratislava and Copenhagen. No investing activity found.",
+  "researched_at": "2026-10-09"
+}

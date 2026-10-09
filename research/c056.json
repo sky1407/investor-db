@@ -1,0 +1,46 @@
+{
+  "candidate_id": "c056",
+  "name": "Slovenský rastový a kapitálový fond",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://eterus.sk/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský rastový a kapitálový fond (SRKF) je partnerom pre financovanie podnikateľa vo fáze rastu."
+  },
+  "investor_type": {
+    "value": "public_fund",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "V rámci verejných fondov u nás pôsobí Národný holdingový fond."
+  },
+  "stages": {
+    "value": ["growth"],
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský rastový a kapitálový fond (SRKF) je partnerom pre financovanie podnikateľa vo fáze rastu."
+  },
+  "ticket_min": {
+    "amount": 500000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský rastový a kapitálový fond - ponúka investíciu od 500 000 do 2 500 000 eur"
+  },
+  "ticket_max": {
+    "amount": 2500000,
+    "currency": "EUR",
+    "source_url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+    "source_date": "2016-02-17",
+    "quote": "Slovenský rastový a kapitálový fond - ponúka investíciu od 500 000 do 2 500 000 eur"
+  },
+  "funds": [],
+  "investments": [],
+  "duplicate_of": "c004",
+  "notes": "Very likely the former name of Eterus Capital (c004): nhfond.sk now describes Eterus Capital with the same wording used for SRKF in 2016 ('partnerom pre financovanie podnikateľa vo fáze rastu ... výrazným rastovým potenciálom, silným trhovým postavením a motivovaným manažmentom'), both list Sygic in the portfolio and Eterus states the same EUR 2-2.5M ticket focus on Slovak companies. No explicit rename statement was found, so the duplicate link is an inference. investor_type public_fund reflects the 2016 status under Národný holdingový fond; Eterus is now managed by WOOD & Company per other sources.",
+  "researched_at": "2026-10-09"
+}

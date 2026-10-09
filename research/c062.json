@@ -1,0 +1,22 @@
+{
+  "candidate_id": "c062",
+  "name": "CB ESPRI",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": ["SK"],
+  "website": "https://cbespri.sk/",
+  "entity_kind": {"value": "investor", "source_url": "https://cbespri.sk/", "source_date": null, "quote": "CB ESPRI je správcovská spoločnosť založená v roku 2022 s cieľom vytvoriť prvý investičný fond na Slovensku s pozitívnym spoločenským dopadom."},
+  "investor_type": {"value": "vc", "source_url": "https://cbespri.sk/", "quote": "Náš fond investuje do podnikov a organizácií, ktoré generujú pozitívne spoločenské zmeny, podporujú inkluzívne zamestnávanie a rozvoj impaktových startupov."},
+  "sectors": {"value": ["impact", "edtech", "healthtech", "cleantech"], "source_url": "https://cbespri.sk/", "source_date": null, "quote": "Fond sa zameriava na podporu spoločností so sociálnymi alebo environmentálnymi cieľmi v oblastiach ako vzdelávanie, zdravotná starostlivosť, ochrana životného prostredia a rodová rovnosť."},
+  "ticket_min": {"amount": 10000, "currency": "EUR", "source_url": "https://www.podnikajte.sk/financie-na-podnikanie/cb-espri-impact-one-novy-fond", "source_date": "2022-08-29", "quote": "investovať kapitál 10,5 miliónov eur, pričom firmám ponúka výšku investície od 10 000 eur do 500 000 eur, podľa individuálnych potrieb podniku."},
+  "ticket_max": {"amount": 500000, "currency": "EUR", "source_url": "https://www.podnikajte.sk/financie-na-podnikanie/cb-espri-impact-one-novy-fond", "source_date": "2022-08-29", "quote": "investovať kapitál 10,5 miliónov eur, pričom firmám ponúka výšku investície od 10 000 eur do 500 000 eur, podľa individuálnych potrieb podniku."},
+  "funds": ["CB ESPRI Impact One"],
+  "investments": [
+    {"company": "Elv.ai", "deal_date": "2024-01-15", "source_url": "https://www.lupa.cz/aktuality/slovensti-lovci-internetovych-trollu-ziskali-prvni-investici-dohlizi-i-na-komentare-v-cesku/", "source_date": "2024-01-15", "quote": "Slovenský startup Elv.ai získal investici půl milionu eur, něco přes dvanáct milionů korun, od tamního fondu CB ESPRI Impact One."},
+    {"company": "Powerful Medical", "deal_date": "2022-11-14", "source_url": "https://ceelegalmatters.com/slovakia/21530-kinstellar-and-wise3-advise-on-powerful-medical-eur-6-2-million-seed-round", "source_date": "2022-11-14", "quote": "Kinstellar has advised Powerful Medical on its EUR 6.2 million seed funding round from investors including Arieli Capital, Venture To Future Fund, CB ESPRI Impact One, BPD partners, and several angel investors."}
+  ],
+  "duplicate_of": null,
+  "notes": "Only fund CB ESPRI Impact One (co-financed by SIH from ESF) had its investment period in 2022-2023 and is in post-investment period 2024-2032 per cbespri.sk; Lupa.cz (Jan 2024) says it no longer accepts applications. Instruments are convertible and subordinated loans (quasi-equity). AUM omitted: planned capital 10.5M EUR vs. ~16-18.6M EUR reported invested; no new fund found. Partly owned by Crowdberry per press.",
+  "researched_at": "2026-10-09"
+}

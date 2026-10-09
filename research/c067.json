@@ -1,0 +1,65 @@
+{
+  "candidate_id": "c067",
+  "name": "365fintech",
+  "legal_name": "365.fintech, a.s.",
+  "reg_no": "51301547",
+  "country": "SK",
+  "active_in": [
+    "SK",
+    "CZ",
+    "GB",
+    "LT",
+    "HU",
+    "DE"
+  ],
+  "website": "https://365fintech.sk/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://365fintech.sk/",
+    "source_date": null,
+    "quote": "We are a fintech venture investor focusing on innovative b2b or b2b2c FinTech, InsurTech and Big Data startups."
+  },
+  "investor_type": {
+    "value": "cvc",
+    "source_url": "https://365fintech.sk/",
+    "quote": "365.fintech, the new investment platform of the 365 ecosystem, is announcing the next step in putting itself on the map of financial services investors in Central and Eastern Europe."
+  },
+  "sectors": {
+    "value": [
+      "fintech",
+      "insurtech",
+      "big data"
+    ],
+    "source_url": "https://365fintech.sk/",
+    "source_date": null,
+    "quote": "We are a fintech venture investor focusing on innovative b2b or b2b2c FinTech, InsurTech and Big Data startups."
+  },
+  "stages": {
+    "value": [
+      "seed"
+    ],
+    "source_url": "https://365fintech.sk/",
+    "source_date": null,
+    "quote": "We invest in and around seed stage in Europe."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "Ctrl Alt",
+      "deal_date": "2023-10-23",
+      "source_url": "https://siliconcanals.com/ctrl-alt-raises-2-5m/",
+      "source_date": "2023-10-23",
+      "quote": "Investors supporting Ctrl Alt The investment round was led by Forward Partners and Middlegame Ventures. The round also saw participation from Angel investors and follow-on funds, including Enterprise Ireland, Algorand Ventures, 365.fintech"
+    },
+    {
+      "company": "Ondato",
+      "deal_date": "2022-09-15",
+      "source_url": "https://365fintech.sk/",
+      "source_date": "2022-09-15",
+      "quote": "We are delighted to announce that Ondato — a tech company that streamlines KYC and AML-related processes — is joining the 365.fintech portfolio."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Bratislava-based fintech investment arm of the 365 ecosystem (365.bank group); classified as cvc. Latest publicly documented deal is Ctrl Alt (Oct 23, 2023, just inside the window); its own news feed ends in 2022 and the site footer says © 2022, so activity after 2023 is uncertain. Ticket sizes only on aggregators.",
+  "researched_at": "2026-10-09"
+}

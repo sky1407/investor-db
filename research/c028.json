@@ -1,0 +1,25 @@
+{
+  "candidate_id": "c028",
+  "name": "Finhold",
+  "legal_name": "Finhold s.r.o.",
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [],
+  "website": "https://jakubecfo.com/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://jakubecfo.com/",
+    "source_date": null,
+    "quote": "We are a private investment and wealth management firm."
+  },
+  "investor_type": {
+    "value": "family_office",
+    "source_url": "https://jakubecfo.com/",
+    "quote": "As a discreet, single-family office and privately-held firm, we engage exclusively with a select group of trusted partners, advisors, and strategic collaborators worldwide."
+  },
+  "funds": [],
+  "investments": [],
+  "duplicate_of": null,
+  "notes": "Finhold s.r.o. is the holding of Pavol Jakubec (sold I.D.C. Holding to Valeo Foods for ~305 mil. EUR per symsite.sk/sme.sk) and operates as Jakubec Family Office (SLOVCA lists jakubecfo.com as its website). Site says it focuses on private equity, strategic investments and wealth management; no ticket, stage or concrete deal found in static public sources (ticket info only on LinkedIn, not used).",
+  "researched_at": "2026-10-09"
+}

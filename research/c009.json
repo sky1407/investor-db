@@ -1,0 +1,82 @@
+{
+  "candidate_id": "c009",
+  "name": "Neulogy Ventures",
+  "legal_name": null,
+  "reg_no": null,
+  "country": "SK",
+  "active_in": [
+    "SK"
+  ],
+  "website": "https://neulogy.vc/",
+  "entity_kind": {
+    "value": "investor",
+    "source_url": "https://neulogy.vc/about-us/",
+    "source_date": null,
+    "quote": "Neulogy Ventures was established in 2014 as a Luxembourg-based regulated venture capital fund, targeting investment opportunities in early-stage tech companies established or operating in Slovakia."
+  },
+  "investor_type": {
+    "value": "vc",
+    "source_url": "https://neulogy.vc/about-us/",
+    "source_date": null,
+    "quote": "We are a venture capital firm focused on supporting visionary founders at the early-stages of company formation and growth."
+  },
+  "sectors": {
+    "value": [
+      "deep tech",
+      "climate",
+      "healthtech"
+    ],
+    "source_url": "https://neulogy.vc/about-us/",
+    "source_date": null,
+    "quote": "With €65M assets under management, about 30 portfolio companies spread across 10 countries, and a strong track record investing in new technologies addressing climate change and healthcare, Neulogy Ventures is one of the leading deeptech investors in the CEE region."
+  },
+  "stages": {
+    "value": [
+      "seed"
+    ],
+    "source_url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+    "source_date": null,
+    "quote": "Typ investícií: Seed, Venture capital"
+  },
+  "ticket_min": {
+    "amount": 200000,
+    "currency": "EUR",
+    "source_url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+    "source_date": null,
+    "quote": "Preferovaná výška jednej investície: 200,000 - 2.5 M EUR"
+  },
+  "ticket_max": {
+    "amount": 2500000,
+    "currency": "EUR",
+    "source_url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+    "source_date": null,
+    "quote": "Preferovaná výška jednej investície: 200,000 - 2.5 M EUR"
+  },
+  "aum": {
+    "amount": 65000000,
+    "currency": "EUR",
+    "source_url": "https://neulogy.vc/about-us/",
+    "source_date": null,
+    "quote": "With €65M assets under management, about 30 portfolio companies spread across 10 countries, and a strong track record investing in new technologies addressing climate change and healthcare, Neulogy Ventures is one of the leading deeptech investors in the CEE region."
+  },
+  "funds": [],
+  "investments": [
+    {
+      "company": "StratifAI",
+      "deal_date": "2024-09-02",
+      "source_url": "https://www.life-sciences-europe.com/person/cekan-pavol-multiplexdx-202409-inc-persons-people-chief-2001-28559.html",
+      "source_date": "2024-09-02",
+      "quote": "StratifAI, a pioneering provider of AI-powered digital oncology solutions, today announced it has raised €1.5 million in pre-seed funding. The round was co-led by Neulogy Ventures and MultiplexDX, with participation from Debiopharm Innovation Fund, Arve Capital, as well as angel investor Christoph Haarburger."
+    },
+    {
+      "company": "GA Drilling",
+      "deal_date": "2024-04-25",
+      "source_url": "https://www.privsource.com/acquisitions/deal/YBSvjg",
+      "source_date": "2024-04-25",
+      "quote": "GA Drilling, a developer of deep geothermal drilling technology, announced a first close of $15 million to commercialize its PLASMABIT drilling systems and scale deployment. Investors in the round include Nabors, Christian Oldendorff’s family office alfa8, geothermal fund Underground Ventures, Neulogy Ventures and investor Thomas von Koch; proceeds will accelerate commercialization and global rollout of deep geothermal solutions."
+    }
+  ],
+  "duplicate_of": null,
+  "notes": "Bratislava-based deeptech VC with Luxembourg (CSSF) regulated funds; invests also outside SK (e.g. StratifAI in Germany). Individual fund names not found. Aggregators mention a 2025 GA Drilling Series D led by Neulogy, but no primary source was found; GA Drilling source is an aggregator (PrivSource). Newer portfolio companies (BiteBerry, Anvesana, BeiT) have no dated deal source.",
+  "researched_at": "2026-10-09"
+}
