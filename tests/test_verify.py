@@ -1,7 +1,7 @@
 import httpx
 import pytest
 
-from investordb.fetch import MAX_BYTES, FetchError, PageFetcher, detect_encoding
+from investordb.fetch import DEFAULT_LANGUAGE, MAX_BYTES, FetchError, PageFetcher, detect_encoding
 from investordb.models import ResearchRecord
 from investordb.verify import summarize, verify_records
 from tests.test_models import base_record
@@ -67,11 +67,15 @@ def test_each_url_is_fetched_once(tmp_path):
     calls = []
 
     def counting(request):
-        calls.append(str(request.url))
+        calls.append((str(request.url), request.headers["accept-language"]))
         return handler(request)
 
     verify_records([ResearchRecord.model_validate(base_record())], make_fetcher(transport_handler=counting))
-    assert sorted(calls) == ["https://example.com/acme", "https://neulogy.vc/"]
+    assert sorted(calls) == [
+        ("https://example.com/acme", "en"),
+        ("https://example.com/acme", DEFAULT_LANGUAGE),
+        ("https://neulogy.vc/", DEFAULT_LANGUAGE),
+    ]
 
 
 def test_cache_avoids_second_request(tmp_path):
@@ -112,3 +116,25 @@ def test_detect_encoding_prefers_header():
 def test_summarize_counts_statuses():
     report = verify_records([ResearchRecord.model_validate(base_record())], make_fetcher())
     assert summarize(report) == {"quote_not_found": 1, "verified": 2}
+
+
+def test_quote_in_other_language_version_is_verified():
+    def negotiated(request):
+        english = request.headers.get("accept-language") == "en"
+        body = "<p>We invest in early stage technology companies</p>" if english else "<p>Investujeme</p>"
+        return httpx.Response(200, headers={"content-type": "text/html"}, content=body.encode())
+
+    record = ResearchRecord.model_validate(base_record(investments=[]))
+    report = verify_records([record], make_fetcher(transport_handler=negotiated))
+    assert report["c009"]["entity_kind"].status == "verified"
+    assert "Accept-Language" in report["c009"]["entity_kind"].detail
+
+
+def test_language_variants_are_cached_separately(tmp_path):
+    def negotiated(request):
+        body = request.headers.get("accept-language", "").encode()
+        return httpx.Response(200, headers={"content-type": "text/plain"}, content=body)
+
+    fetcher = make_fetcher(tmp_path, negotiated)
+    assert fetcher.get("https://example.com/").text.startswith("sk")
+    assert fetcher.get("https://example.com/", "en").text == "en"
