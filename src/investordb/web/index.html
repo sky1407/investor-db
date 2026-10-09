@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Databáza investorov</title>
+<style>
+  :root {
+    --bg: #f6f5f1; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6a64; --line: #e4e2da;
+    --accent: #1f4d3a; --accent-soft: #e3eee8; --bad: #a3322a; --bad-soft: #f7e5e3;
+    --warn: #8a5a00; --warn-soft: #fbf0d9; --radius: 10px;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151514; --panel: #1e1e1c; --ink: #ecebe6; --muted: #9b9a93; --line: #33322f;
+      --accent: #7cc4a0; --accent-soft: #1f3329; --bad: #f08a80; --bad-soft: #3a2220;
+      --warn: #e7b85a; --warn-soft: #3a2f17;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { padding: 24px 24px 0; max-width: 1280px; margin: 0 auto; }
+  h1 { font-size: 22px; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 16px; }
+  .stats { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 10px 14px; min-width: 130px; }
+  .stat b { display: block; font-size: 22px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 13px; }
+  nav { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
+  nav button { background: none; border: 0; padding: 10px 14px; font: inherit; color: var(--muted);
+    cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav button[aria-selected="true"] { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+  main { max-width: 1280px; margin: 0 auto; padding: 16px 24px 48px; }
+  .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; align-items: center; }
+  input[type=search], select, input[type=text] { font: inherit; padding: 7px 10px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+  input[type=search] { min-width: 240px; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 16px; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-weight: 600; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover, tbody tr[aria-selected="true"] { background: var(--accent-soft); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12px;
+    background: var(--line); color: var(--ink); white-space: nowrap; }
+  .pill.ok { background: var(--accent-soft); color: var(--accent); }
+  .pill.bad { background: var(--bad-soft); color: var(--bad); }
+  .pill.warn { background: var(--warn-soft); color: var(--warn); }
+  .detail { padding: 18px; position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; }
+  .detail h2 { margin: 0 0 4px; font-size: 19px; }
+  .fact { border-top: 1px solid var(--line); padding: 10px 0; }
+  .fact .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  .fact .value { font-weight: 600; margin: 2px 0; }
+  blockquote { margin: 6px 0; padding: 6px 10px; border-left: 3px solid var(--accent);
+    background: var(--bg); font-size: 13px; color: var(--ink); border-radius: 0 6px 6px 0; }
+  .src { font-size: 12px; color: var(--muted); word-break: break-all; }
+  a { color: var(--accent); }
+  .empty { color: var(--muted); padding: 24px; text-align: center; }
+  .check-row { display: grid; grid-template-columns: 170px minmax(0, 1fr) 210px; gap: 12px;
+    padding: 12px 14px; border-bottom: 1px solid var(--line); align-items: start; }
+  @media (max-width: 900px) { .check-row { grid-template-columns: 1fr; } }
+  .check-row .who { font-weight: 600; }
+  .check-row .item { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .verdict { display: flex; gap: 6px; flex-wrap: wrap; }
+  .verdict button { font: inherit; border-radius: 8px; border: 1px solid var(--line); background: var(--panel);
+    color: var(--ink); padding: 5px 12px; cursor: pointer; }
+  .verdict button.on-correct { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+  .verdict button.on-incorrect { background: var(--bad); border-color: var(--bad); color: var(--panel); }
+  .verdict input { width: 100%; margin-top: 6px; font-size: 13px; }
+  .ai { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .progress { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; flex: 1; min-width: 160px; }
+  .progress div { height: 100%; background: var(--accent); }
+  .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .metric { padding: 14px 16px; }
+  .metric b { font-size: 26px; font-variant-numeric: tabular-nums; display: block; }
+  .metric small { color: var(--muted); }
+  .metric h3 { margin: 0 0 6px; font-size: 14px; }
+  .error { background: var(--bad-soft); color: var(--bad); padding: 12px 16px; border-radius: var(--radius); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Databáza investorov</h1>
+  <p class="sub" id="sub">Pilot: VC aktívne na Slovensku. Každý údaj má zdroj, dátum a doslovnú citáciu overenú skriptom.</p>
+  <div class="stats" id="stats"></div>
+  <nav role="tablist">
+    <button role="tab" data-tab="db" aria-selected="true">Databáza</button>
+    <button role="tab" data-tab="check" aria-selected="false">Ručná kontrola</button>
+    <button role="tab" data-tab="metrics" aria-selected="false">Presnosť</button>
+  </nav>
+</header>
+<main>
+  <div id="fatal" class="error" hidden></div>
+
+  <section id="tab-db">
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Hľadať názov, sektor…" aria-label="Hľadať">
+      <select id="f-status" aria-label="Stav">
+        <option value="included">Zaradení</option>
+        <option value="excluded">Vyradení</option>
+        <option value="all">Všetci</option>
+      </select>
+      <select id="f-type" aria-label="Typ"><option value="">Všetky typy</option></select>
+      <select id="f-country" aria-label="Krajina"><option value="">Všetky krajiny</option></select>
+    </div>
+    <div class="layout">
+      <div class="card">
+        <table>
+          <thead><tr><th>Investor</th><th>Typ</th><th class="num">Ticket (EUR)</th><th class="num">AUM (EUR)</th><th>Posledný deal</th></tr></thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <div class="empty" id="no-rows" hidden>Nič nevyhovuje filtru.</div>
+      </div>
+      <aside class="card detail" id="detail"><div class="empty">Vyber investora v tabuľke.</div></aside>
+    </div>
+  </section>
+
+  <section id="tab-check" hidden>
+    <div class="toolbar">
+      <select id="c-filter" aria-label="Filter kontroly">
+        <option value="todo">Neskontrolované človekom</option>
+        <option value="disagree">AI predkontrola: nesprávne / nejasné</option>
+        <option value="all">Všetko</option>
+      </select>
+      <select id="c-scope" aria-label="Rozsah">
+        <option value="SK">Iba sídlo SK (meraná vzorka)</option>
+        <option value="">Všetky krajiny</option>
+      </select>
+      <div class="progress" aria-label="Postup kontroly"><div id="c-progress" style="width:0"></div></div>
+      <span id="c-count" class="src"></span>
+    </div>
+    <div class="card" id="check-list"></div>
+  </section>
+
+  <section id="tab-metrics" hidden>
+    <div class="metrics" id="metric-cards"></div>
+  </section>
+</main>
+
+<script>
+"use strict";
+const state = { data: null, records: [], byId: new Map(), checks: [], selected: null };
+const TYPE_LABELS = { vc: "VC", pe: "PE", cvc: "Korporátne VC", family_office: "Family office", angel: "Angel",
+  private_investor: "Súkromný investor", public_fund: "Verejný fond", fund_of_funds: "Fond fondov" };
+const REASON_LABELS = { not_investor_service: "Služby (nie investor)", debt_only: "Iba dlh", platform_only: "Iba platforma",
+  grant_only: "Iba granty", public_markets_only: "Iba verejné trhy", inactive: "Neaktívny (36 mes.)",
+  no_evidence: "Bez overeného dôkazu", duplicate: "Duplicita" };
+const ITEM_LABELS = { inclusion: "Zaradenie", investor_type: "Typ", sectors: "Sektory", stages: "Fázy",
+  ticket_min_eur: "Ticket min", ticket_max_eur: "Ticket max", aum_eur: "AUM", latest_investment: "Posledný deal" };
+const STATUS_LABELS = { verified: ["overené", "ok"], quote_not_found: ["citácia nenájdená", "bad"],
+  http_error: ["HTTP chyba", "warn"], fetch_error: ["nedostupné", "warn"], unsupported_content: ["PDF/iný formát", "warn"] };
+const fmt = new Intl.NumberFormat("sk-SK", { maximumFractionDigits: 0 });
+const pct = v => v === null || v === undefined ? "–" : `${(v * 100).toFixed(1)} %`;
+
+function el(tag, attrs = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v === null || v === undefined || v === false) continue;
+    if (k === "class") node.className = v;
+    else if (k.startsWith("on")) node.addEventListener(k.slice(2), v);
+    else node.setAttribute(k, v === true ? "" : v);
+  }
+  for (const child of children.flat()) {
+    if (child === null || child === undefined || child === false) continue;
+    node.append(child instanceof Node ? child : document.createTextNode(String(child)));
+  }
+  return node;
+}
+function safeLink(url, text) {
+  try {
+    const parsed = new URL(url);
+    if (parsed.protocol !== "https:" && parsed.protocol !== "http:") return el("span", {}, text || url);
+    return el("a", { href: parsed.href, target: "_blank", rel: "noopener noreferrer" }, text || parsed.href);
+  } catch { return el("span", {}, text || url); }
+}
+async function api(path, options = {}) {
+  const res = await fetch(path, { headers: { "Content-Type": "application/json" }, ...options });
+  if (!res.ok) {
+    let message = `${res.status}`;
+    try { message += `: ${(await res.json()).detail}`; } catch {}
+    throw new Error(message);
+  }
+  return res.json();
+}
+function showFatal(err) {
+  const box = document.getElementById("fatal");
+  box.textContent = `Chyba: ${err.message}`;
+  box.hidden = false;
+}
+const val = f => (f && f.value !== null && f.value !== undefined ? f.value : null);
+const money = f => (val(f) === null ? "–" : fmt.format(val(f)));
+function ticket(r) {
+  const lo = val(r.ticket_min_eur), hi = val(r.ticket_max_eur);
+  if (lo === null && hi === null) return "–";
+  return `${lo === null ? "?" : fmt.format(lo)} – ${hi === null ? "?" : fmt.format(hi)}`;
+}
+const latestDeal = r => r.investments.find(i => i.status === "verified") || null;
+
+function renderStats() {
+  const inc = state.records.filter(r => r.included);
+  const sk = inc.filter(r => r.country === "SK").length;
+  const review = state.records.filter(r => r.needs_review).length;
+  const stats = [
+    [inc.length, "zaradených investorov"], [sk, "so sídlom na Slovensku"],
+    [state.records.length - inc.length, "vyradených kandidátov"], [review, "na ručné posúdenie"],
+  ];
+  document.getElementById("stats").replaceChildren(
+    ...stats.map(([n, label]) => el("div", { class: "stat" }, el("b", {}, n), el("span", {}, label))));
+  document.getElementById("sub").textContent =
+    `Pilot: VC aktívne na Slovensku, stav k ${state.data.as_of}. Každý údaj má zdroj, dátum a doslovnú citáciu overenú skriptom.`;
+}
+
+function fillFilters() {
+  const types = [...new Set(state.records.map(r => val(r.investor_type)).filter(Boolean))].sort();
+  const countries = [...new Set(state.records.map(r => r.country))].sort();
+  const typeSel = document.getElementById("f-type");
+  types.forEach(t => typeSel.append(el("option", { value: t }, TYPE_LABELS[t] || t)));
+  const cSel = document.getElementById("f-country");
+  countries.forEach(c => cSel.append(el("option", { value: c }, c)));
+}
+
+function filtered() {
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const status = document.getElementById("f-status").value;
+  const type = document.getElementById("f-type").value;
+  const country = document.getElementById("f-country").value;
+  return state.records.filter(r => {
+    if (status === "included" && !r.included) return false;
+    if (status === "excluded" && r.included) return false;
+    if (type && val(r.investor_type) !== type) return false;
+    if (country && r.country !== country) return false;
+    if (!q) return true;
+    const hay = [r.name, ...(val(r.sectors) || []), ...(r.funds || [])].join(" ").toLowerCase();
+    return hay.includes(q);
+  });
+}
+
+function renderTable() {
+  const rows = filtered();
+  document.getElementById("no-rows").hidden = rows.length > 0;
+  document.getElementById("rows").replaceChildren(...rows.map(r => {
+    const deal = latestDeal(r);
+    const badge = r.included
+      ? el("span", { class: `pill ${r.confidence === "high" ? "ok" : ""}` }, TYPE_LABELS[val(r.investor_type)] || "?")
+      : el("span", { class: "pill bad" }, REASON_LABELS[r.exclusion_reason] || r.exclusion_reason);
+    return el("tr", { "aria-selected": r.candidate_id === state.selected ? "true" : "false",
+        onclick: () => select(r.candidate_id) },
+      el("td", {}, el("div", {}, r.name), el("div", { class: "src" }, `${r.country} · ${r.candidate_id}`,
+        r.needs_review ? " · ⚠ na posúdenie" : "")),
+      el("td", {}, badge),
+      el("td", { class: "num" }, ticket(r)),
+      el("td", { class: "num" }, money(r.aum_eur)),
+      el("td", {}, deal ? `${deal.company}` : "–", deal ? el("div", { class: "src" }, deal.deal_date) : null));
+  }));
+}
+
+function statusPill(status) {
+  const [label, cls] = STATUS_LABELS[status] || [status, ""];
+  return el("span", { class: `pill ${cls}` }, label);
+}
+
+function factBlock(label, field, display) {
+  if (!field) return el("div", { class: "fact" }, el("div", { class: "label" }, label),
+    el("div", { class: "src" }, "Nenašiel sa verejný zdroj."));
+  const shown = field.value === null ? "neoverené – údaj sa nepoužije" : display(field);
+  return el("div", { class: "fact" },
+    el("div", { class: "label" }, label, " ", statusPill(field.status)),
+    el("div", { class: "value" }, shown),
+    el("blockquote", {}, field.quote),
+    el("div", { class: "src" }, safeLink(field.source_url), field.source_date ? ` · ${field.source_date}` : ""));
+}
+
+function select(id) {
+  state.selected = id;
+  const r = state.byId.get(id);
+  renderTable();
+  const list = v => (Array.isArray(v.value) ? v.value.join(", ") : v.value);
+  const eur = v => `${fmt.format(v.value)} EUR${v.original_currency && v.original_currency !== "EUR"
+    ? ` (${fmt.format(v.original_amount)} ${v.original_currency})` : ""}`;
+  const decision = r.included
+    ? el("span", { class: `pill ${r.confidence === "high" ? "ok" : "warn"}` }, `zaradený · istota ${r.confidence}`)
+    : el("span", { class: "pill bad" }, `vyradený · ${REASON_LABELS[r.exclusion_reason]}`);
+  document.getElementById("detail").replaceChildren(
+    el("h2", {}, r.name),
+    el("div", { class: "src" }, `${r.country}${r.active_in.length ? ` · investuje v ${r.active_in.join(", ")}` : ""}`,
+      r.website ? " · " : "", r.website ? safeLink(r.website) : ""),
+    el("p", {}, decision),
+    r.issues.length ? el("div", { class: "src" }, "Na posúdenie: ", r.issues.join("; ")) : null,
+    r.funds.length ? el("p", { class: "src" }, `Fondy: ${r.funds.join(", ")}`) : null,
+    factBlock("Čo je to za subjekt", r.entity_kind, v => v.value),
+    r.included || r.investor_type ? factBlock("Typ investora", r.investor_type, v => TYPE_LABELS[v.value] || v.value) : null,
+    r.included ? factBlock("Sektory", r.sectors, list) : null,
+    r.included ? factBlock("Fázy", r.stages, list) : null,
+    r.included ? factBlock("Ticket min", r.ticket_min_eur, eur) : null,
+    r.included ? factBlock("Ticket max", r.ticket_max_eur, eur) : null,
+    r.included ? factBlock("Celkový kapitál (AUM)", r.aum_eur, eur) : null,
+    el("div", { class: "fact" }, el("div", { class: "label" }, `Doložené investície (${r.investments.length})`),
+      ...r.investments.map(i => el("div", { style: "margin-top:8px" },
+        el("div", { class: "value" }, `${i.company} · ${i.deal_date} `, statusPill(i.status),
+          i.in_window ? "" : el("span", { class: "pill warn" }, "mimo 36 mes.")),
+        el("blockquote", {}, i.quote),
+        el("div", { class: "src" }, safeLink(i.source_url))))),
+    r.notes ? el("div", { class: "fact" }, el("div", { class: "label" }, "Poznámka rešerše"), el("div", {}, r.notes)) : null);
+}
+
+function quoteFor(row) {
+  const r = state.byId.get(row.candidate_id);
+  if (!r) return null;
+  if (row.item === "inclusion") return r.entity_kind.quote;
+  if (row.item === "latest_investment") return (r.investments.find(i => i.source_url === row.source_url) || {}).quote;
+  return (r[row.item] || {}).quote;
+}
+
+function renderChecks() {
+  const filter = document.getElementById("c-filter").value;
+  const scope = document.getElementById("c-scope").value;
+  const inScope = state.checks.filter(c => !scope || (state.byId.get(c.candidate_id) || {}).country === scope);
+  const done = inScope.filter(c => c.human_verdict).length;
+  document.getElementById("c-progress").style.width = inScope.length ? `${(done / inScope.length) * 100}%` : "0";
+  document.getElementById("c-count").textContent = `${done} / ${inScope.length} skontrolovaných človekom`;
+  const visible = inScope.filter(c => filter === "all" || (filter === "todo" && !c.human_verdict)
+    || (filter === "disagree" && c.ai_verdict !== "correct"));
+  const list = document.getElementById("check-list");
+  if (!visible.length) { list.replaceChildren(el("div", { class: "empty" }, "Hotovo, nič tu nie je.")); return; }
+  list.replaceChildren(...visible.map(c => checkRow(c)));
+}
+
+function checkRow(c) {
+  const r = state.byId.get(c.candidate_id) || { name: c.candidate_id };
+  const note = el("input", { type: "text", placeholder: "Poznámka (nepovinné)", value: c.human_note, maxlength: "500" });
+  const save = async verdict => {
+    try {
+      const updated = await api(`/api/check/${encodeURIComponent(c.candidate_id)}/${encodeURIComponent(c.item)}`,
+        { method: "PUT", body: JSON.stringify({ human_verdict: verdict, human_note: note.value }) });
+      Object.assign(c, updated);
+      renderChecks();
+    } catch (err) { showFatal(err); }
+  };
+  const btn = (verdict, label) => el("button", { class: c.human_verdict === verdict ? `on-${verdict}` : "",
+    onclick: () => save(c.human_verdict === verdict ? "" : verdict) }, label);
+  const quote = quoteFor(c);
+  return el("div", { class: "check-row" },
+    el("div", {}, el("div", { class: "who" }, r.name), el("div", { class: "item" }, ITEM_LABELS[c.item] || c.item)),
+    el("div", {},
+      el("div", { class: "value" }, c.system_value),
+      quote ? el("blockquote", {}, quote) : null,
+      el("div", { class: "src" }, safeLink(c.source_url)),
+      c.ai_verdict ? el("div", { class: "ai" }, `AI predkontrola: ${c.ai_verdict === "correct" ? "✓ správne" : "✗ nesprávne"}${c.ai_note ? ` – ${c.ai_note}` : ""}`)
+        : el("div", { class: "ai" }, "AI predkontrola: bez verdiktu")),
+    el("div", { class: "verdict" }, btn("correct", "✓ Správne"), btn("incorrect", "✗ Nesprávne"), note));
+}
+
+function metricCard(title, ratio, hint) {
+  return el("div", { class: "card metric" }, el("h3", {}, title), el("b", {}, pct(ratio.value)),
+    el("small", {}, `${ratio.correct} / ${ratio.total}${hint ? ` · ${hint}` : ""}`));
+}
+
+async function renderMetrics() {
+  try {
+    const m = await api("/api/metrics");
+    const h = m.human, all = m.combined;
+    const cards = [
+      metricCard("Precision zaradenia (človek)", h.inclusion_precision, "je to skutočný aktívny investor?"),
+      metricCard("Precision zaradenia (človek + AI)", all.inclusion_precision),
+      metricCard("Správnosť vyradenia (človek)", h.exclusion_accuracy),
+      metricCard("Skontrolované človekom", h.human_checked, `položky so sídlom ${h.scope_country}`),
+      metricCard("AI predkontrola súhlasí s človekom", h.ai_agrees_with_human),
+      ...Object.entries(h.field_accuracy).map(([k, v]) => metricCard(`Presnosť: ${ITEM_LABELS[k] || k} (človek)`, v)),
+      ...Object.entries(h.fill_rate).map(([k, v]) => metricCard(`Vyplnenosť: ${ITEM_LABELS[k] || k}`, v, "zaradení SK")),
+    ];
+    document.getElementById("metric-cards").replaceChildren(...cards);
+  } catch (err) { showFatal(err); }
+}
+
+function switchTab(name) {
+  document.querySelectorAll("nav button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
+  ["db", "check", "metrics"].forEach(t => { document.getElementById(`tab-${t}`).hidden = t !== name; });
+  if (name === "check") renderChecks();
+  if (name === "metrics") renderMetrics();
+}
+
+async function init() {
+  try {
+    const [data, checks] = await Promise.all([api("/api/investors"), api("/api/check")]);
+    state.data = data;
+    state.records = [...data.records].sort((a, b) => Number(b.included) - Number(a.included) || a.name.localeCompare(b.name, "sk"));
+    state.byId = new Map(state.records.map(r => [r.candidate_id, r]));
+    state.checks = checks;
+    renderStats();
+    fillFilters();
+    renderTable();
+  } catch (err) { showFatal(err); }
+}
+
+document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
+["q", "f-status", "f-type", "f-country"].forEach(id =>
+  document.getElementById(id).addEventListener("input", renderTable));
+["c-filter", "c-scope"].forEach(id => document.getElementById(id).addEventListener("input", renderChecks));
+init();
+</script>
+</body>
+</html>

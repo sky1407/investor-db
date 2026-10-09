@@ -6,15 +6,18 @@ from pathlib import Path
 
 from pydantic import ValidationError
 
-from investordb.build import FxRates, build_record
+from investordb.build import FxRates, InvestorOut, build_record
 from investordb.export import EXCLUDED_COLUMNS, INCLUDED_COLUMNS, excluded_row, included_row, write_csv
 from investordb.fetch import PageFetcher
 from investordb.io import DATA_DIR, RESEARCH_DIR, ROOT, VALIDATION_DIR, load_record, load_research, write_json
+from investordb.metrics import check_items, load_rows, merge, metrics_payload, save_rows
 from investordb.models import CheckResult
 from investordb.verify import summarize, verify_records
 
 CACHE_DIR = ROOT / ".cache" / "pages"
 VERIFY_REPORT = VALIDATION_DIR / "verify_report.json"
+INVESTORS_JSON = DATA_DIR / "investors.json"
+MANUAL_CHECK = VALIDATION_DIR / "manual_check.csv"
 
 
 def cmd_check_schema(args: argparse.Namespace) -> int:
@@ -75,7 +78,7 @@ def cmd_build(args: argparse.Namespace) -> int:
     as_of = date.fromisoformat(args.as_of)
     built = [build_record(r, report[r.candidate_id], fx, as_of) for r in records]
     write_json(
-        DATA_DIR / "investors.json",
+        INVESTORS_JSON,
         {"as_of": as_of, "fx": fx.model_dump(), "records": [b.model_dump(mode="json") for b in built]},
     )
     included = [b for b in built if b.included]
@@ -86,6 +89,32 @@ def cmd_build(args: argparse.Namespace) -> int:
     print(f"included: {len(included)}  excluded: {len(excluded)}  needs review: {review}")
     print(f"schema errors: {len(errors)}")
     return 1 if errors else 0
+
+
+def cmd_metrics(args: argparse.Namespace) -> int:
+    if not INVESTORS_JSON.exists():
+        print("run `build` first", file=sys.stderr)
+        return 1
+    payload = json.loads(INVESTORS_JSON.read_text(encoding="utf-8"))
+    built = [InvestorOut.model_validate(r) for r in payload["records"]]
+    rows = merge(check_items(built), load_rows(MANUAL_CHECK))
+    save_rows(MANUAL_CHECK, rows)
+    metrics = metrics_payload(built, rows)
+    write_json(VALIDATION_DIR / "metrics.json", metrics)
+    for source in ("human", "combined"):
+        m = metrics[source]
+        print(f"[{source}] precision {m['inclusion_precision']}  exclusion {m['exclusion_accuracy']}")
+    print(f"human checked: {metrics['human']['human_checked']}")
+    return 0
+
+
+def cmd_serve(args: argparse.Namespace) -> int:
+    import uvicorn
+
+    from investordb.server import create_app
+
+    uvicorn.run(create_app(INVESTORS_JSON, MANUAL_CHECK), host="127.0.0.1", port=args.port)
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -101,6 +130,11 @@ def build_parser() -> argparse.ArgumentParser:
     build = sub.add_parser("build", help="apply inclusion rules and export the database")
     build.add_argument("--as-of", default=date.today().isoformat())
     build.set_defaults(func=cmd_build)
+    metrics = sub.add_parser("metrics", help="sync the manual check sheet and compute accuracy")
+    metrics.set_defaults(func=cmd_metrics)
+    serve = sub.add_parser("serve", help="browse the database and do the manual check on localhost")
+    serve.add_argument("--port", type=int, default=8000)
+    serve.set_defaults(func=cmd_serve)
     return parser
 
 

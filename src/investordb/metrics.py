@@ -172,3 +172,18 @@ def compute_metrics(
             sum(r.ai_verdict == r.human_verdict for r in ai_vs_human), len(ai_vs_human)
         ),
     }
+
+
+def _plain(value: object) -> object:
+    if isinstance(value, Ratio):
+        return {"correct": value.correct, "total": value.total, "value": value.value}
+    if isinstance(value, dict):
+        return {key: _plain(item) for key, item in value.items()}
+    return value
+
+
+def metrics_payload(built: list[InvestorOut], rows: list[CheckRow]) -> dict:
+    return {
+        "human": _plain(compute_metrics(built, rows, human_only=True)),
+        "combined": _plain(compute_metrics(built, rows)),
+    }
