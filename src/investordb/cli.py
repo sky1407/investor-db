@@ -10,7 +10,7 @@ from investordb.build import FxRates, InvestorOut, build_record
 from investordb.export import EXCLUDED_COLUMNS, INCLUDED_COLUMNS, excluded_row, included_row, write_csv
 from investordb.fetch import PageFetcher
 from investordb.io import DATA_DIR, RESEARCH_DIR, ROOT, VALIDATION_DIR, load_record, load_research, write_json
-from investordb.metrics import check_items, load_rows, merge, metrics_payload, save_rows
+from investordb.metrics import apply_ai_verdicts, check_items, load_rows, merge, metrics_payload, save_rows
 from investordb.models import CheckResult
 from investordb.verify import summarize, verify_records
 
@@ -108,6 +108,28 @@ def cmd_metrics(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_import_review(args: argparse.Namespace) -> int:
+    if not INVESTORS_JSON.exists():
+        print("run `build` first", file=sys.stderr)
+        return 1
+    payload = json.loads(INVESTORS_JSON.read_text(encoding="utf-8"))
+    built = [InvestorOut.model_validate(r) for r in payload["records"]]
+    rows = merge(check_items(built), load_rows(MANUAL_CHECK))
+    total_problems = 0
+    for raw in args.paths:
+        entries = json.loads(Path(raw).read_text(encoding="utf-8"))
+        if not isinstance(entries, list):
+            print(f"{raw}: expected a JSON list", file=sys.stderr)
+            return 1
+        rows, problems = apply_ai_verdicts(rows, entries)
+        total_problems += len(problems)
+        for problem in problems:
+            print(f"{raw}: {problem}", file=sys.stderr)
+        print(f"{raw}: {len(entries) - len(problems)} verdicts imported")
+    save_rows(MANUAL_CHECK, rows)
+    return 1 if total_problems else 0
+
+
 def cmd_serve(args: argparse.Namespace) -> int:
     import uvicorn
 
@@ -132,6 +154,9 @@ def build_parser() -> argparse.ArgumentParser:
     build.set_defaults(func=cmd_build)
     metrics = sub.add_parser("metrics", help="sync the manual check sheet and compute accuracy")
     metrics.set_defaults(func=cmd_metrics)
+    review = sub.add_parser("import-review", help="import AI pre-check verdicts into the manual check sheet")
+    review.add_argument("paths", nargs="+")
+    review.set_defaults(func=cmd_import_review)
     serve = sub.add_parser("serve", help="browse the database and do the manual check on localhost")
     serve.add_argument("--port", type=int, default=8000)
     serve.set_defaults(func=cmd_serve)

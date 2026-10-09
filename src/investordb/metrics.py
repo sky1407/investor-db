@@ -187,3 +187,22 @@ def metrics_payload(built: list[InvestorOut], rows: list[CheckRow]) -> dict:
         "human": _plain(compute_metrics(built, rows, human_only=True)),
         "combined": _plain(compute_metrics(built, rows)),
     }
+
+
+def apply_ai_verdicts(rows: list[CheckRow], entries: list[dict]) -> tuple[list[CheckRow], list[str]]:
+    index = {row.key: i for i, row in enumerate(rows)}
+    updated = list(rows)
+    problems: list[str] = []
+    for entry in entries:
+        key = (str(entry.get("candidate_id", "")), str(entry.get("item", "")))
+        if key not in index:
+            problems.append(f"unknown row {key}")
+            continue
+        try:
+            verdict = _verdict(entry.get("ai_verdict"))
+        except ValueError as exc:
+            problems.append(f"{key}: {exc}")
+            continue
+        note = str(entry.get("ai_note") or "").strip()[:500]
+        updated[index[key]] = replace(updated[index[key]], ai_verdict=verdict, ai_note=note)
+    return updated, problems

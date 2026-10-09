@@ -2,7 +2,15 @@ from dataclasses import replace
 
 import pytest
 
-from investordb.metrics import CheckRow, check_items, compute_metrics, load_rows, merge, save_rows
+from investordb.metrics import (
+    CheckRow,
+    apply_ai_verdicts,
+    check_items,
+    compute_metrics,
+    load_rows,
+    merge,
+    save_rows,
+)
 from tests.test_build import build, inv
 
 SECTORS = {"value": ["fintech"], "source_url": "https://neulogy.vc/s", "quote": "fintech companies"}
@@ -97,3 +105,18 @@ def test_check_row_final_verdict_prefers_human():
         "c009", "inclusion", "included", "https://x", ai_verdict="incorrect", human_verdict="correct"
     )
     assert row.final_verdict == "correct"
+
+
+def test_apply_ai_verdicts_validates_entries():
+    rows = check_items(sample())
+    entries = [
+        {"candidate_id": "c009", "item": "sectors", "ai_verdict": "incorrect", "ai_note": " fund size "},
+        {"candidate_id": "c999", "item": "inclusion", "ai_verdict": "correct"},
+        {"candidate_id": "c009", "item": "inclusion", "ai_verdict": "yes"},
+    ]
+    updated, problems = apply_ai_verdicts(rows, entries)
+    by_key = {r.key: r for r in updated}
+    assert by_key[("c009", "sectors")].ai_verdict == "incorrect"
+    assert by_key[("c009", "sectors")].ai_note == "fund size"
+    assert by_key[("c009", "inclusion")].ai_verdict == ""
+    assert len(problems) == 2
