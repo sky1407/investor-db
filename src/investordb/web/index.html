@@ -133,6 +133,7 @@
         <option value="SK">Iba sídlo SK (meraná vzorka)</option>
         <option value="">Všetky krajiny</option>
       </select>
+      <input type="search" id="c-q" placeholder="Hľadať c013, názov…" aria-label="Hľadať v kontrole">
       <div class="progress" aria-label="Postup kontroly"><div id="c-progress" style="width:0"></div></div>
       <span id="c-count" class="src"></span>
     </div>
@@ -325,9 +326,12 @@ function renderChecks() {
   const done = inScope.filter(c => c.human_verdict).length;
   document.getElementById("c-progress").style.width = inScope.length ? `${(done / inScope.length) * 100}%` : "0";
   document.getElementById("c-count").textContent = `${done} / ${inScope.length} skontrolovaných človekom`;
-  const visible = inScope.filter(c => filter === "all" || state.keep.has(checkKey(c))
+  const q = document.getElementById("c-q").value.trim().toLowerCase();
+  const matches = c => !q || c.candidate_id.toLowerCase().includes(q)
+    || ((state.byId.get(c.candidate_id) || {}).name || "").toLowerCase().includes(q);
+  const visible = inScope.filter(c => matches(c) && (filter === "all" || state.keep.has(checkKey(c))
     || (filter === "todo" && !c.human_verdict)
-    || (filter === "disagree" && c.ai_verdict !== "correct"));
+    || (filter === "disagree" && c.ai_verdict !== "correct")));
   const list = document.getElementById("check-list");
   if (!visible.length) { list.replaceChildren(el("div", { class: "empty" }, "Hotovo, nič tu nie je.")); return; }
   list.replaceChildren(...visible.map(c => checkRow(c)));
@@ -358,7 +362,7 @@ function checkRow(c) {
     "aria-pressed": String(c.human_verdict === verdict), onclick: e => save(verdict, e.currentTarget) }, label);
   const quote = quoteFor(c);
   return el("div", { class: "check-row" },
-    el("div", {}, el("div", { class: "who" }, r.name), el("div", { class: "item" }, ITEM_LABELS[c.item] || c.item)),
+    el("div", {}, el("div", { class: "who" }, `${c.candidate_id} · ${r.name}`), el("div", { class: "item" }, ITEM_LABELS[c.item] || c.item)),
     el("div", {},
       el("div", { class: "value" }, c.system_value),
       quote ? el("blockquote", {}, quote) : null,
@@ -415,7 +419,7 @@ async function init() {
 document.querySelectorAll("nav button").forEach(b => b.addEventListener("click", () => switchTab(b.dataset.tab)));
 ["q", "f-status", "f-type", "f-country"].forEach(id =>
   document.getElementById(id).addEventListener("input", renderTable));
-["c-filter", "c-scope"].forEach(id => document.getElementById(id).addEventListener("input", () => {
+["c-filter", "c-scope", "c-q"].forEach(id => document.getElementById(id).addEventListener("input", () => {
   state.keep.clear();
   renderChecks();
 }));
