@@ -19,6 +19,7 @@ testpaths = ["tests"]
 [tool.ruff]
 line-length = 110
 src = ["src", "tests"]
+extend-exclude = ["ai-log"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "B", "UP", "SIM"]
