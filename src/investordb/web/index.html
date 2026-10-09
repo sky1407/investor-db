@@ -333,6 +333,11 @@ function renderChecks() {
   list.replaceChildren(...visible.map(c => checkRow(c)));
 }
 
+function looksEnglish(text) {
+  if (!text || /[áäčďéěíĺľňóôŕřšťúůýžąćęłńśźż]/i.test(text)) return false;
+  return /\b(the|and|of|is|are|we|our|with|for)\b/i.test(text);
+}
+
 function checkKey(c) { return `${c.candidate_id}/${c.item}`; }
 
 function checkRow(c) {
@@ -357,6 +362,8 @@ function checkRow(c) {
     el("div", {},
       el("div", { class: "value" }, c.system_value),
       quote ? el("blockquote", {}, quote) : null,
+      looksEnglish(quote) ? el("div", { class: "ai" },
+        "Citácia je v angličtine. Ak ju Ctrl+F nenájde, prepni stránku do angličtiny (EN).") : null,
       el("div", { class: "src" }, safeLink(c.source_url)),
       c.ai_verdict ? el("div", { class: "ai" }, `AI predkontrola: ${c.ai_verdict === "correct" ? "✓ správne" : "✗ nesprávne"}${c.ai_note ? ` – ${c.ai_note}` : ""}`)
         : el("div", { class: "ai" }, "AI predkontrola: bez verdiktu")),

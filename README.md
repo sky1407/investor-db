@@ -111,6 +111,11 @@ záver z citácie správny**: či je AUM naozaj spravovaný kapitál, či ticket
 2. **Existencia citácie** (`verify`): 327 z 329 dôkazov overených, 2 URL nedostupné (HTTP chyba).
 3. **Druhý, nezávislý agent** kontroloval interpretáciu.
 4. **Ručná kontrola** v UI: pri každej položke odkaz na zdroj, verdikt a poznámka AI, tlačidlá správne/nesprávne.
+   - **Jazyk zdroja:** citácie sú doslovné, v jazyku, v ktorom ich agent na stránke našiel. Viacjazyčné weby
+     (napr. fondy so sídlom v SK alebo CZ) slovenskému prehliadaču často zobrazia slovenskú verziu, hoci agent aj
+     skript dostali anglickú. Text vtedy Ctrl+F nenájde, kým sa stránka neprepne do angličtiny. **Nie je to chyba
+     dôkazu.** UI pri anglickej citácii zobrazí upozornenie. Citácie zámerne neprekladám, lebo preložený text by
+     skript nevedel overiť.
 5. **Testy** pre pravidlá zaradenia, normalizáciu textu, overovanie a metriky (87 testov).
 
 ### Kde sa AI pomýlila
