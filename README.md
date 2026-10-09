@@ -21,27 +21,48 @@ výsledok v jednoduchom UI.
 Pilot: **75 kandidátov** pôsobiacich na Slovensku → **29 zaradených, 46 vyradených**. Overených **327 z 329**
 dôkazov (citácia sa našla na stránke), 2 URL boli nedostupné.
 
-**Meranie presnosti** prebieha na 50 kandidátoch so sídlom na Slovensku (100 %, nevzorkujem). Kontrolný hárok má
-211 položiek (zaradenie/vyradenie + každé vyplnené pole).
+**Meranie presnosti** prebieha na 50 kandidátoch so sídlom na Slovensku. Skontrolovaných je 100 % (102 položiek:
+zaradenie alebo vyradenie a každé vyplnené pole), nevzorkujem. Kontrolu robil človek v UI 2026-10-09 a pri každej
+položke otvoril zdroj.
 
-| Metrika | AI predkontrola (stav 2026-10-09) | Ručná kontrola |
+| Metrika (sídlo SK) | Ručná kontrola | AI predkontrola (pre porovnanie) |
 |---|---|---|
-| Precision zaradenia (zaradení sú naozaj aktívni investori) | **7 / 8 = 87,5 %** | <!-- HUMAN --> |
-| Správnosť dôvodu vyradenia | **28 / 33 = 84,8 %** | |
-| `investor_type`, `sectors`, `stages`, tickety, posledný deal | 100 % (33 / 33) | |
-| `aum_eur` | **2 / 4 = 50 %** | |
-| Položky, ktoré AI označila ako nesprávne | 15 / 211 = 7,1 % | |
-| Položky bez verdiktu (stránka vracia 403) | 10 / 211 | |
+| **Precision zaradenia** (zaradení sú naozaj aktívni investori) | **10 / 10 = 100 %** | 7 / 8 |
+| **Správnosť dôvodu vyradenia** | **36 / 40 = 90 %** | 28 / 33 |
+| `investor_type` | 10 / 10 | |
+| `sectors`, `stages` | 13 / 13 | |
+| `ticket_min_eur`, `ticket_max_eur` | 13 / 13 | |
+| `latest_investment` (doložený deal so zdrojom a dátumom) | 10 / 10 | |
+| **`aum_eur`** | **5 / 6 = 83 %** | 2 / 4 |
+| **Všetky polia spolu** | **51 / 52 = 98 %** | |
+| Zhoda AI predkontroly s človekom | 75 / 78 = 96 % | |
 
-Celkovo (všetky krajiny) AI predkontrola označila ako nesprávne 15 položiek: 7× číslo (5× AUM, 2× ticket), 1× sektor,
-1× fáza, 1× zaradenie (CB ESPRI) a 5× dôvod vyradenia. Pri 4 z nich bolo samotné vyradenie správne, iba dôvod mal
-byť `inactive` namiesto `no_evidence` (viď chyby nižšie).
+**Chyby, ktoré našiel človek** (všetky predtým označila aj AI predkontrola):
 
-**Interpretácia:** identita, typ a doložená investícia sú spoľahlivé. Slabým miestom je AUM a rozlíšenie
-„neaktívny“ vs. „bez dôkazu“, čo zodpovedá odhadu spoľahlivosti v `PLAN.md` (AUM: stredná až nízka).
+- **4× nesprávny dôvod vyradenia** (SRF, Arca Capital, Limerock, Sociálni Inovátori): subjekty sú správne vyradené,
+  ale ako `no_evidence` namiesto `inactive`. Staré investície sú doložené, fondy sú ukončené.
+- **1× AUM** (Across, c013): 450 mil. EUR je majetok klientov wealth managementu, nie veľkosť VC fondu.
+- Mimo meranej vzorky: Fil Rouge Capital (c073, HR) nemá vo fázach `series-a`.
 
-> Čísla v stĺpci „Ručná kontrola“ sú merania človeka. AI predkontrola je len predbežný odhad. Metriky v
-> `validation/metrics.json` majú dve vetvy: `human` (len ľudské verdikty) a `combined` (ľudský verdikt, inak AI).
+**Kde sa AI predkontrola mýlila** (3 z 78 položiek): CB ESPRI (zaradenie je podľa pravidla 36 mesiacov správne),
+CB Investment Management (koinvestícia 2025 len v agregátore, SIH potvrdzuje koniec investičného obdobia v 2023) a
+0100 Ventures (23 mil. EUR je skutočný Fund I, 60 mil. je len cieľ nového fondu). AI predkontrola teda chyby
+nevynechala, ale bola prísnejšia ako človek.
+
+**Vyplnenosť polí** pri zaradených SK: typ 100 %, fázy a `ticket_max` 70 %, sektory, `ticket_min` a AUM 60 %.
+
+**Interpretácia:** hlavná požiadavka zadania („každý záznam je skutočný investor“) je na vzorke splnená na 100 %.
+Identita, typ a doložená investícia sú spoľahlivé. Slabými miestami sú AUM a rozlíšenie „neaktívny“ vs. „bez
+dôkazu“. Zodpovedá to odhadu v `PLAN.md` (AUM: stredná až nízka spoľahlivosť). Vzorka je malá (10 zaradených),
+preto 100 % neznamená, že vo veľkom rozsahu nebudú chyby. Pri 10 z 10 je 95 % interval spoľahlivosti pre
+precision približne 69 – 100 %.
+
+Mimo SK vzorky AI predkontrola označila ďalšie chyby čísel (3TS: ticket je veľkosť kola, AUM je cieľ fondu; ZAKA:
+zastarané AUM; BHM: AUM je hodnota aktív skupiny; BHS: príliš úzky sektor). Človek ich nekontroloval, preto nie sú
+v metrikách.
+
+> Metriky v `validation/metrics.json` majú dve vetvy: `human` (len ľudské verdikty, z nich je tabuľka vyššie) a
+> `combined` (ľudský verdikt, inak AI).
 
 ## Ako to funguje
 
@@ -124,9 +145,9 @@ záver z citácie správny**: či je AUM naozaj spravovaný kapitál, či ticket
 |---|---|---|---|
 | **AUM nie je spravovaný kapitál** (najčastejšia) | Ako AUM zapísaný majetok klientov wealth managementu (Across, c013), hodnota aktív portfóliových firiem (BHM, c018), cieľová veľkosť fondu namiesto skutočného uzavretia (3TS, ZAKA) | Review agent | Pole označené ako nesprávne; v pokynoch pre ďalšie kolo treba presnejšiu definíciu AUM |
 | **Veľkosť kola namiesto ticketu** | 3TS: „vedie kolá 5 – 20 mil. EUR“ zapísané ako ticket fondu | Review agent | Ticket ponechať prázdny |
-| **Príliš konkrétny sektor** | BHS: „manufacturing“, hoci zdroj hovorí „všetky odvetvia, primárne tradičná ekonomika“ | Review agent | Opravené na generalist |
-| **Falošný záver „neaktívny“** | CB Investment Management vyradený ako `inactive`, review agent našiel koinvestíciu z 05/2025 | Review agent | Výhrada: deal-first zdroje sú neúplné, `inactive` treba overovať druhým hľadaním |
-| **Aktivita podľa dátumu správy, nie stavu fondu** | CB ESPRI (c062) zaradený, lebo správa o investícii do Elv.ai je z 01/2024. Fond je však od 2024 v poinvestičnom období a nové investície nerobí | Review agent | Pravidlo aktivity treba rozšíriť: ak zdroj uvádza ukončené investičné obdobie a nie je nový fond, `inactive` |
+| **Príliš konkrétny sektor** | BHS: „manufacturing“, hoci zdroj hovorí „všetky odvetvia, primárne tradičná ekonomika“ | Review agent | Navrhnutá oprava: generalist |
+| **Review agent: falošné poplachy** | CB Investment Management: „aktívny“ podľa agregátora Caplight, primárny zdroj neexistuje. CB ESPRI: „neaktívny“, hoci posledný deal je v okne 36 mesiacov. 0100 Ventures: AUM „zastarané“, hoci nový fond je len cieľ | Ručná kontrola | Aj kontrolný agent sa mýli, preto o metrikách rozhoduje človek. Zhoda AI s človekom bola 96 % |
+| **Aktivita podľa dátumu dealu, nie stavu fondu** (obmedzenie pravidla, nie chyba dát) | CB ESPRI (c062) je podľa pravidla správne zaradený (Elv.ai 01/2024). Fond je však od 2024 v poinvestičnom období a nové investície nerobí | Review agent | Pravidlo aktivity treba rozšíriť: ak zdroj uvádza ukončené investičné obdobie a nie je nový fond, `inactive` |
 | **`no_evidence` namiesto `inactive`** | SRF, Arca Capital, Limerock, Sociálni Inovátori: agent v poznámke správne napísal, že subjekt je neaktívny (likvidácia, konkurz, skončené investičné obdobie), ale staré investície nezapísal, hoci to prompt vyžadoval. Pravidlo bez investícií vráti „bez dôkazu“ | Review agent | Vyradenie je správne, dôvod nie. Riešenie: povinne zapísať najnovší starý deal, alebo pole `status_evidence` s citáciou o likvidácii |
 | **Jazyková verzia stránky** (chyba môjho skriptu, nie modelu) | Agent citoval anglickú verziu, skript stiahol slovenskú (podľa `Accept-Language`) → citácia „nenájdená“, falošný negatív | Ručne pri prvom behu `verify` | Commit `eb6542a`: pri nezhode skúsi aj anglický variant stránky |
 | **Zdieľaný scratchpad agentov** | Paralelní agenti rešerše si navzájom prepisovali pomocné skripty v spoločnom pracovnom priečinku | Report agenta 1 | Výstupy (`research/cXXX.json`) to nepoškodilo; paralelní agenti potrebujú izolované priečinky. Review agent má zakázané zapisovať mimo svojho výstupného súboru |
@@ -151,11 +172,12 @@ Chyby, ktoré zostali, sú **chyby interpretácie** pravdivého zdroja. Tie zach
 
 ## Čo v riešení chýba
 
-- **Ručná kontrola človekom** <!-- HUMAN-STATUS -->
+- **Ručná kontrola mimo SK:** zaradení a vyradení so sídlom mimo Slovenska (CZ, PL, AT…) majú iba AI predkontrolu.
 - **Recall** som nemeral. Capture-recapture z `PLAN.md` vyžaduje druhý nezávislý zoznam (napr. Dealroom export),
   ktorý nie je verejne a zadarmo dostupný v strojovo čitateľnej podobe.
-- **Opravy podľa AI predkontroly nie sú zapracované do dát.** Zámerne: najprv rozhodne človek, potom sa opraví
-  `research/*.json` a pipeline sa spustí znova. Inak by sa metrika merala na dátach, ktoré už opravila AI.
+- **Opravy zistené kontrolou nie sú zapracované do dát.** Zámerne: metriky opisujú výstup pipeline tak, ako ho
+  vyrobila. Ďalší krok je opraviť `research/*.json` (5 položiek), upraviť pokyny pre agentov (AUM, staré dealy) a
+  spustiť pipeline znova.
 - **Zlučovanie duplicít:** `duplicate` záznam sa vyradí, ale jeho dôkazy sa nepripoja k hlavnému záznamu.
 - **Vzťah správca → fondy** (NHF → Eterus, FIT) nie je modelovaný, iba popísaný v poznámke.
 - **Pravidlo aktivity** neberie do úvahy ukončené investičné obdobie (prípad CB ESPRI).
