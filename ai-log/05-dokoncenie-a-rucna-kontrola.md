@@ -2566,7 +2566,7 @@ Repozitár je verejný a pushnutý: **https://github.com/sky1407/investor-db** (
 - `ai-log/README.md` popisuje obsah a úpravy oproti surovému transkriptu.
 
 **Čo som pred zverejnením odstránil:**
-- **Výstupy z tvojej pamäte o iných projektoch.** Transkript obsahoval napríklad poznámky o prijímacom teste INIZIO a výpis tvojho domovského priečinka. Takéto výstupy som vynechal a označil. Tvoje správy ani odpovede Clauda som nevynechal.
+- **Výstupy z tvojej pamäte o iných projektoch.** Transkript obsahoval napríklad poznámky o inom projekte a výpis tvojho domovského priečinka. Takéto výstupy som vynechal a označil. Tvoje správy ani odpovede Clauda som nevynechal.
 - **E-mailové adresy** som nahradil `[email]`. Kľúče API ani heslá som v exporte nenašiel.
 
 **Ďalšie zmeny pred pushom:**
