@@ -42,7 +42,6 @@ položke otvoril zdroj.
 - **4× nesprávny dôvod vyradenia** (SRF, Arca Capital, Limerock, Sociálni Inovátori): subjekty sú správne vyradené,
   ale ako `no_evidence` namiesto `inactive`. Staré investície sú doložené, fondy sú ukončené.
 - **1× AUM** (Across, c013): 450 mil. EUR je majetok klientov wealth managementu, nie veľkosť VC fondu.
-- Mimo meranej vzorky: Fil Rouge Capital (c073, HR) nemá vo fázach `series-a`.
 
 **Kde sa AI predkontrola mýlila** (3 z 78 položiek): CB ESPRI (zaradenie je podľa pravidla 36 mesiacov správne),
 CB Investment Management (koinvestícia 2025 len v agregátore, SIH potvrdzuje koniec investičného obdobia v 2023) a
@@ -57,9 +56,9 @@ dôkazu“. Zodpovedá to odhadu v `PLAN.md` (AUM: stredná až nízka spoľahli
 preto 100 % neznamená, že vo veľkom rozsahu nebudú chyby. Pri 10 z 10 je 95 % interval spoľahlivosti pre
 precision približne 69 – 100 %.
 
-Mimo SK vzorky AI predkontrola označila ďalšie chyby čísel (3TS: ticket je veľkosť kola, AUM je cieľ fondu; ZAKA:
-zastarané AUM; BHM: AUM je hodnota aktív skupiny; BHS: príliš úzky sektor). Človek ich nekontroloval, preto nie sú
-v metrikách.
+Mimo SK vzorky človek skontroloval iba 7 položiek, ktoré AI predkontrola označila ako sporné, a potvrdil všetky:
+3TS (ticket je veľkosť kola, AUM je cieľ fondu), ZAKA (zastarané AUM), BHM (AUM je hodnota aktív skupiny), BHS
+(príliš úzky sektor) a Fil Rouge (chýba `series-a`). Tieto položky nie sú v metrikách, lebo meraná vzorka sú subjekty so sídlom na Slovensku.
 
 > Metriky v `validation/metrics.json` majú dve vetvy: `human` (len ľudské verdikty, z nich je tabuľka vyššie) a
 > `combined` (ľudský verdikt, inak AI).
@@ -172,7 +171,8 @@ Chyby, ktoré zostali, sú **chyby interpretácie** pravdivého zdroja. Tie zach
 
 ## Čo v riešení chýba
 
-- **Ručná kontrola mimo SK:** zaradení a vyradení so sídlom mimo Slovenska (CZ, PL, AT…) majú iba AI predkontrolu.
+- **Ručná kontrola mimo SK:** pri subjektoch so sídlom mimo Slovenska (CZ, PL, AT…) človek skontroloval iba položky,
+  ktoré AI označila ako sporné. Ostatné majú len AI predkontrolu.
 - **Recall** som nemeral. Capture-recapture z `PLAN.md` vyžaduje druhý nezávislý zoznam (napr. Dealroom export),
   ktorý nie je verejne a zadarmo dostupný v strojovo čitateľnej podobe.
 - **Opravy zistené kontrolou nie sú zapracované do dát.** Zámerne: metriky opisujú výstup pipeline tak, ako ho
