@@ -358,6 +358,7 @@ function checkRow(c) {
       renderChecks();
     } catch (err) { button.disabled = false; showFatal(err); }
   };
+  note.addEventListener("change", () => { if (c.human_verdict) save(c.human_verdict, note); });
   const btn = (verdict, label) => el("button", { class: c.human_verdict === verdict ? `on-${verdict}` : "",
     "aria-pressed": String(c.human_verdict === verdict), onclick: e => save(verdict, e.currentTarget) }, label);
   const quote = quoteFor(c);
