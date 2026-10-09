@@ -1,0 +1,704 @@
+[
+ {
+  "candidate_id": "c001",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "PE správca s fondami (>300 mil. EUR v 4 fondoch), Medicofit 08/2026 je v okne."
+ },
+ {
+  "candidate_id": "c001",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Tlačová správa ARX sa označuje ako private equity firm."
+ },
+ {
+  "candidate_id": "c001",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka uvádza financovanie MBO/MBI; buyout je podložený (rastové/nástupnícke deals sú doplnkové)."
+ },
+ {
+  "candidate_id": "c001",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka: štyri PE fondy s viac ako 300 mil. EUR pod správou."
+ },
+ {
+  "candidate_id": "c001",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "ARX získal väčšinový podiel v Medicofit, správa z 26.8.2026."
+ },
+ {
+  "candidate_id": "c002",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "CVI je správca private debt (senior/junior, unitranche, mezanín); equity len okrajovo, debt_only sedí."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "PE investor, EIF IX investoval do Saulėgrąža 07/2026, v okne."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka: 'the most experienced private equity investor in CEE'."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Zoznam sektorov je doslovne zo stránky About."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Podiely od veľkých minoritných po plné vlastníctvo za 20-75 mil. EUR zodpovedajú growth a buyout."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "'We invest between EUR 20 million and EUR 75 million' je veľkosť jednej investície."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Ako vyššie, horná hranica 75 mil. EUR."
+ },
+ {
+  "candidate_id": "c003",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Správa z 1.7.2026: EIF IX investuje až 21,8 mil. EUR do Saulėgrąža."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Kapitálový fond investujúci equity do SK firiem; EC Pharmacies 08/2024 je v okne."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Oaklins: 'Eterus Capital is a private equity fund founded in 2008'."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Vlastná stránka: financovanie spoločností vo fáze rastu, minoritné podiely."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Vlastná stránka: investície v rozmedzí 2-2,5 mil. EUR."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Vlastná stránka: horná hranica 2,5 mil. EUR."
+ },
+ {
+  "candidate_id": "c004",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Oaklins: v auguste 2024 Eterus získal väčšinový podiel v EC Pharmacies."
+ },
+ {
+  "candidate_id": "c005",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "fondfit.sk: 'Fond inovácií a technológií vstúpil v roku 2025 do post-investičnej fázy', nové investície nerobí; inactive sedí."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "PE skupina, GPEF V investuje do POS Media Europe 04/2026."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Lupa.cz: skupina fondov private equity."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "AmCham: equity tickets 10-45 mil. EUR (menšie len výnimočne)."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "AmCham: horná hranica 45 mil. EUR."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "286 mil. EUR je aktuálna veľkosť najnovšieho fondu GPEF V, prípustné podľa pravidiel (vysvetlené v notes)."
+ },
+ {
+  "candidate_id": "c006",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Novinka z 13.04.2026 o investícii GPEF V do POS Media Europe; neskôr len exit GTH Catering."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "PE a VC fondy Jet, viacero investícií v 09/2026."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA: 'Typ fondu: Private Equity'."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Zdroj podporuje 'industry'; VC fond Jet Venture (AI/SaaS) by mohol byť doplnený, ale hodnota nie je nesprávna."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA: min. 15 mil. EUR equity na jednu investíciu (PE stratégia)."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA: max. 50 mil. EUR equity."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "17 mld. CZK pod správou vrátane nesplateného kapitálu v 4 fondoch; prepočet 17e9/24,403 sedí."
+ },
+ {
+  "candidate_id": "c007",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Správa z 17.9.2026: Jet Venture 1 investoval 1,8 mil. USD do AppNava."
+ },
+ {
+  "candidate_id": "c008",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka (copyright 2014) bez datovanej priamej investície, nič nové sa nenašlo; aktivita beží cez Eterus (c004) a FIT (c005) evidované zvlášť."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Regulovaný VC fond; StratifAI 09/2024 v okne (agregátory uvádzajú aj GreenWay 03/2025 ako koinvestíciu)."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka: 'We are a venture capital firm'."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "About us: deeptech, klíma, zdravotníctvo."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA uvádza 'Seed, Venture capital'; seed je podložený (vlastná stránka hovorí o early-stage)."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA: 200 000 - 2,5 mil. EUR (vlastná stránka uvádza 200K-3M)."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA 2,5 mil. EUR; vlastná stránka uvádza až 3 mil. EUR, zvážiť aktualizáciu."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "About us: '€65M assets under management'."
+ },
+ {
+  "candidate_id": "c009",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka: pre-seed kolo StratifAI 1,5 mil. EUR co-led Neulogy, oznámené 2.9.2024."
+ },
+ {
+  "candidate_id": "c013",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Across Private Investments viedol kolo SuperScale 11/2024, v okne; ide však o wealth manažéra, nie čistý VC fond."
+ },
+ {
+  "candidate_id": "c013",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "AIN: firma sa zameriava na early-stage investície; vc je najbližší typ."
+ },
+ {
+  "candidate_id": "c013",
+  "item": "aum_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "450+ mil. EUR je majetok klientov wealth managementu (obchodník s CP), nie kapitál na priame/venture investície; nechať prázdne."
+ },
+ {
+  "candidate_id": "c013",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "MrWeb 19.11.2024: kolo SuperScale viedli existujúci investori vrátane Across Private Investments."
+ },
+ {
+  "candidate_id": "c014",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Aon je poisťovací maklér/poradca, žiadne investovanie."
+ },
+ {
+  "candidate_id": "c015",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Advokátska kancelária."
+ },
+ {
+  "candidate_id": "c016",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "ASB Group je poskytovateľ účtovných, daňových a mzdových služieb; vlastný fond nemá."
+ },
+ {
+  "candidate_id": "c017",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "SLOVCA: 'advokátska kancelária'."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Súkromná investičná skupina T. Krska; akvizícia Schaerer Medical cez Reinsberg Group 08/2026 v okne."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Súkromná investičná spoločnosť investujúca kapitál zakladateľa; private_investor sedí."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "O nás: strojárstvo, OZE, zdravotníctvo, nové technológie, reality; 'tech startups' je mierna interpretácia 'nových technológií'."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Väčšinové akvizície (buy-and-build) = buyout."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "aum_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "'Spravuje aktíva v hodnote 1 mld. EUR' je hodnota aktív vlastných portfóliových firiem skupiny, nie spravovaný kapitál/fond; nechať prázdne."
+ },
+ {
+  "candidate_id": "c018",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Správa z 24.8.2026: BHM cez Reinsberg Group kupuje Schaerer Medical Schweiz AG."
+ },
+ {
+  "candidate_id": "c019",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "CMS je advokátska kancelária."
+ },
+ {
+  "candidate_id": "c020",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "ČSOB je univerzálna banka (KBC), žiadny equity investičný nástroj."
+ },
+ {
+  "candidate_id": "c021",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Poradenská firma (fundraising, M&A, financovanie), vlastné investovanie neuvádza."
+ },
+ {
+  "candidate_id": "c022",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka vracia 403; Dentons je známa advokátska kancelária, záver je pravdepodobne správny."
+ },
+ {
+  "candidate_id": "c023",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Advokátska kancelária."
+ },
+ {
+  "candidate_id": "c024",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Právne, daňové a účtovné poradenstvo; fondy len ako klienti."
+ },
+ {
+  "candidate_id": "c025",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Advokátska kancelária."
+ },
+ {
+  "candidate_id": "c026",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Advokátska kancelária."
+ },
+ {
+  "candidate_id": "c027",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "G4 od 2021 investuje primárne do svetových tech fondov; žiadna datovaná priama investícia v okne sa nenašla."
+ },
+ {
+  "candidate_id": "c028",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Jakubec Family Office uvádza len predaj I.D.C. (2024, exit), žiadna datovaná investícia v okne sa nenašla."
+ },
+ {
+  "candidate_id": "c029",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Holding investujúci najmä do vlastných nehnuteľností/proptech, bez datovanej investície do tretích firiem."
+ },
+ {
+  "candidate_id": "c030",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Audit, daňové a poradenské služby."
+ },
+ {
+  "candidate_id": "c031",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka vracia 403; Ments je podľa iných zdrojov advokátska kancelária, záver pravdepodobne správny."
+ },
+ {
+  "candidate_id": "c032",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Big Four audit a poradenstvo."
+ },
+ {
+  "candidate_id": "c033",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Advokátska kancelária, bratislavskú pobočku od 9/2024 prevzal Kinstellar."
+ },
+ {
+  "candidate_id": "c034",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Poisťovací maklér (M&A/W&I poistenie)."
+ },
+ {
+  "candidate_id": "c035",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Podnikateľské poradenstvo a eurofondy, žiadne investovanie."
+ },
+ {
+  "candidate_id": "c036",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka vracia 403; PwC je audítorská a poradenská firma, záver pravdepodobne správny."
+ },
+ {
+  "candidate_id": "c037",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "SIH od 2024 priamo investuje (vklady do imania a konvertibilné úvery = quasi-equity); VisionFlow 09/2026."
+ },
+ {
+  "candidate_id": "c037",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "100 % štátna a.s. investujúca priamo do firiem = public_fund."
+ },
+ {
+  "candidate_id": "c037",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Startitup 22.9.2026: SIH poskytuje VisionFlow 1,4 mil. EUR formou konvertibilného úveru."
+ },
+ {
+  "candidate_id": "c038",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Poradenská firma; sekcia 'Správa kapitálu' ponúka investorom prístup k firmám, vlastný fond ani investície sa nenašli."
+ },
+ {
+  "candidate_id": "c039",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka vracia 403; podľa záznamu butiková advokátska kancelária, záver pravdepodobne správny."
+ },
+ {
+  "candidate_id": "c040",
+  "item": "inclusion",
+  "ai_verdict": "",
+  "ai_note": "Stránka vracia 403; Taylor Wessing je medzinárodná advokátska kancelária, záver pravdepodobne správny."
+ },
+ {
+  "candidate_id": "c041",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Právne, audítorské, daňové a účtovné služby, bez investovania."
+ },
+ {
+  "candidate_id": "c042",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Účtovné, mzdové, daňové a audítorské služby."
+ },
+ {
+  "candidate_id": "c043",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Produktové štúdio (vývoj softvéru pre klientov), žiadne equity investície."
+ },
+ {
+  "candidate_id": "c044",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Web je zastaraný (posledná správa 2012), najnovšia aktivita je exit Klikpojisteni.cz 2020; vylúčenie sedí (presnejší dôvod by bol inactive)."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "BHS Private Equity Fund získal významný minoritný podiel v ALFA 3 (11/2025), v okne."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Versute: manažér Private Equity fondov pre MSP."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "sectors",
+  "ai_verdict": "incorrect",
+  "ai_note": "Zdroj uvádza 'všetky odvetvia, primárne tradičná ekonomika'; 'manufacturing' tam nie je. Správne: generalist; traditional industries."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Stránka opisuje rastový kapitál, LBO, MBO a MBI."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Deloitte 9/2025: fond spravuje aktíva 1,5 mld. CZK; prepočet sedí."
+ },
+ {
+  "candidate_id": "c045",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Schoenherr 26.11.2025: akvizícia významného minoritného podielu v ALFA 3."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "VC fond, viedol pre-seed SuperPlane 06/2026."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Credo Stage 5, 88 mil. USD VC fond."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Článok: zámerne voľné zameranie, rastúci záujem o AI; developer tools uvedené pri partnerovi Micekovi."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Web: vedie pre-seed kolá, 'Pre-seed — Onwards'; seed je primeraný."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "ticket_min_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Článok: typické šeky 1-5 mil. USD; prepočet 1 mil. USD sedí."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "ticket_max_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Horná hranica 5 mil. USD; prepočet sedí."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "88 mil. USD je veľkosť najnovšieho fondu Credo Stage 5; prepočet sedí."
+ },
+ {
+  "candidate_id": "c046",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "TheSaaSNews 24.6.2026: pre-seed SuperPlane 2,28 mil. EUR vedený Credo Ventures."
+ },
+ {
+  "candidate_id": "c047",
+  "item": "inclusion",
+  "ai_verdict": "incorrect",
+  "ai_note": "Caplight uvádza CB Investment Management ako koinvestora v 3IPK v 05/2025 (https://www.caplight.com/investor/cbim), fond s 32 firmami môže byť aktívny; overiť pred vylúčením ako inactive."
+ },
+ {
+  "candidate_id": "c048",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "FKI J&T Arch kúpil 4,27 % Allwyn za 500 mil. EUR (08/2025); investuje do súkromných podnikov skupiny/partnerov."
+ },
+ {
+  "candidate_id": "c048",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Holdingový fond kvalifikovaných investorov, pe je prijateľná aproximácia."
+ },
+ {
+  "candidate_id": "c048",
+  "item": "aum_eur",
+  "ai_verdict": "correct",
+  "ai_note": "Aktíva pod správou fondu 202,9 mld. CZK; prepočet sedí."
+ },
+ {
+  "candidate_id": "c048",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Deloitte 28.8.2025: KKCG predala J&T Arch 4,27 % Allwyn; novšia je investícia 500 mil. EUR do prioritných akcií EPEI (12/2025)."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "VC fond, investícia v Sygaldry (Series A 04/2026) a Cirrus (02/2026)."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "'We are a seed & pre-seed VC fund'."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "'Health & Biotech and Industrial Tech verticals'."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "'seed & pre-seed VC fund'."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "aum_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "15 mil. EUR bol cieľ Fund I z 2024 (first close 10,5 mil.); zaka.vc dnes uvádza 'Current fund size 17M', správne 17 000 000 EUR."
+ },
+ {
+  "candidate_id": "c049",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "ZAKA investoval do Sygaldry v 06/2025 a zúčastnil sa Series A oznámenej v 04/2026."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "inclusion",
+  "ai_verdict": "correct",
+  "ai_note": "Growth VC, TCEE Fund IV viedol kolo Patronus 05/2026."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "investor_type",
+  "ai_verdict": "correct",
+  "ai_note": "Silicon Canals: 'technology growth-stage VC firm'."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "sectors",
+  "ai_verdict": "correct",
+  "ai_note": "Fund IV: software, tech-enabled services, e-commerce."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "stages",
+  "ai_verdict": "correct",
+  "ai_note": "Growth kapitál s kolami 5-20 mil. EUR zodpovedá series-a až growth."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "ticket_min_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "5-20 mil. EUR je veľkosť kôl, ktoré 3TS vedie, nie tiket 3TS; nechať prázdne."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "ticket_max_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "Ako pri ticket_min: 20 mil. EUR je veľkosť kola, nie tiket 3TS; nechať prázdne."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "aum_eur",
+  "ai_verdict": "incorrect",
+  "ai_note": "150 mil. EUR bol cieľ pri first close 2021; Fund IV sa uzavrel na 111 mil. EUR (30.1.2024, https://en.ain.ua/2024/02/05/3ts-capital-partner-closes-fund-iv-111m), správne 111 000 000."
+ },
+ {
+  "candidate_id": "c050",
+  "item": "latest_investment",
+  "ai_verdict": "correct",
+  "ai_note": "Heuking 4.5.2026: 3TS lead investor v 11 mil. EUR kole Patronus cez TCEE Fund IV."
+ }
+]

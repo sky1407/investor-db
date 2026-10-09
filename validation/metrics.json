@@ -1,0 +1,192 @@
+{
+  "human": {
+    "verdict_source": "human",
+    "scope_country": "SK",
+    "records_in_scope": 50,
+    "included_in_scope": 10,
+    "inclusion_precision": {
+      "correct": 0,
+      "total": 0,
+      "value": null
+    },
+    "exclusion_accuracy": {
+      "correct": 0,
+      "total": 0,
+      "value": null
+    },
+    "field_accuracy": {
+      "aum_eur": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "investor_type": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "latest_investment": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "sectors": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "stages": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "ticket_max_eur": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      },
+      "ticket_min_eur": {
+        "correct": 0,
+        "total": 0,
+        "value": null
+      }
+    },
+    "fill_rate": {
+      "investor_type": {
+        "correct": 10,
+        "total": 10,
+        "value": 1.0
+      },
+      "sectors": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      },
+      "stages": {
+        "correct": 7,
+        "total": 10,
+        "value": 0.7
+      },
+      "ticket_min_eur": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      },
+      "ticket_max_eur": {
+        "correct": 7,
+        "total": 10,
+        "value": 0.7
+      },
+      "aum_eur": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      }
+    },
+    "human_checked": {
+      "correct": 0,
+      "total": 102,
+      "value": 0.0
+    },
+    "ai_agrees_with_human": {
+      "correct": 0,
+      "total": 0,
+      "value": null
+    }
+  },
+  "combined": {
+    "verdict_source": "human_or_ai",
+    "scope_country": "SK",
+    "records_in_scope": 50,
+    "included_in_scope": 10,
+    "inclusion_precision": {
+      "correct": 4,
+      "total": 4,
+      "value": 1.0
+    },
+    "exclusion_accuracy": {
+      "correct": 23,
+      "total": 24,
+      "value": 0.9583333333333334
+    },
+    "field_accuracy": {
+      "aum_eur": {
+        "correct": 1,
+        "total": 2,
+        "value": 0.5
+      },
+      "investor_type": {
+        "correct": 4,
+        "total": 4,
+        "value": 1.0
+      },
+      "latest_investment": {
+        "correct": 4,
+        "total": 4,
+        "value": 1.0
+      },
+      "sectors": {
+        "correct": 1,
+        "total": 1,
+        "value": 1.0
+      },
+      "stages": {
+        "correct": 2,
+        "total": 2,
+        "value": 1.0
+      },
+      "ticket_max_eur": {
+        "correct": 2,
+        "total": 2,
+        "value": 1.0
+      },
+      "ticket_min_eur": {
+        "correct": 2,
+        "total": 2,
+        "value": 1.0
+      }
+    },
+    "fill_rate": {
+      "investor_type": {
+        "correct": 10,
+        "total": 10,
+        "value": 1.0
+      },
+      "sectors": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      },
+      "stages": {
+        "correct": 7,
+        "total": 10,
+        "value": 0.7
+      },
+      "ticket_min_eur": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      },
+      "ticket_max_eur": {
+        "correct": 7,
+        "total": 10,
+        "value": 0.7
+      },
+      "aum_eur": {
+        "correct": 6,
+        "total": 10,
+        "value": 0.6
+      }
+    },
+    "human_checked": {
+      "correct": 0,
+      "total": 102,
+      "value": 0.0
+    },
+    "ai_agrees_with_human": {
+      "correct": 0,
+      "total": 0,
+      "value": null
+    }
+  }
+}

@@ -1,0 +1,2134 @@
+{
+  "generated_at": "2026-10-09T12:41:32+00:00",
+  "summary": {
+    "http_error": 2,
+    "verified": 327
+  },
+  "schema_errors": [],
+  "records": {
+    "c001": {
+      "entity_kind": {
+        "url": "https://www.arxequity.com/about-arx/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-medicofit-slovenias-leading-private-physiotherapy-provider/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.arxequity.com/about-arx/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.arxequity.com/working-with-arx/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-medicofit-slovenias-leading-private-physiotherapy-provider/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.arxequity.com/arx-equity-partners-invests-in-direct4me/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.arxequity.com/arx-equity-partners-acquires-majority-stake-in-hlb-proxy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c002": {
+      "entity_kind": {
+        "url": "https://cvi.pl/en/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c003": {
+      "entity_kind": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.ei.com.pl/en/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.ei.com.pl/en/enterprise-investors-returns-to-lithuania-with-investment-in-kredito-unija-saulegraza",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.ei.com.pl/en/ei-re-enters-the-renewables-sector-with-majority-investment-in-art-wind",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.ei.com.pl/en/18gym-and-stay-fit-gym-join-forces-with-backing-from-enterprise-investors",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c004": {
+      "entity_kind": {
+        "url": "https://www.eterus.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.oaklins.com/at/en/deals/110584/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.eterus.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.eterus.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.eterus.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.oaklins.com/at/en/deals/110584/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://eterus.sk/2024/06/12/dr-martin-a-eterus-capital-spaja-sily-pre-expanziu-a-rozvoj-siete-zubnych-klinik/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://eterus.sk/2023/05/15/mtbiker-ziskal-silneho-partnera-eterus-capital-investuje-do-jeho-rozvoja/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c005": {
+      "entity_kind": {
+        "url": "https://www.fondfit.sk/index.php/sba/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.podnikajte.sk/investor/fit-fond-financovanie",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.fondfit.sk/index.php/sluzby/financovanie-kapitalu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/?p=12849",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.startitup.sk/?p=12849",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.podnikajte.sk/investor/fit-fond-financovanie",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c006": {
+      "entity_kind": {
+        "url": "https://www.genesis.cz/en/private-equity",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.lupa.cz/aktuality/zpatky-do-ceskych-rukou-slevomat-ma-noveho-majitele-vetsinu-v-nem-koupil-genesis-capital/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.amcham.cz/member-news/genesis-announces-strong-year-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.genesis.cz/en/private-equity",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.genesis.cz/en/private-equity",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.lupa.cz/aktuality/zpatky-do-ceskych-rukou-slevomat-ma-noveho-majitele-vetsinu-v-nem-koupil-genesis-capital/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c007": {
+      "entity_kind": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/jet-investment.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-vstupuje-do-americkeho-startupu-appnava-ktery-pomoci-ai-predpovida-chovani-uzivatelu",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-expands-nas-chleb-with-ostrava-based-bakery-pekari-a-spol",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.jetinvestment.cz/en/news/jet-investment-announces-eu2-1-million-investment-in-berlin-ai-startup-phantasma-labs",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c008": {
+      "entity_kind": {
+        "url": "https://www.nhfond.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.nhfond.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.nhfond.sk/fondy-rizikoveho-kapitalu/narodny-holdingovy-fond/podmienky-poskytnutia-investicie/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.nhfond.sk/fondy-rizikoveho-kapitalu/narodny-holdingovy-fond/podmienky-poskytnutia-investicie/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/narodny-holdingovy-fond-s-r-o.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/narodny-holdingovy-fond-s-r-o.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c009": {
+      "entity_kind": {
+        "url": "https://neulogy.vc/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://neulogy.vc/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://neulogy.vc/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.slovca.sk/sk/riadni-clenovia/neulogy-ventures.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://neulogy.vc/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.life-sciences-europe.com/person/cekan-pavol-multiplexdx-202409-inc-persons-people-chief-2001-28559.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.privsource.com/acquisitions/deal/YBSvjg",
+        "status": "http_error",
+        "http_status": 406,
+        "detail": ""
+      }
+    },
+    "c010": {
+      "entity_kind": {
+        "url": "https://sandbergcapital.com/en/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://sandbergcapital.com/en/sandberg-acquires-a-majority-stake-in-czech-technology-company-hoteltime/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://sandbergcapital.com/en/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://sandbergcapital.com/en/how-we-invest/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://sandbergcapital.com/en/our-fonds/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://sandbergcapital.com/en/about-us/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://sandbergcapital.com/en/sandberg-enters-the-polish-market-through-the-acquisition-of-a-majority-stake-in-carrot/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://sandbergcapital.com/en/sandberg-and-arx-continue-hospitality-tech-consolidation-with-the-acquisition-of-croatias-rentlio/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://sandbergcapital.com/en/sandberg-acquires-a-majority-stake-in-czech-technology-company-hoteltime/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c011": {
+      "entity_kind": {
+        "url": "https://vff.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://vff.sk/novinky/cesky-startup-patron-go-ziskava-investiciu-v-hodnote-1-milion-eur-30",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://vff.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://vff.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://vff.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://vff.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://en.ain.ua/2025/09/30/talentiqa-raises-eur1m/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://vff.sk/novinky/cesky-startup-patron-go-ziskava-investiciu-v-hodnote-1-milion-eur-30",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://vff.sk/novinky/podpora-buducnosti-robotiky-v-podobe-novej-investicie-do-spolocnosti-spinbotics-26",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c012": {
+      "entity_kind": {
+        "url": "https://www.visionventures.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.visionventures.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.visionventures.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.visionventures.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.visionventures.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://ceelegalmatters.com/slovakia/15111-havel-partners-advises-vision-ventures-on-investment-in-eatster",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://cc.cz/cesko-slovensky-startup-sloneek-nabira-miliony-od-vision-ventures-se-svym-personalnim-systemem-miri-do-evropy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c013": {
+      "entity_kind": {
+        "url": "https://en.ain.ua/2024/11/25/slovakian-startup-superscale-raises-12m-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://en.ain.ua/2024/11/25/slovakian-startup-superscale-raises-12m-investment",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://across.sk/o-nas",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.mrweb.com/drno/news37546.htm",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://mobidictum.com/superscale-secures-five-point-four-million-dollars-funding/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c014": {
+      "entity_kind": {
+        "url": "https://www.aon.com/en/locations/slovak-republic",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c015": {
+      "entity_kind": {
+        "url": "https://www.aoshearman.com/en/global-coverage/Europe/slovakia",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c016": {
+      "entity_kind": {
+        "url": "https://www.asbgroup.eu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": "matched with Accept-Language: en"
+      }
+    },
+    "c017": {
+      "entity_kind": {
+        "url": "https://www.slovca.sk/sk/pridruzeni-clenovia/barger-prekop.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c018": {
+      "entity_kind": {
+        "url": "https://www.bhmgroup.eu/o-nas",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.bhmgroup.eu/o-nas",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.bhmgroup.eu/o-nas",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.bhmgroup.eu/news/bhm-group-rozsiruje-reinsberg-group-o-spanelskou-spolecnost-tedisel-medical",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.bhmgroup.eu/portfolio",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.bhmgroup.eu/news/reinsberg-group-posiluje-sve-portfolio-operacnich-stolu-akvizici-schaerer-medical-schweiz-ag",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.bhmgroup.eu/news/bhm-group-rozsiruje-reinsberg-group-o-spanelskou-spolecnost-tedisel-medical",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.bhmgroup.eu/news/bhm-group-posiluje-globalni-ambice-reinsberg-group-akvizici-rein-medical",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c019": {
+      "entity_kind": {
+        "url": "https://cms.law/en/svk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c020": {
+      "entity_kind": {
+        "url": "https://www.csob.sk/o-nas/csob-financna-skupina",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c021": {
+      "entity_kind": {
+        "url": "http://danubeca.com/finance/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c022": {
+      "entity_kind": {
+        "url": "https://www.dentons.com/en/global-presence/central-and-eastern-europe/slovak-republic/bratislava",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c023": {
+      "entity_kind": {
+        "url": "https://www.havelpartners.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c024": {
+      "entity_kind": {
+        "url": "https://highgate.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c025": {
+      "entity_kind": {
+        "url": "https://www.hkv.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c026": {
+      "entity_kind": {
+        "url": "https://www.hillbridges.com/about/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c027": {
+      "entity_kind": {
+        "url": "https://www.g4.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.g4.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.g4.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.g4.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c028": {
+      "entity_kind": {
+        "url": "https://jakubecfo.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://jakubecfo.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c029": {
+      "entity_kind": {
+        "url": "https://m3partners.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://m3partners.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://m3partners.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c030": {
+      "entity_kind": {
+        "url": "https://www.forvismazars.com/sk/sk",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c031": {
+      "entity_kind": {
+        "url": "https://ceelegalmatters.com/slovakia/24859-ments-opens-doors-in-slovakia",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c032": {
+      "entity_kind": {
+        "url": "https://kpmg.com/sk/sk/o-nas.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c033": {
+      "entity_kind": {
+        "url": "https://www.noerr.com/en/press/transfer-of-offices-in-central-and-eastern-europe-eoerr-successfully-completes-closing",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c034": {
+      "entity_kind": {
+        "url": "https://www.howdengroup.com/global-practices/mergers-and-acquisitions",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c035": {
+      "entity_kind": {
+        "url": "https://www.profc.eu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c036": {
+      "entity_kind": {
+        "url": "https://www.pwc.com/sk/sk.html",
+        "status": "http_error",
+        "http_status": 403,
+        "detail": ""
+      }
+    },
+    "c037": {
+      "entity_kind": {
+        "url": "https://www.sih.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.startitup.sk/?p=1237737",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/?p=1239607",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.startitup.sk/?p=1237737",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://www.sih.sk/aktuality/ai-proti-nenavisti-na-internete-startup-trollwall-ai-ziskal-investiciu-vo-vyske-800-000-eur",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c038": {
+      "entity_kind": {
+        "url": "https://www.montward.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c039": {
+      "entity_kind": {
+        "url": "https://ceelegalmatters.com/interviews/20051-the-ceelmdirect-profile-pick-an-interview-with-katarina-mihalikova-of-majernik-mihalikova",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c040": {
+      "entity_kind": {
+        "url": "https://www.taylorwessing.com/en/careers/slovakia/vacancies/junior-associate",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c041": {
+      "entity_kind": {
+        "url": "https://www.v4g.sk/sk",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c042": {
+      "entity_kind": {
+        "url": "https://www.claslovakia.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c043": {
+      "entity_kind": {
+        "url": "https://www.wezeo.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c044": {
+      "entity_kind": {
+        "url": "http://bensonoak.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "http://bensonoak.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "http://bensonoak.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "http://bensonoak.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "http://bensonoak.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c045": {
+      "entity_kind": {
+        "url": "https://www.schoenherr.eu/content/czech-republic-schoenherr-advises-bhs-private-equity-fund-on-acquisition-of-alfa-3",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://versute.cz/cs_cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://versute.cz/cs_cz/sluzby/private-equity/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/dva-fondy-zabalily-unipap.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.schoenherr.eu/content/czech-republic-schoenherr-advises-bhs-private-equity-fund-on-acquisition-of-alfa-3",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c046": {
+      "entity_kind": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.credoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://thenextweb.com/news/credo-ventures-88m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://thesaasnews.com/news/superplane-raises-2-28m-pre-seed",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c047": {
+      "entity_kind": {
+        "url": "https://www.cbim.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://cc.cz/lokalni-investovani-je-na-vzestupu-hlasi-crowdberry-pres-platformu-a-fondy-loni-proteklo-730-milionu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.cbim.sk/founders",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.cbim.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c048": {
+      "entity_kind": {
+        "url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.newstream.cz/zpravy-z-firem/j-t-arch-dal-roste-majetek-fondu-presahl-200-miliard-korun",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.deloitte.com/cz-sk/en/mnaport/articles/clanky-transakce/2025-q3/kkcg-prodala-jt-arch-investment-minoritni-podil-v-allwyn.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c049": {
+      "entity_kind": {
+        "url": "https://www.zaka.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.zaka.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.zaka.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.zaka.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://tech.eu/2024/07/19/zaka-unveils-its-fund-i-15m-for-bridging-the-us-with-the-eu-market/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://zaka.vc/sygaldry-backed-by-zaka-vc-raises-139m-to-build-quantum-accelerated-ai-infrastructure/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://vestbee.com/insights/articles/readmio-secures-1-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://zaka.vc/zaka-vc-invests-in-cirrus-therapeutics-to-advance-gene-therapies-for-blinding-eye-diseases/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c050": {
+      "entity_kind": {
+        "url": "https://www.heuking.de/en/career/latest-news/detail/heuking-advises-3ts-capital-partners-as-lead-investor-in-11-million-euro-financing-round-for-patronus.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://siliconcanals.com/3ts-capital-partners-new-150m-fund/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.heuking.de/en/career/latest-news/detail/heuking-advises-3ts-capital-partners-as-lead-investor-in-11-million-euro-financing-round-for-patronus.html",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c051": {
+      "entity_kind": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c052": {
+      "entity_kind": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://techcrunch.com/2012/04/17/shared-online-paywall-service-piano-media-secures-euro-2-million-from-3ts",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c053": {
+      "entity_kind": {
+        "url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/slovensky-startup-ziskal-investiciu-15-miliona-eur/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c054": {
+      "entity_kind": {
+        "url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.trendingtopics.eu/pioneers-ventures-neuer-8-millionen-euro-fonds-investiert-erste-100-000-euro-in-das-start-up-cloudo/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.trendingtopics.eu/pioneers-ventures-neuer-8-millionen-euro-fonds-investiert-erste-100-000-euro-in-das-start-up-cloudo/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://pioneers.io/pioneers-ventures-cloudo-becomes-first-investment/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c055": {
+      "entity_kind": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c056": {
+      "entity_kind": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c057": {
+      "entity_kind": {
+        "url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://sita.sk/zlty-melon-ziskal-vyznamnu-kapitalovu-investiciu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.podnikajte.sk/investor/private-equity-venture-fondy-sr",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c058": {
+      "entity_kind": {
+        "url": "https://www.forbes.sk/investicny-fond-zero-gravity-capital-hlada-mlade-firmy-rozdelit-ma-12-milionov-eur/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c059": {
+      "entity_kind": {
+        "url": "https://www.0100.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.startitup.sk/startupy-zo-slovenska-ziskali-kluc-k-najbohatsim-trhom-planety-miliardove-biznisy-maju-na-dosah/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.eu-startups.com/investor/zero-one-hundred/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://cc.cz/podporili-nejvetsi-startupove-nadeje-na-slovensku-s-novym-fondem-maji-i-pro-ceske-firmy-15-miliardy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://vestbee.com/insights/articles/readmio-secures-1-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c060": {
+      "entity_kind": {
+        "url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.seedstarter.sk/sk/uvod",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.seedstarter.sk/sk/uvod",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.seedstarter.sk/sk/uvod",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.seedstarter.sk/sk/uvod",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://cc.cz/ceska-sporitelna-jde-podporovat-startupy-i-na-slovensko-pro-tamni-mlade-firmy-ma-pres-120-milionu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.slsp.sk/sk/aktuality/2026/6/2/seed-starter-slovenskej-sporitelne-investuje-400-tisic-eur-do-startupu-webout-ten-ziskava-spolu-165-miliona-eur-a-mieri-do-silicon-valley",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c061": {
+      "entity_kind": {
+        "url": "https://simpact.vc/en/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://simpact.vc/en/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://simpact.vc/en/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://en.ain.ua/2022/11/23/simpact-ventures-launches-21m-fund",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://xyz.pl/polski-startup-pozyskal-36-mln-usd-wspoltworca-booksy-pomaga-mu-podbic-usa/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://ceelegalmatters.com/lithuania/28040-tgs-baltic-advises-simpact-ventures-on-investment-in-ligence",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c062": {
+      "entity_kind": {
+        "url": "https://cbespri.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://cbespri.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://cbespri.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.podnikajte.sk/financie-na-podnikanie/cb-espri-impact-one-novy-fond",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/financie-na-podnikanie/cb-espri-impact-one-novy-fond",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.lupa.cz/aktuality/slovensti-lovci-internetovych-trollu-ziskali-prvni-investici-dohlizi-i-na-komentare-v-cesku/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://ceelegalmatters.com/slovakia/21530-kinstellar-and-wise3-advise-on-powerful-medical-eur-6-2-million-seed-round",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c063": {
+      "entity_kind": {
+        "url": "https://www.socialniinovatori.sk/investicny-fond",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.socialniinovatori.sk/investicny-fond",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.socialniinovatori.sk/investicny-fond",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.podnikajte.sk/financie-na-podnikanie/investicny-fond-pre-socialnu-ekonomiku",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.podnikajte.sk/financie-na-podnikanie/investicny-fond-pre-socialnu-ekonomiku",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c064": {
+      "entity_kind": {
+        "url": "https://jtventures.cz/blog",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://jtventures.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://jtventures.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://jtventures.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://jtventures.cz/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://cc.cz/nakup-it-sluzeb-v-korporacich-je-casto-nefunkcni-hlasi-do-jejich-reseni-investuje-i-ceska-sporitelna/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://cc.cz/tvori-avatary-kteri-zvladnou-zive-komentovat-sportovni-zapasy-ted-ziskal-rekordni-investici/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c065": {
+      "entity_kind": {
+        "url": "https://intellinews.com/infratech-investment-pioneer-ipm-tackles-the-big-themes-of-the-coming-decades-181060",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.vestbee.com/vc-list/ipm-growth",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.vestbee.com/vc-list/ipm-growth",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.batterypoweronline.com/view-press-releases/entry/5335/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c066": {
+      "entity_kind": {
+        "url": "https://www.bic.sk/o-nas",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c067": {
+      "entity_kind": {
+        "url": "https://365fintech.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://365fintech.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://365fintech.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://365fintech.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://siliconcanals.com/ctrl-alt-raises-2-5m/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://365fintech.sk/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c068": {
+      "entity_kind": {
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.thecaterer.com/products--equipment/mcwin-pours-4m-into-coffee-brand",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://www.goodwinlaw.com/en/news-and-events/news/2025/10/announcements-technology-goodwin-advises-mcwin-capital-partners-in-ecorobotix-105-million",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c069": {
+      "entity_kind": {
+        "url": "https://tracxn.com/d/venture-capital/ergos/__WGrR1Qun0G2FVNY3OFYkhRzeqIYHTkx5Q8BaVywuX9I",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://tracxn.com/d/venture-capital/ergos/__WGrR1Qun0G2FVNY3OFYkhRzeqIYHTkx5Q8BaVywuX9I",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c070": {
+      "entity_kind": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.vestbee.com/insights/articles/cequence-secures-2-m",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c071": {
+      "entity_kind": {
+        "url": "https://lookai.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://lookai.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://lookai.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://lookai.vc/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://tech.eu/2023/04/13/czech-republic-has-a-new-investment-fund-for-ai-start-ups",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://lookai.vc/look-ai-ventures-backs-embodied-ai-robots-manufacturing/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://lookai.vc/look-ai-ventures-sodex-innovations-4m-ai-construction-site-surveying/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://lookai.vc/new-investment-cequence-secures-e2m-to-expand-ai-powered-contract-automation-platform/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c072": {
+      "entity_kind": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://cc.cz/startupovi-presto-ventures-a-zbrojarska-csg-michala-strnada-rozjizdi-fond-maji-v-nem-4-miliardy/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://www.prestoventures.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://cc.cz/investori-v-cele-s-miliardarem-michalem-strnadem-posilaji-desitky-milionu-na-vyvoj-autonomnich-dronu/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://cc.cz/dronum-i-robotum-chybi-treninkova-data-z-terenu-a-z-boje-madary-kteri-je-vytvari-podporili-cesti-investori/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[2]": {
+        "url": "https://en.ain.ua/2024/06/20/zerops-raises-500k-pre-seed-cloud-platform-expansion",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c073": {
+      "entity_kind": {
+        "url": "https://en.lider.media/?p=214855",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://en.lider.media/?p=214855",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://filrougecapital.com/accelerate",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_min": {
+        "url": "https://filrougecapital.com/accelerate",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://filrougecapital.com/accelerate",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://en.lider.media/?p=214855",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c074": {
+      "entity_kind": {
+        "url": "https://gi21capital.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://pulse2.com/gi21-capital-profile-damir-spoljaric-interview/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://gi21capital.com/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[1]": {
+        "url": "https://en.ain.ua/2024/06/20/zerops-raises-500k-pre-seed-cloud-platform-expansion",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    },
+    "c075": {
+      "entity_kind": {
+        "url": "https://jic.cz/ventures",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investor_type": {
+        "url": "https://jic.cz/ventures",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "sectors": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "stages": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "ticket_max": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "aum": {
+        "url": "https://cc.cz/v-brne-vznikl-fond-jaky-nema-obdoby-spojuje-soukromniky-mesto-kraj-univerzity-i-biskupstvi/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      },
+      "investments[0]": {
+        "url": "https://www.startitup.sk/z-brna-do-dubaja-novy-fond-nalial-miliony-do-startupu-ktory-vznikol-ako-studentsky-projekt-teraz-mieri-aj-na-slovensko/",
+        "status": "verified",
+        "http_status": 200,
+        "detail": ""
+      }
+    }
+  }
+}
