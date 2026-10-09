@@ -1,0 +1,14 @@
+{
+  "base": "EUR",
+  "rate_date": "2026-10-08",
+  "source_url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+  "rates": {
+    "EUR": 1.0,
+    "USD": 1.1186,
+    "CZK": 24.403,
+    "GBP": 0.84698,
+    "HUF": 366.25,
+    "PLN": 4.3753,
+    "CHF": 0.9326
+  }
+}
