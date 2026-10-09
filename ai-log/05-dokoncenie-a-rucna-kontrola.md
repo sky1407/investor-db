@@ -2489,3 +2489,94 @@ Mimo SK vzorky človek skontroloval iba 7 položiek, ktoré AI predkontrola ozna
 ```
 
 </details>
+
+**Nástroj `Bash`**
+
+[vynechané: súkromné poznámky alebo súbory mimo projektu]
+
+<details><summary>Výstup nástroja</summary>
+
+```
+663576c docs: add Claude Code conversation export
+4fd92c1 data: manual check of AI-flagged items outside the SK sample
+fb1597c data: manual check results and README accuracy section
+```
+
+</details>
+
+## Claude · 2026-10-09 17:21:39 UTC
+
+Všetko je commitnuté. Vytváram verejné repo a pushujem.
+
+**Nástroj `Bash`**
+
+```bash
+cd ~/investor-db && git branch --show-current && gh repo create sky1407/investor-db --public --description "Reliable investor database pilot: AI research, verbatim-quote verification, deterministic inclusion rules, manual accuracy check" --source . --remote origin --push 2>&1 | tail -5 && gh repo view sky1407/investor-db --json url,visibility,defaultBranchRef
+```
+
+<details><summary>Výstup nástroja</summary>
+
+```
+master
+https://github.com/sky1407/investor-db
+To https://github.com/sky1407/investor-db.git
+ * [new branch]      HEAD -> master
+branch 'master' set up to track 'origin/master'.
+{"defaultBranchRef":{"name":""},"url":"https://github.com/sky1407/investor-db","visibility":"PUBLIC"}
+```
+
+</details>
+
+**Nástroj `Bash`**
+
+```bash
+cd ~/investor-db && sleep 3; gh repo view sky1407/investor-db --json defaultBranchRef -q .defaultBranchRef.name; git ls-remote origin | head -3; gh api repos/sky1407/investor-db/commits --jq 'length'
+```
+
+<details><summary>Výstup nástroja</summary>
+
+```
+master
+663576c313ddc447c47d93bdd976c3162d009fbc	HEAD
+663576c313ddc447c47d93bdd976c3162d009fbc	refs/heads/master
+25
+```
+
+</details>
+
+**Nástroj `Bash`**
+
+[vynechané: súkromné poznámky alebo súbory mimo projektu]
+
+<details><summary>Výstup nástroja</summary>
+
+```
+(Bash completed with no output)
+```
+
+</details>
+
+## Claude · 2026-10-09 17:22:27 UTC
+
+Repozitár je verejný a pushnutý: **https://github.com/sky1407/investor-db** (vetva `master`, 25 commitov).
+
+**Konverzácie z predošlých relácií nie sú stratené.** Na agentmemory som sa nemusel spoliehať: Claude Code ukladá každú reláciu lokálne ako transkript do `~/.claude/projects/`. Našiel som 5 relácií z dneška k tomuto projektu a k nim transkripty 8 agentov. Skriptom som ich previedol do Markdownu v priečinku `ai-log/`:
+- `01` až `05`: hlavné relácie od vloženia zadania po ručnú kontrolu,
+- `agents/`: 5 rešeršných a 3 kontrolní agenti,
+- `ai-log/README.md` popisuje obsah a úpravy oproti surovému transkriptu.
+
+**Čo som pred zverejnením odstránil:**
+- **Výstupy z tvojej pamäte o iných projektoch.** Transkript obsahoval napríklad poznámky o prijímacom teste INIZIO a výpis tvojho domovského priečinka. Takéto výstupy som vynechal a označil. Tvoje správy ani odpovede Clauda som nevynechal.
+- **E-mailové adresy** som nahradil `[email]`. Kľúče API ani heslá som v exporte nenašiel.
+
+**Ďalšie zmeny pred pushom:**
+- **Posledné verdikty:** skontroloval si aj 7 sporných položiek mimo SK (3TS, ZAKA, BHM, BHS, Fil Rouge) a všetky chyby AI predkontroly si potvrdil. README som podľa toho upravil.
+- **Moja chyba pri c059:** 0100 Ventures má sídlo na Slovensku, nie mimo neho, ako som ti predtým písal. Metriky sú však správne, c059 je v nich započítaná.
+
+**Ostáva:**
+1. Pošli odpoveď na e-mail s odkazom https://github.com/sky1407/investor-db. Termín je 16. 10.
+2. Táto relácia v `ai-log/05` končí pred vytvorením repa, takže posledné správy v nej chýbajú. Ak chceš kompletný záznam, pred odoslaním napíš „pregeneruj ai-log“ a doplním ho.
+
+## Používateľ · 2026-10-09 17:25:29 UTC
+
+„pregeneruj ai-log“
