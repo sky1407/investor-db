@@ -12,7 +12,8 @@ výsledok v jednoduchom UI.
 | [`data/investors.json`](data/investors.json) | To isté vrátane doslovných citácií, dátumov a všetkých dealov |
 | [`data/excluded.csv`](data/excluded.csv) | Vyradení kandidáti s dôvodom a zdrojom |
 | [`validation/manual_check.csv`](validation/manual_check.csv) | Kontrolný hárok: AI predkontrola + ručná kontrola |
-| [`validation/metrics.json`](validation/metrics.json) | Výsledok merania presnosti |
+| [`validation/pilot-v1/`](validation/pilot-v1/) | **Meranie presnosti (v1):** hárok, metriky a databáza presne v stave, ktorý kontroloval človek |
+| [`validation/metrics.json`](validation/metrics.json) | Metriky po opravách (v2) |
 | [`prompts/`](prompts/) | Presné pokyny, ktoré dostali AI agenti |
 | [`ai-log/`](ai-log/) | Export konverzácií s Claude Code |
 
@@ -60,8 +61,23 @@ Mimo SK vzorky človek skontroloval iba 7 položiek, ktoré AI predkontrola ozna
 3TS (ticket je veľkosť kola, AUM je cieľ fondu), ZAKA (zastarané AUM), BHM (AUM je hodnota aktív skupiny), BHS
 (príliš úzky sektor) a Fil Rouge (chýba `series-a`). Tieto položky nie sú v metrikách, lebo meraná vzorka sú subjekty so sídlom na Slovensku.
 
-> Metriky v `validation/metrics.json` majú dve vetvy: `human` (len ľudské verdikty, z nich je tabuľka vyššie) a
-> `combined` (ľudský verdikt, inak AI).
+> Tabuľka vyššie je **meranie v1** (`validation/pilot-v1/metrics.json`), teda presnosť výstupu pipeline pred
+> akoukoľvek opravou. Metriky majú dve vetvy: `human` (len ľudské verdikty, z nich je tabuľka) a `combined`
+> (ľudský verdikt, inak AI).
+
+### Opravy po ručnej kontrole (v2)
+
+Chyby zo SK vzorky som opravil v `research/*.json` a pipeline spustil znova (`verify` → `build` → `metrics`):
+
+| Záznam | Oprava | Ako |
+|---|---|---|
+| c013 Across | AUM odstránené | 450 mil. EUR je majetok klientov. Agent to sám napísal do poznámky, ale pole aj tak vyplnil |
+| c051 SRF, c055 Arca, c057 Limerock | `no_evidence` → `inactive` | Doplnená stará investícia s doslovnou citáciou (podnikajte.sk 2016, SITA 2015). Dôvod vyradenia potom určilo pravidlo, nie ručný zásah. Všetky 3 citácie `verify` overil na živej stránke |
+| c063 Sociálni Inovátori | **neopravené** | Zdroj neuvádza konkrétnu datovanú investíciu, iba koniec investičného obdobia 31. 12. 2023. Ten je ešte v 36-mesačnom okne, takže ide o rovnaký hraničný prípad ako CB ESPRI. Dátum dealu si nevymýšľam |
+
+Po opravách (`validation/metrics.json`): správny dôvod vyradenia **39 / 40**, AUM **5 / 5** (vyplnenosť AUM
+klesla na 50 %). Opravené riadky potvrdil človek podľa svojich poznámok z v1. Chyby mimo SK vzorky (3TS, ZAKA,
+BHM, BHS, Fil Rouge) zatiaľ nie sú opravené.
 
 ## Ako to funguje
 
@@ -175,9 +191,8 @@ Chyby, ktoré zostali, sú **chyby interpretácie** pravdivého zdroja. Tie zach
   ktoré AI označila ako sporné. Ostatné majú len AI predkontrolu.
 - **Recall** som nemeral. Capture-recapture z `PLAN.md` vyžaduje druhý nezávislý zoznam (napr. Dealroom export),
   ktorý nie je verejne a zadarmo dostupný v strojovo čitateľnej podobe.
-- **Opravy zistené kontrolou nie sú zapracované do dát.** Zámerne: metriky opisujú výstup pipeline tak, ako ho
-  vyrobila. Ďalší krok je opraviť `research/*.json` (5 položiek), upraviť pokyny pre agentov (AUM, staré dealy) a
-  spustiť pipeline znova.
+- **Opravy mimo SK vzorky** (7 položiek, ktoré potvrdil človek) a **úprava pokynov pre agentov** (definícia AUM,
+  povinne zapísať aj staré dealy) zatiaľ nie sú spravené. Opravy v SK vzorke sú v sekcii „Opravy po ručnej kontrole“.
 - **Zlučovanie duplicít:** `duplicate` záznam sa vyradí, ale jeho dôkazy sa nepripoja k hlavnému záznamu.
 - **Vzťah správca → fondy** (NHF → Eterus, FIT) nie je modelovaný, iba popísaný v poznámke.
 - **Pravidlo aktivity** neberie do úvahy ukončené investičné obdobie (prípad CB ESPRI).
