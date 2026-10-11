@@ -1,5 +1,7 @@
 # Reliable Investor Database (Assignment A)
 
+[![CI](https://github.com/sky1407/investor-db/actions/workflows/ci.yml/badge.svg)](https://github.com/sky1407/investor-db/actions/workflows/ci.yml)
+
 A pilot investor database in which **code and evidence decide, not the LLM**. An AI agent finds sources and verbatim
 quotes, a script verifies that each quote really appears on the page, deterministic rules decide on inclusion, and a
 human reviews the result in a simple UI.
