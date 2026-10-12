@@ -13,9 +13,10 @@ human reviews the result in a simple UI.
 | [`data/investors.csv`](data/investors.csv) | Included investors, with a source for every field |
 | [`data/investors.json`](data/investors.json) | The same, including verbatim quotes, dates and all deals |
 | [`data/excluded.csv`](data/excluded.csv) | Excluded candidates with reason and source |
-| [`validation/manual_check.csv`](validation/manual_check.csv) | Review sheet: AI pre-review + manual review |
-| [`validation/pilot-v1/`](validation/pilot-v1/) | **Accuracy measurement (v1):** sheet, metrics and the database exactly as reviewed by the human |
-| [`validation/metrics.json`](validation/metrics.json) | Metrics after fixes (v2) |
+| [`validation/manual_check.csv`](validation/manual_check.csv) | Review sheet of the final review (v3): AI pre-review + blind manual review |
+| [`validation/metrics.json`](validation/metrics.json) | **Final accuracy measurement (v3)** of the fixed database |
+| [`validation/pilot-v1/`](validation/pilot-v1/) | First review (v1): sheet, metrics and the database before any fixes |
+| [`validation/pilot-v2/`](validation/pilot-v2/) | State after fixes (v2), including the human verdicts on items outside SK |
 | [`prompts/`](prompts/) | The exact instructions given to the AI agents |
 | [`ai-log/`](ai-log/) | Export of the Claude Code conversations (in Slovak) |
 
@@ -24,35 +25,41 @@ human reviews the result in a simple UI.
 Pilot: **75 candidates** active in Slovakia → **29 included, 46 excluded**. **327 of 329** pieces of evidence verified
 (the quote was found on the page); 2 URLs were unreachable.
 
-**Accuracy is measured** on the 50 candidates headquartered in Slovakia. 100 % of them were reviewed (102 items:
-inclusion or exclusion plus every filled-in field), no sampling. The review was done by a human in the UI on
-2026-10-09, opening the source for every item.
+**Accuracy is measured** on the 50 candidates headquartered in Slovakia. 100 % of them were reviewed (101 items:
+inclusion or exclusion plus every filled-in field), no sampling. The final review (v3) was done by a human in the UI
+on 2026-10-12: for every item the reviewer opened the source and judged whether the **claim is true** (not merely
+whether the quote is on the page), following an item-specific checklist, with the AI verdict **hidden until the
+human had decided**.
 
-| Metric (HQ in SK) | Manual review | AI pre-review (for comparison) |
+| Metric (HQ in SK) | Pipeline output before fixes (v1) | Final database (v3) |
 |---|---|---|
-| **Inclusion precision** (included entities really are active investors) | **10 / 10 = 100 %** | 7 / 8 |
-| **Correct exclusion reason** | **36 / 40 = 90 %** | 28 / 33 |
-| `investor_type` | 10 / 10 | |
-| `sectors`, `stages` | 13 / 13 | |
-| `ticket_min_eur`, `ticket_max_eur` | 13 / 13 | |
-| `latest_investment` (documented deal with source and date) | 10 / 10 | |
-| **`aum_eur`** | **5 / 6 = 83 %** | 2 / 4 |
-| **All fields combined** | **51 / 52 = 98 %** | |
-| AI pre-review agreement with the human | 75 / 78 = 96 % | |
+| **Inclusion precision** (included entities really are active investors) | **10 / 10 = 100 %** | **10 / 10 = 100 %** |
+| **Correct exclusion reason** | **36 / 40 = 90 %** | **39 / 40 = 97.5 %** |
+| `investor_type` | 10 / 10 | 10 / 10 |
+| `sectors`, `stages` | 13 / 13 | 13 / 13 |
+| `ticket_min_eur`, `ticket_max_eur` | 13 / 13 | 13 / 13 |
+| `latest_investment` (documented deal with source and date) | 10 / 10 | 10 / 10 |
+| **`aum_eur`** | **5 / 6 = 83 %** | 5 / 5 |
+| **All fields combined** | **51 / 52 = 98 %** | 51 / 51 |
+| AI pre-review agreement with the human | 75 / 78 = 96 % | 71 / 74 = 96 % |
 
-**Errors found by the human** (all of them had also been flagged by the AI pre-review):
+The v1 column is the accuracy of what the pipeline produced; the v3 column is the database after the fixes below.
+The v1 numbers are backed by v3: every item that was not changed by a fix was confirmed as correct in the blind
+review, so the only errors in the pipeline output are the 5 listed below.
+
+**Errors in the pipeline output** (all of them had also been flagged by the AI pre-review):
 
 - **4× wrong exclusion reason** (SRF, Arca Capital, Limerock, Sociálni Inovátori): the entities are correctly
   excluded, but as `no_evidence` instead of `inactive`. Old investments are documented and the funds are closed.
 - **1× AUM** (Across, c013): EUR 450 m is wealth-management client assets, not the size of a VC fund.
 
-**Where the AI pre-review was wrong** (3 of 78 items): CB ESPRI (inclusion is correct under the 36-month rule),
-CB Investment Management (2025 co-investment only appears in an aggregator; SIH confirms the investment period ended
-in 2023) and 0100 Ventures (EUR 23 m is the actual Fund I; EUR 60 m is only the target of a new fund). So the AI
-pre-review did not miss any errors, but it was stricter than the human.
+**Where the AI pre-review was wrong** (3 items, the same in v1 and v3): CB ESPRI (inclusion is correct under the
+36-month rule), Crowdberry / CB Investment Management (2025 co-investment only appears in an aggregator; SIH
+confirms the investment period ended in 2023) and 0100 Ventures (EUR 23 m is the actual Fund I; EUR 60 m is only
+the target of a new fund). So the AI pre-review did not miss any errors, but it was stricter than the human.
 
-**Field fill rate** for included SK entities: type 100 %, stages and `ticket_max` 70 %, sectors, `ticket_min` and
-AUM 60 %.
+**Field fill rate** for included SK entities: type 100 %, stages and `ticket_max` 70 %, sectors and `ticket_min`
+60 %, AUM 50 % (60 % before the Across fix).
 
 **Interpretation:** the core requirement of the assignment ("every record is a real investor") is met on the sample
 at 100 %. Identity, type and documented investment are reliable. The weak spots are AUM and the distinction between
@@ -62,12 +69,30 @@ interval for precision is roughly 69–100 %.
 
 Outside the SK sample, the human reviewed only the 7 items the AI pre-review had flagged as disputed, and confirmed
 all of them: 3TS (ticket is the round size, AUM is the fund target), ZAKA (outdated AUM), BHM (AUM is the group's
-asset value), BHS (sector too narrow) and Fil Rouge (missing `series-a`). These items are not part of the metrics,
-because the measured sample consists of entities headquartered in Slovakia.
+asset value), BHS (sector too narrow) and Fil Rouge (missing `series-a`). These verdicts are in
+`validation/pilot-v2/manual_check.csv`; they are not part of the metrics, because the measured sample consists of
+entities headquartered in Slovakia.
 
-> The table above is **measurement v1** (`validation/pilot-v1/metrics.json`), i.e. the accuracy of the pipeline
-> output before any fixes. The metrics have two branches: `human` (human verdicts only, used for the table) and
-> `combined` (human verdict, otherwise AI).
+> The metrics have two branches: `human` (human verdicts only, used for the table) and `combined` (human verdict,
+> otherwise AI).
+
+### Why the manual review was done twice
+
+The first manual review (v1, 2026-10-09) was flawed, and the mistake was mine, not the AI's. For most items I
+searched the page for the quote (Ctrl+F) and marked the item correct when I found it. That only repeats what the
+`verify` script already does. I judged the substance (is this really AUM, is the fund still investing?) only for the
+items the AI pre-review had flagged, and the AI verdict was visible while I decided. A review like that can only
+confirm the AI, not measure the data.
+
+For the second review (v3, 2026-10-12) I changed the process, not just the effort:
+
+- the UI shows a **"what to check" question for every item type** (derived from `prompts/review_agent.md`, e.g.
+  for AUM: "client assets, portfolio value or a fund target are wrong"),
+- the **AI verdict is hidden** until the human verdict is saved, and the filter "AI says incorrect" was removed,
+- the whole SK sample was reviewed again from scratch; the v1 sheet is kept in `validation/pilot-v1/`.
+
+The blind review found no errors beyond the five already known, and disagreed with the AI on the same three items.
+The result did not change, but now it is a measurement of whether the data is true.
 
 ### Fixes after manual review (v2)
 
@@ -79,9 +104,8 @@ I fixed the errors from the SK sample in `research/*.json` and re-ran the pipeli
 | c051 SRF, c055 Arca, c057 Limerock | `no_evidence` → `inactive` | Added an old investment with a verbatim quote (podnikajte.sk 2016, SITA 2015). The exclusion reason was then determined by the rule, not by a manual override. `verify` confirmed all 3 quotes on the live page |
 | c063 Sociálni Inovátori | **not fixed** | The source gives no specific dated investment, only the end of the investment period on 31 Dec 2023. That is still within the 36-month window, so it is the same edge case as CB ESPRI. I do not make up deal dates |
 
-After the fixes (`validation/metrics.json`): correct exclusion reason **39 / 40**, AUM **5 / 5** (AUM fill rate dropped
-to 50 %). The human confirmed the fixed rows based on their notes from v1. Errors outside the SK sample (3TS, ZAKA,
-BHM, BHS, Fil Rouge) are not fixed yet.
+After the fixes, the blind review (v3) confirmed all fixed rows: correct exclusion reason **39 / 40**, AUM **5 / 5**.
+Errors outside the SK sample (3TS, ZAKA, BHM, BHS, Fil Rouge) are not fixed yet.
 
 ## How it works
 
@@ -153,8 +177,9 @@ the ticket is not actually the round size, etc.
 1. **Schema** (pydantic, `check-schema`): types from the code list, `ticket_min ≤ ticket_max`, valid dates.
 2. **Quote existence** (`verify`): 327 of 329 pieces of evidence verified, 2 URLs unreachable (HTTP error).
 3. **A second, independent agent** checked the interpretation.
-4. **Manual review** in the UI: for every item a link to the source, the AI verdict and note, and correct/incorrect
-   buttons.
+4. **Manual review** in the UI: for every item a link to the source, a "what to check" question for the item type
+   and correct/incorrect buttons. The AI verdict and note appear only after the human verdict is saved (see
+   "Why the manual review was done twice").
    - **Source language:** quotes are verbatim, in the language in which the agent found them on the page.
      Multilingual websites (e.g. funds headquartered in SK or CZ) often show a Slovak browser the Slovak version,
      even though both the agent and the script received the English one. Ctrl+F then does not find the text until
