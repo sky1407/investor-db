@@ -1,24 +1,26 @@
-# Export konverzácií s Claude Code
+# Claude Code conversation export
 
-Transkripty všetkých relácií, v ktorých vznikalo riešenie (2026-10-09), v chronologickom poradí. Vygenerované
-z lokálnych transkriptov Claude Code (`~/.claude/projects/…/*.jsonl`) do Markdownu, obsahovo zodpovedajú `/export`.
+Transcripts of all sessions in which the solution was built (2026-10-09), in chronological order. Generated from
+the local Claude Code transcripts (`~/.claude/projects/…/*.jsonl`) into Markdown; the content matches `/export`.
+The conversations are in Slovak.
 
-| Súbor | Obsah |
+| File | Contents |
 |---|---|
-| `01-zadanie-a-uvod.md` | Vloženie zadania |
-| `02-plan-a-koncepty.md` | Koncepty riešenia (čisté LLM / scrapovanie / hybrid), výber hybridu |
-| `03-plan-pokracovanie.md` | Dopracovanie plánu |
-| `04-implementacia-a-reserse.md` | Pipeline, testy, rešerš 5 paralelnými agentmi, AI predkontrola c001–c050, náklady |
-| `05-dokoncenie-a-rucna-kontrola.md` | AI predkontrola c051–c075, README, úpravy UI, ručná kontrola, nezhody človek vs. AI |
-| `06-export-tejto-relacie.txt` | Doslovný výstup príkazu `/export` relácie 05 (vrátane opráv v2) |
-| `agents/agent-aresearch-*.md` | Rešeršní agenti (pokyny: `prompts/research_agent.md`) |
-| `agents/agent-areview-*.md`, `agents/agent-ab984fec*.md` | Kontrolní agenti (pokyny: `prompts/review_agent.md`) |
+| `01-zadanie-a-uvod.md` | Pasting the assignment |
+| `02-plan-a-koncepty.md` | Solution concepts (pure LLM / scraping / hybrid), choice of the hybrid |
+| `04-implementacia-a-reserse.md` | Pipeline, tests, research by 5 parallel agents, AI pre-review c001–c050, costs |
+| `05-dokoncenie-a-rucna-kontrola.md` | AI pre-review c051–c075, README, UI changes, manual review, human vs. AI disagreements |
+| `06-export-tejto-relacie.txt` | Verbatim `/export` output of session 05 (including the v2 fixes) |
+| `agents/agent-aresearch-*.md` | Research agents (instructions: `prompts/research_agent.md`) |
+| `agents/agent-areview-*.md`, `agents/agent-ab984fec*.md` | Review agents (instructions: `prompts/review_agent.md`) |
 
-Úpravy oproti surovému transkriptu:
+File `03` was removed: it was a transcript of a session on a different assignment, included by mistake.
 
-- dlhé výstupy nástrojov sú skrátené (označené „skrátené“),
-- e-mailové adresy sú nahradené `[email]`,
-- v súbore `06` je jeden blok (diff exportu so súkromnými údajmi) nahradený značkou „vynechané“ a názov iného
-  projektu je nahradený výrazom „iný projekt“,
-- výstupy so súkromnými poznámkami používateľa o iných projektoch (pamäť Claude Code, výpis domovského
-  priečinka) sú vynechané a označené „vynechané“. Správy používateľa ani odpovede Claude sa nevynechávali.
+Changes compared with the raw transcripts:
+
+- long tool outputs are shortened (marked „skrátené“),
+- e-mail addresses are replaced with `[email]`,
+- in file `06`, one block (a diff of the export containing private data) is replaced with the marker „vynechané“,
+  and the name of another project is replaced with „iný projekt“,
+- outputs containing the user's private notes about other projects (Claude Code memory, home directory listing)
+  are omitted and marked „vynechané“. No user messages or Claude replies were omitted.
