@@ -76,6 +76,9 @@
   .verdict button.on-incorrect { background: var(--bad); border-color: var(--bad); color: var(--panel); }
   .verdict input { width: 100%; margin-top: 6px; font-size: 13px; }
   .ai { font-size: 13px; color: var(--muted); margin-top: 4px; }
+  .hint { font-size: 13px; margin-top: 8px; padding: 8px 10px; border-radius: 8px;
+    background: var(--warn-soft); color: var(--ink); }
+  .check-intro { padding: 12px 14px; margin-bottom: 12px; font-size: 14px; }
   .progress { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; flex: 1; min-width: 160px; }
   .progress div { height: 100%; background: var(--accent); }
   .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
@@ -125,10 +128,14 @@
   </section>
 
   <section id="tab-check" hidden>
+    <div class="card check-intro">
+      <b>Neoveruj, či citácia na stránke existuje – to už spravil skript.</b> Otvor zdroj a posúď, či je
+      <b>tvrdenie pravdivé</b> podľa nápovedy „Čo overiť“. Ak nie, klikni „Nesprávne“ a do poznámky napíš správnu
+      hodnotu. Verdikt AI uvidíš až po svojom rozhodnutí, aby ťa neovplyvnil.
+    </div>
     <div class="toolbar">
       <select id="c-filter" aria-label="Filter kontroly">
         <option value="todo">Neskontrolované človekom</option>
-        <option value="disagree">AI predkontrola: nesprávne / nejasné</option>
         <option value="all">Všetko</option>
       </select>
       <select id="c-scope" aria-label="Rozsah">
@@ -159,6 +166,28 @@ const ITEM_LABELS = { inclusion: "Zaradenie", investor_type: "Typ", sectors: "Se
   ticket_min_eur: "Ticket min", ticket_max_eur: "Ticket max", aum_eur: "AUM", latest_investment: "Posledný deal" };
 const STATUS_LABELS = { verified: ["overené", "ok"], quote_not_found: ["citácia nenájdená", "bad"],
   http_error: ["HTTP chyba", "warn"], fetch_error: ["nedostupné", "warn"], unsupported_content: ["PDF/iný formát", "warn"] };
+const ITEM_HINTS = {
+  included: "Investuje subjekt vlastný alebo spravovaný kapitál do súkromných firiem za podiel? Je posledná investícia naozaj jeho a z obdobia po 9. 10. 2023? Nesprávne, ak je to poradca, banka, platforma, grantová schéma, fond, ktorý už neinvestuje, alebo investoval iný subjekt s podobným menom.",
+  not_investor_service: "Je to naozaj len poskytovateľ služieb (advokát, poradca, audítor)? Nesprávne, ak má aj vlastný investičný fond.",
+  debt_only: "Poskytuje naozaj len úvery, nie kapitál za podiel? Nesprávne, ak má aj equity fond.",
+  platform_only: "Je to naozaj len platforma, ktorá sprostredkúva? Nesprávne, ak investuje z vlastného fondu.",
+  grant_only: "Poskytuje naozaj len granty a dotácie? Nesprávne, ak investuje aj za podiel.",
+  public_markets_only: "Investuje naozaj len do kótovaných akcií? Nesprávne, ak investuje aj do súkromných firiem.",
+  inactive: "Je pravda, že od 9. 10. 2023 nemá žiadnu investíciu (alebo je v likvidácii, investičné obdobie skončilo)? Nesprávne, ak nájdeš novšiu investíciu – URL daj do poznámky.",
+  no_evidence: "Naozaj sa nedá doložiť žiadna investícia? Ak existujú len staré investície alebo je fond zatvorený či v likvidácii, správny dôvod je „neaktívny“, nie „bez dôkazu“.",
+  duplicate: "Je to naozaj ten istý subjekt ako iný záznam v databáze (napr. starý názov alebo fond toho istého správcu)?",
+  investor_type: "Sedí typ? VC = rizikový kapitál do mladých firiem, PE = podiely v zrelých firmách, korporátne VC = investičná vetva firmy, verejný fond = štát investuje priamo, fond fondov = investuje len cez iné fondy.",
+  sectors: "Hovorí zdroj, že investuje práve do týchto sektorov? Nesprávne, ak sú vymyslené, príliš úzke (zdroj hovorí „všetky sektory“) alebo opísané z jedného dealu.",
+  stages: "Hovorí zdroj, že investuje v týchto fázach (seed, séria A, growth, buyout…)? Nesprávne, ak chýba alebo prebýva fáza, ktorú zdroj uvádza.",
+  ticket_min_eur: "Je to typická veľkosť jednej investície tohto investora? Nesprávne, ak je to veľkosť celého kola s ďalšími investormi alebo veľkosť fondu. Mena sa prepočítava kódom, kontroluj pôvodnú sumu.",
+  ticket_max_eur: "Je to typická veľkosť jednej investície tohto investora? Nesprávne, ak je to veľkosť celého kola s ďalšími investormi alebo veľkosť fondu. Mena sa prepočítava kódom, kontroluj pôvodnú sumu.",
+  aum_eur: "Je to kapitál, ktorý tento správca spravuje, alebo skutočná veľkosť jeho fondu? Nesprávne, ak sú to aktíva klientov, hodnota portfóliových firiem, len cieľ nového fondu alebo jeden deal. Ak je údaj zjavne zastaraný, napíš to do poznámky.",
+  latest_investment: "Píše zdroj, že práve tento investor (alebo jeho fond) investoval do tejto firmy približne k tomuto dátumu? Nesprávne, ak investoval iný subjekt alebo ide len o plán či úver.",
+};
+function hintFor(c) {
+  if (c.item !== "inclusion") return ITEM_HINTS[c.item];
+  return ITEM_HINTS[c.system_value === "included" ? "included" : c.system_value.replace("excluded:", "")];
+}
 const fmt = new Intl.NumberFormat("sk-SK", { maximumFractionDigits: 0 });
 const pct = v => v === null || v === undefined ? "–" : `${(v * 100).toFixed(1)} %`;
 
@@ -332,8 +361,7 @@ function renderChecks() {
   const matches = c => !q || c.candidate_id.toLowerCase().includes(q)
     || ((state.byId.get(c.candidate_id) || {}).name || "").toLowerCase().includes(q);
   const visible = inScope.filter(c => matches(c) && (filter === "all" || state.keep.has(checkKey(c))
-    || (filter === "todo" && !c.human_verdict)
-    || (filter === "disagree" && c.ai_verdict !== "correct")));
+    || (filter === "todo" && !c.human_verdict)));
   const list = document.getElementById("check-list");
   if (!visible.length) { list.replaceChildren(el("div", { class: "empty" }, "Hotovo, nič tu nie je.")); return; }
   list.replaceChildren(...visible.map(c => checkRow(c)));
@@ -372,7 +400,9 @@ function checkRow(c) {
       looksEnglish(quote) ? el("div", { class: "ai" },
         "Citácia je v angličtine. Ak ju Ctrl+F nenájde, prepni stránku do angličtiny (EN).") : null,
       el("div", { class: "src" }, safeLink(c.source_url)),
-      c.ai_verdict ? el("div", { class: "ai" }, `AI predkontrola: ${c.ai_verdict === "correct" ? "✓ správne" : "✗ nesprávne"}${c.ai_note ? ` – ${c.ai_note}` : ""}`)
+      hintFor(c) ? el("div", { class: "hint" }, el("b", {}, "Čo overiť: "), hintFor(c)) : null,
+      !c.human_verdict ? el("div", { class: "ai" }, "AI predkontrola sa zobrazí po tvojom rozhodnutí.")
+        : c.ai_verdict ? el("div", { class: "ai" }, `AI predkontrola: ${c.ai_verdict === "correct" ? "✓ správne" : "✗ nesprávne"}${c.ai_note ? ` – ${c.ai_note}` : ""}`)
         : el("div", { class: "ai" }, "AI predkontrola: bez verdiktu")),
     el("div", { class: "verdict" }, btn("correct", "✓ Správne"), btn("incorrect", "✗ Nesprávne"), note));
 }
